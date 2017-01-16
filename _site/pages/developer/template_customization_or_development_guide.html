@@ -1,0 +1,2918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Template customization or development guide</title>
+	<meta name="description" content="AbanteCart Templates Guide">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="/img/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="/img/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/img/favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/img/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/img/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon-180x180.png">
+	<link rel="stylesheet" href="/css/style.css">
+	<script src="/js/modernizr.js"></script>
+</head>
+
+<body>
+	<!--[if lt IE 8]>
+	    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<div class="page">
+		<div class="header header-over large">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<a href="/index.html" class="logo-image">
+							<img src="/img/logos/logo.png" alt="AbanteCart open source ecommerce">
+						</a>
+						<a href="/index.html" class="languages">
+						<span class="language-active js-language-active">AbanteCart Docs</span>
+						</a>
+					</div>
+					<div class="col-md-9 col-sm-6 col-xs-6">
+					<nav class="right helper">
+    					<ul class="menu sf-menu js-menu">
+						<li>
+    <a href="/pages/install/installation_options.html">Install</a>
+    <ul>
+    	<li>
+    		<a href="/pages/install/installation_options.html">Installation Options</a>
+    	</li>
+    	<li>
+    		<a href="/pages/extensions/install.html">Install Extension</a>
+    	</li>
+    	<li>
+    		<a href="/pages/install/system_requirements.html">System requirements</a>
+    	</li>
+    	<li>
+    		<a href="/pages/install/download.html">Download</a>
+    	</li>
+    </ul>
+</li>
+<li>
+    <a href="/pages/quickstart/checklist.html">Getting Started</a>
+    <ul>
+    	<li>
+    		<a href="/pages/quickstart/checklist.html">Basic Setup Checklist</a>
+    	</li>
+    	<li>
+    		<a href="/pages/quickstart/settings.html">Common Store settings</a>
+    	</li>
+    	<li>
+    		<a href="/pages/quickstart/payment_quick_start.html">Enable Payments</a>
+    	</li>
+    	<li>
+    		<a href="/pages/quickstart/shipping_quick_start.html">Enable Shipping</a>
+    	</li>
+    	<li>
+    		<a href="/pages/quickstart/email_settings.html">Email settings</a>
+    	</li>
+    </ul>
+</li>
+<li>
+    <a href="/pages/catalog/index.html">User Manual
+    	<span class="menu-label">v1.2.9</span>
+    </a>
+    <ul>
+    	<li>
+    		<a href="/pages/catalog/products/search.html">Manage Products</a>
+    	</li>
+    	<li>
+    		<a href="/pages/customers/search.html">Manage Customers</a>
+    	</li>
+    	<li>
+    		<a href="/pages/promotions/specials.html">Manage Promotions</a>
+    	</li>
+    	<li>
+    		<a href="/pages/orders/search.html">Manage Orders</a>
+    	</li>
+    	<li>
+    		<a href="/pages/settings/settings.html">Edit Settings</a>
+    	</li>
+    	<li>
+    		<a href="/pages/localization/languages/languages.html">Manage Localization</a>
+    	</li>
+    	<li>
+    		<a href="/pages/embed/embed.html">Embed your store</a>
+    	</li>
+    	<li>
+    		<a href="/pages/settings/stores.html">Set up multiple stores</a>
+    	</li>
+    	<li>
+    		<a href="/pages/reports/index.html">Store Reports</a>
+    	</li>
+    	<li>
+    		<a href="/pages/extensions/find.html">Extend Functionality</a>
+    	</li>
+    </ul>
+</li>
+<li>
+    <a href="/pages/design/index.html">Design Guide</a>
+    <ul>
+    	<li>
+    		<a href="/pages/design/templates/select.html">Manage Templates</a>
+    	</li>
+    	<li>
+    		<a href="/pages/design/layouts.html">Manage Page Layouts</a>
+    	</li>
+    	<li>
+    		<a href="/pages/design/blocks/search.html">Manage Blocks</a>
+    	</li>
+    	<li>
+    		<a href="/pages/design/menu.html">Manage Menu</a>
+    	</li>
+    	<li>
+    		<a href="/pages/design/blocks/banner_block.html">Manage Banners</a>
+    	</li>
+    	<li>
+    		<a href="/pages/design/blocks/forms_block.html">Manage Forms</a>
+    	</li>
+    </ul>
+</li>
+<li>
+    <a href="/pages/developer/index.html">Developer Guide</a>
+    <ul>
+    	<li>
+    		<a href="/pages/developer/architecture.html">Architecture</a>
+    	</li>
+    	<li>
+    		<a href="/pages/developer/extension_dev.html">Extension Development</a>
+    	</li>
+    	<li>
+    		<a href="/pages/developer/templates_overview.html">Templates Overview</a>
+    	</li>
+    	<li>
+    		<a href="/pages/developer/template_customization_or_development_guide.html">Developing Templates</a>
+    	</li>
+    	<li>
+    		<a href="/pages/developer/template_dev_tools.html">Developer Tools</a>
+    	</li>
+    	<li>
+    		<a href="/pages/developer/sf_api.html">Storefront API</a>
+    	</li>
+    </ul>
+</li>
+<li>
+    <a href="/pages/tips/troubleshooting.html">Troubleshoot</a>
+</li>
+
+						</u>
+					</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="page-info page-info-background background-2 page-info-small">
+			<div class="page-info-container">
+				<div class="container ">
+					<div class="row">
+						<div class="col-md-12">
+							<h1 class="page-title">Template customization or development guide</h1>
+							<h2 class="page-description">AbanteCart Templates Guide</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="layout with-left-sidebar">
+							<div class="left-sidebar">
+								<nav class="js-menu-fixed menu-vertical-wrapper">
+
+    <div class="search">
+<!--
+		//conflict of css and google button
+		<script>
+		  (function() {
+		    var cx = '015077254431814821964:ia6eg4e1ow4';
+		    var gcse = document.createElement('script');
+		    gcse.type = 'text/javascript';
+		    gcse.async = true;
+		    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+		        '//cse.google.com/cse.js?cx=' + cx;
+		    var s = document.getElementsByTagName('script')[0];
+		    s.parentNode.insertBefore(gcse, s);
+		  })();
+		</script>
+		<gcse:search></gcse:search>
+-->
+		<form name="cse" id="google_search" action="https://www.google.com/cse">
+		  <input type="hidden" name="cx" value="015077254431814821964:ia6eg4e1ow4" />
+		  <input type="hidden" name="ie" value="utf-8" />
+		  <input type="hidden" name="hl" value="" />
+		  <input name="q" type="text" size="40" class="search-input form-control" placeholder="Documents search" />
+		  <a href="#" onclick="document.getElementById('google_search').submit();"><i class="fa fa-search search-icon"></i></a>
+		</form>
+		                         
+    </div>
+
+	<ul class="menu-vertical js-menu-vertical">
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-cloud-download fa-fw"></i> Installation</a>
+    
+    
+        <ul >
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/install/installation_options.html"><i class="fa fa-magic fa-fw"></i> Installation Options</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/install/options/click_installation.html"><i class="fa fa-caret-right fa-fw"></i> Click Installation</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/install/options/cpanel_installation.html"><i class="fa fa-caret-right fa-fw"></i> Cpanel Installation</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/install/options/cloud_installation.html"><i class="fa fa-caret-right fa-fw"></i> Cloud Installation</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/install/options/localhost_installation.html"><i class="fa fa-caret-right fa-fw"></i> Localhost Installation</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/install/options/regular_installation.html"><i class="fa fa-caret-right fa-fw"></i> Regular installation</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/install/system_requirements.html"><i class="fa fa-caret-right fa-fw"></i> System requirements</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/install/download.html"><i class="fa fa-caret-right fa-fw"></i> Download</a>
+    
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-sign-in fa-fw"></i> Core Upgrade</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/upgrade/auto.html"><i class="fa fa-caret-right fa-fw"></i> Run Upgrade in admin</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/upgrade/manual.html"><i class="fa fa-caret-right fa-fw"></i> Upgrade manually</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/upgrade/troubleshoot.html"><i class="fa fa-caret-right fa-fw"></i> Troubleshoot</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-bicycle fa-fw"></i> Getting Started</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/quickstart/checklist.html"><i class="fa fa-caret-right fa-fw"></i> Basic Setup Checklist</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/quickstart/settings.html"><i class="fa fa-caret-right fa-fw"></i> Common Store settings</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/quickstart/payment_quick_start.html"><i class="fa fa-caret-right fa-fw"></i> Enable Payments</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/quickstart/shipping_quick_start.html"><i class="fa fa-caret-right fa-fw"></i> Enable Shipping</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/quickstart/email_settings.html"><i class="fa fa-caret-right fa-fw"></i> Email settings</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/quickstart/language_settings.html"><i class="fa fa-caret-right fa-fw"></i> Language settings</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/quickstart/currency_settings.html"><i class="fa fa-caret-right fa-fw"></i> Currency settings</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/quickstart/region_settings.html"><i class="fa fa-caret-right fa-fw"></i> Region settings</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/quickstart/setup_taxes.html"><i class="fa fa-caret-right fa-fw"></i> Enable Taxes</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/catalog/index.html"><i class="fa fa-cubes fa-fw"></i> Managing Product Catalog</a>
+    
+    
+        <ul >
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-file-text fa-fw"></i> Manage Categories</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/categories/search.html"><i class="fa fa-caret-right fa-fw"></i> List & search categories</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/categories/edit.html"><i class="fa fa-caret-right fa-fw"></i> Add & edit categories</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-files-o fa-fw"></i> Manage Products</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/products/search.html"><i class="fa fa-caret-right fa-fw"></i> List & search products</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/products/edit.html"><i class="fa fa-caret-right fa-fw"></i> Add & edit products</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/products/media.html"><i class="fa fa-caret-right fa-fw"></i> Manage product Media</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/products/attributes.html"><i class="fa fa-caret-right fa-fw"></i> Manage product options</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/products/files.html"><i class="fa fa-caret-right fa-fw"></i> Manage product files</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/products/relations.html"><i class="fa fa-caret-right fa-fw"></i> Manage product relations</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/products/product_layout.html"><i class="fa fa-caret-right fa-fw"></i> Manage product page layout</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/products/inventory.html"><i class="fa fa-caret-right fa-fw"></i> Manage product inventory</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-bookmark fa-fw"></i> Manage Manufacturers</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/manufacturers/search.html"><i class="fa fa-caret-right fa-fw"></i> List & search Manufacturers</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/manufacturers/edit.html"><i class="fa fa-caret-right fa-fw"></i> Add & edit Manufacturers</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/global_downloads.html"><i class="fa fa-caret-right fa-fw"></i> Global Downloads</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/product_reviews.html"><i class="fa fa-caret-right fa-fw"></i> Product Reviews</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/global_attributes.html"><i class="fa fa-caret-right fa-fw"></i> Global Attributes</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/resource_library.html"><i class="fa fa-caret-right fa-fw"></i> Resource Library</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/page_layout.html"><i class="fa fa-caret-right fa-fw"></i> Page Layout</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/promotions/index.html"><i class="fa fa-tags fa-fw"></i> Managing Promotions</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/promotions/specials.html"><i class="fa fa-caret-right fa-fw"></i> Manage Specials</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/promotions/discounts.html"><i class="fa fa-caret-right fa-fw"></i> Set Quantity discounts</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/promotions/featured.html"><i class="fa fa-caret-right fa-fw"></i> Set Features Products</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/promotions/banners.html"><i class="fa fa-caret-right fa-fw"></i> Place banners</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href=""><i class="fa fa-ticket fa-fw"></i> Manage Coupons</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/promotions/search_coupons.html"><i class="fa fa-caret-right fa-fw"></i> List & search coupons</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/promotions/edit_coupons.html"><i class="fa fa-caret-right fa-fw"></i> Add & edit coupons</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/customers/index.html"><i class="fa fa-users fa-fw"></i> Managing Customers</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/customers/search.html"><i class="fa fa-caret-right fa-fw"></i> List & search customers</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/customers/edit.html"><i class="fa fa-caret-right fa-fw"></i> Add & edit customer</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/customers/address.html"><i class="fa fa-caret-right fa-fw"></i> Add & edit address</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/customers/transactions.html"><i class="fa fa-caret-right fa-fw"></i> Add & edit transactions</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/customers/groups.html"><i class="fa fa-caret-right fa-fw"></i> Customer Groups</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/customers/send_mails.html"><i class="fa fa-caret-right fa-fw"></i> Send Mail/SMS</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/orders/index.html"><i class="fa fa-money fa-fw"></i> Managing Orders</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/orders/search.html"><i class="fa fa-caret-right fa-fw"></i> Search and filter</a>
+    
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-shopping-cart fa-fw"></i> View Orders</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/orders/order_details.html"><i class="fa fa-caret-right fa-fw"></i> Order Details</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/orders/order_shipping.html"><i class="fa fa-caret-right fa-fw"></i> Order Shipping Details</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/orders/order_payment.html"><i class="fa fa-caret-right fa-fw"></i> Order Payment Details</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/orders/order_files.html"><i class="fa fa-caret-right fa-fw"></i> Order Files</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/orders/order_history.html"><i class="fa fa-caret-right fa-fw"></i> Order History</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/orders/modify.html"><i class="fa fa-caret-right fa-fw"></i> Modify Orders</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/orders/order_totals.html"><i class="fa fa-caret-right fa-fw"></i> Manage Order Totals</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/reports/index.html"><i class="fa fa-file-text fa-fw"></i> Store Reports</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/reports/sales.html"><i class="fa fa-caret-right fa-fw"></i> Sales Report</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/reports/customers.html"><i class="fa fa-caret-right fa-fw"></i> Customers Report</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/reports/products.html"><i class="fa fa-caret-right fa-fw"></i> Products Report</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/design/index.html"><i class="fa fa-tint fa-fw"></i> Design Guide</a>
+    
+    
+        <ul >
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-files-o fa-fw"></i> Templates</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/design/templates/select.html"><i class="fa fa-caret-right fa-fw"></i> Select template</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/design/templates/edit.html"><i class="fa fa-caret-right fa-fw"></i> Edit template</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/design/templates/files.html"><i class="fa fa-caret-right fa-fw"></i> Template files</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/design/layouts.html"><i class="fa fa-caret-right fa-fw"></i> Layouts</a>
+    
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-th-large fa-fw"></i> Blocks</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/design/blocks/search.html"><i class="fa fa-caret-right fa-fw"></i> List & search blocks</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/design/blocks/html_block.html"><i class="fa fa-caret-right fa-fw"></i> HTML block</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/design/blocks/data_listing.html"><i class="fa fa-caret-right fa-fw"></i> Data Listing</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/design/blocks/banner_block.html"><i class="fa fa-caret-right fa-fw"></i> Banner block</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/design/blocks/forms_block.html"><i class="fa fa-caret-right fa-fw"></i> Forms Block</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/design/menu.html"><i class="fa fa-caret-right fa-fw"></i> Menu</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/design/content_pages.html"><i class="fa fa-caret-right fa-fw"></i> Content Pages</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/design/banners.html"><i class="fa fa-caret-right fa-fw"></i> Banners</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/design/banner_slider.html"><i class="fa fa-caret-right fa-fw"></i> Banner Slider Management</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/design/forms.html"><i class="fa fa-caret-right fa-fw"></i> Forms</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-money fa-fw"></i> Shippings & Payments</a>
+    
+    
+        <ul >
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/ship_and_pay/enable_shipping.html"><i class="fa fa-truck fa-fw"></i> Enable Shipping</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/shippings/fedex.html"><i class="fa fa-caret-right fa-fw"></i> Fedex</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/shippings/royal_mail.html"><i class="fa fa-caret-right fa-fw"></i> Royal Mail</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/shippings/parcelforce_48.html"><i class="fa fa-caret-right fa-fw"></i> Parcelforce 48</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/shippings/usps.html"><i class="fa fa-caret-right fa-fw"></i> USPS</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/shippings/ups.html"><i class="fa fa-caret-right fa-fw"></i> UPS</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/shippings/per_item.html"><i class="fa fa-caret-right fa-fw"></i> Per Item</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/shippings/free.html"><i class="fa fa-caret-right fa-fw"></i> Free Shipping</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/shippings/flat_rate.html"><i class="fa fa-caret-right fa-fw"></i> Flat rate</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/shippings/citylink.html"><i class="fa fa-caret-right fa-fw"></i> CityLink</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/shippings/weight_based.html"><i class="fa fa-caret-right fa-fw"></i> Weight Based</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/shippings/pickup.html"><i class="fa fa-caret-right fa-fw"></i> Pickup From Store</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/ship_and_pay/enable_payment.html"><i class="fa fa-money fa-fw"></i> Enable Payment</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/stripe.html"><i class="fa fa-caret-right fa-fw"></i> Stripe</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/paypal_payments_std.html"><i class="fa fa-caret-right fa-fw"></i> PayPal Payments Standard</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/paypal_payments_pro.html"><i class="fa fa-caret-right fa-fw"></i> PayPal Payments Pro</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/paypal_payments_pro_uk.html"><i class="fa fa-caret-right fa-fw"></i> PayPal Payments Pro (UK)</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/paypal_payments_express.html"><i class="fa fa-caret-right fa-fw"></i> PayPal Express Checkout</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/check_money_order.html"><i class="fa fa-caret-right fa-fw"></i> Cheque / Money Order</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/authorize_net.html"><i class="fa fa-caret-right fa-fw"></i> Authorize.Net (AIM)</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/payza.html"><i class="fa fa-caret-right fa-fw"></i> Payza</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/realex.html"><i class="fa fa-caret-right fa-fw"></i> Realex</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/liqpay.html"><i class="fa fa-caret-right fa-fw"></i> LIQPAY</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/worldpay.html"><i class="fa fa-caret-right fa-fw"></i> WorldPay</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/2co.html"><i class="fa fa-caret-right fa-fw"></i> 2Checkout</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/sagepay.html"><i class="fa fa-caret-right fa-fw"></i> SagePay Payments</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/sagepay_us.html"><i class="fa fa-caret-right fa-fw"></i> SagePay US Payments</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/sagepay_direct.html"><i class="fa fa-caret-right fa-fw"></i> SagePay Direct</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/paypoint.html"><i class="fa fa-caret-right fa-fw"></i> PayPoint</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/paymate.html"><i class="fa fa-caret-right fa-fw"></i> Paymate</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/cashflows.html"><i class="fa fa-caret-right fa-fw"></i> CashFlows</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/skrill.html"><i class="fa fa-caret-right fa-fw"></i> Skrill</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/cash_on_delivery.html"><i class="fa fa-caret-right fa-fw"></i> Cash on Delivery</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/banktransfer.html"><i class="fa fa-caret-right fa-fw"></i> Bank Transfer</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/settings/index.html"><i class="fa fa-wrench fa-fw"></i> Settings & Tools</a>
+    
+    
+        <ul >
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/settings/settings.html"><i class="fa fa-cog fa-fw"></i> Settings</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/settings/details.html"><i class="fa fa-caret-right fa-fw"></i> Store Details</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/settings/general.html"><i class="fa fa-caret-right fa-fw"></i> General</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/settings/checkout.html"><i class="fa fa-caret-right fa-fw"></i> Checkout</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/settings/appearance.html"><i class="fa fa-caret-right fa-fw"></i> Appearance</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/settings/mail.html"><i class="fa fa-caret-right fa-fw"></i> Mail</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/settings/im.html"><i class="fa fa-caret-right fa-fw"></i> IM</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/settings/api.html"><i class="fa fa-caret-right fa-fw"></i> API</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/settings/system.html"><i class="fa fa-caret-right fa-fw"></i> System</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/settings/stores.html"><i class="fa fa-caret-right fa-fw"></i> Manage Multiple Stores</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-user-md fa-fw"></i> Admin users</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/users/users.html"><i class="fa fa-caret-right fa-fw"></i> Users</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/users/edit_user.html"><i class="fa fa-caret-right fa-fw"></i> Edit User</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/users/user_groups.html"><i class="fa fa-caret-right fa-fw"></i> User Groups</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/users/user_permissions.html"><i class="fa fa-caret-right fa-fw"></i> Permissions</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tools/backup_restore.html"><i class="fa fa-caret-right fa-fw"></i> Backup/Restore tool</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tools/migration.html"><i class="fa fa-caret-right fa-fw"></i> Migration tool</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tools/message_manager.html"><i class="fa fa-caret-right fa-fw"></i> Message manager</a>
+    
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-upload fa-fw"></i> Data Import / Export</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/tools/export.html"><i class="fa fa-caret-right fa-fw"></i> Export</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tools/import.html"><i class="fa fa-caret-right fa-fw"></i> Import</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tools/file_uploads.html"><i class="fa fa-caret-right fa-fw"></i> File Uploads</a>
+    
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-cog fa-fw"></i> Logs</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/tools/logs/install_history.html"><i class="fa fa-caret-right fa-fw"></i> install/Upgrade History</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tools/logs/error_logs.html"><i class="fa fa-caret-right fa-fw"></i> Error logs</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tools/logs/sheduled_tasks.html"><i class="fa fa-caret-right fa-fw"></i> Scheduled Tasks</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/products/inventory.html"><i class="fa fa-caret-right fa-fw"></i> Stock configuration</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/settings/encryption_data.html"><i class="fa fa-caret-right fa-fw"></i> Encryption Data Manager</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/localization/index.html"><i class="fa fa-globe fa-fw"></i> Manage Localization</a>
+    
+    
+        <ul >
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-language fa-fw"></i> Languages</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/localization/languages/languages.html"><i class="fa fa-caret-right fa-fw"></i> Languages List</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/languages/edit_language.html"><i class="fa fa-caret-right fa-fw"></i> Edit Language</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/languages/create_language.html"><i class="fa fa-caret-right fa-fw"></i> Create Language</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/language_definitions.html"><i class="fa fa-caret-right fa-fw"></i> Language Definitions</a>
+    
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-usd fa-fw"></i> Currencies</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/localization/currencies/currencies.html"><i class="fa fa-caret-right fa-fw"></i> List Currencies</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/currencies/edit_currency.html"><i class="fa fa-caret-right fa-fw"></i> Edit Currency</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-suitcase fa-fw"></i> Stock and Order Statuses</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/localization/statuses/stock_status_list.html"><i class="fa fa-caret-right fa-fw"></i> List Stock Statuses</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/statuses/edit_stock_status.html"><i class="fa fa-caret-right fa-fw"></i> Edit Stock Status</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/statuses/order_status_list.html"><i class="fa fa-caret-right fa-fw"></i> List Order Statuses</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/statuses/edit_order_status.html"><i class="fa fa-caret-right fa-fw"></i> Edit Order Status</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href=""><i class="fa fa-map-marker fa-fw"></i> Countries and Zones</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/localization/country_and_zone/country_list.html"><i class="fa fa-caret-right fa-fw"></i> List Countries</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/country_and_zone/edit_country.html"><i class="fa fa-caret-right fa-fw"></i> Edit Country</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/country_and_zone/zone_list.html"><i class="fa fa-caret-right fa-fw"></i> List Zones</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/country_and_zone/edit_zone.html"><i class="fa fa-caret-right fa-fw"></i> Edit Zone</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href=""><i class="fa fa-location-arrow fa-fw"></i> Locations and Taxes</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/localization/locations_and_taxes/locations_list.html"><i class="fa fa-caret-right fa-fw"></i> List Locations</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/locations_and_taxes/edit_location.html"><i class="fa fa-caret-right fa-fw"></i> Edit Location</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/locations_and_taxes/tax_classes_list.html"><i class="fa fa-caret-right fa-fw"></i> List Tax Classes</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/locations_and_taxes/edit_tax_class.html"><i class="fa fa-caret-right fa-fw"></i> Edit Tax Class</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/locations_and_taxes/add_rates.html"><i class="fa fa-caret-right fa-fw"></i> Add Rates to Tax Class</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href=""><i class="fa fa-truck fa-fw"></i> Length & Weight classes</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/localization/length_and_weight/length_list.html"><i class="fa fa-caret-right fa-fw"></i> List Length Classes</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/length_and_weight/edit_length.html"><i class="fa fa-caret-right fa-fw"></i> Edit Length Class</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/length_and_weight/weight_list.html"><i class="fa fa-caret-right fa-fw"></i> List Weight Classes</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/length_and_weight/edit_weight.html"><i class="fa fa-caret-right fa-fw"></i> Edit Weight Class</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/auto_translate.html"><i class="fa fa-caret-right fa-fw"></i> Language Auto Translate</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/embed/embed.html"><i class="fa fa-code-fork fa-fw"></i> Embed your store</a>
+    
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/extensions/index.html"><i class="fa fa-puzzle-piece fa-fw"></i> Extend Functionality</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/extensions/find.html"><i class="fa fa-caret-right fa-fw"></i> Find extension</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/extensions/install.html"><i class="fa fa-caret-right fa-fw"></i> Install new extension</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/extensions/edit.html"><i class="fa fa-caret-right fa-fw"></i> Managing extensions</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/extensions/connect.html"><i class="fa fa-caret-right fa-fw"></i> Connect store to Marketplace</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/tips/index.html"><i class="fa fa-life-ring fa-fw"></i> Helpful Tips</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/tips/global_search.html"><i class="fa fa-caret-right fa-fw"></i> Global search</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tips/troubleshooting.html"><i class="fa fa-caret-right fa-fw"></i> Troubleshooting</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tips/performance.html"><i class="fa fa-caret-right fa-fw"></i> Performance</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tips/side_panels.html"><i class="fa fa-caret-right fa-fw"></i> Side Panels</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tips/more_help.html"><i class="fa fa-caret-right fa-fw"></i> Getting more help</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tips/change_domain.html"><i class="fa fa-caret-right fa-fw"></i> Changing Domain Name</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tips/enable_seo.html"><i class="fa fa-caret-right fa-fw"></i> Enable Seo Urls</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tips/cache.html"><i class="fa fa-caret-right fa-fw"></i> Clear AbanteCart cache</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tips/template_debug.html"><i class="fa fa-caret-right fa-fw"></i> Template Debug</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li class="active-menu active-submenu selected">
+    	 <a class="sub_menu_link" href="/pages/developer/index.html"><i class="fa fa-code fa-fw"></i> Developer Guide</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/developer/architecture.html"><i class="fa fa-caret-right fa-fw"></i> AbanteCart Architecture</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/developer/extension_dev.html"><i class="fa fa-caret-right fa-fw"></i> Extension Development</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/developer/developing_extensions_and_extension_api.html"><i class="fa fa-caret-right fa-fw"></i> Advanced Extension dev</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/developer/templates_overview.html"><i class="fa fa-caret-right fa-fw"></i> Templates Overview</a>
+    
+    
+    </li>
+
+	
+	
+    <li class="active-menu selected">    
+         <a href="/pages/developer/template_customization_or_development_guide.html"><i class="fa fa-caret-right fa-fw"></i> Template development guide</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/developer/template_dev_tools.html"><i class="fa fa-caret-right fa-fw"></i> Developer Tools</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/developer/adata.html"><i class="fa fa-caret-right fa-fw"></i> Import/Export AData</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/developer/sf_api.html"><i class="fa fa-caret-right fa-fw"></i> Storefront API</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/developer/rl_system.html"><i class="fa fa-caret-right fa-fw"></i> Resource Library System</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/developer/translating_process.html"><i class="fa fa-caret-right fa-fw"></i> Translating Process</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/developer/tasks_processing.html"><i class="fa fa-caret-right fa-fw"></i> Tasks Processing</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+</ul>
+
+    <div class="separator"></div>	
+
+</nav>
+							</div>
+							<div class="main-content with-left-sidebar main-content-full">
+								<div class="category-info helper pt40">
+	<h3 class="category-title">Template development guide</h3>
+	<h4 class="category-description"> 
+	</h4>
+	<p class="box-description">
+ This manual it intended to help developers to create custom or brand new storefront templates for AbanteCart. 
+<br>
+We try to make development with AbanteCart easy and fun, and this guide to make this process very clear and efficient. 
+<br>
+If something is missing or not clear, please let us know of feel free to contribute in manual improvement. 
+	</p>
+</div>
+
+						<!-- Note -->
+						<div class="note js-note blue">
+							<span class="note-close js-close">
+								<i class="fa fa-times"></i>
+							</span>
+							<h4 class="note-title"> NOTE </h4>
+							<p class="note-description"> This manual assumes that you have HTML/CSS/PHP knowledge and you have reviewed AbanteCart <a href="/pages/developer/extension_dev.html#glossary">glossary</a> and <a href="/pages/developer/architecture.html">basic architecture</a>. </p>
+						</div>
+						<!-- End of Note -->
+	<p class="box-description">
+If you just start, you will be pleased to know that we have developed a special extension for developers (<a href="https://github.com/abantecart/developer_tools_extension" target="_blank">Developer&nbsp;Tools</a>). <br>
+
+Developer Tools extension will save you time to clone templates and build (archive) final extension archive. Final archive is used for extension distribution and install in AbanteCart admin.<br>
+
+Be fair! Developer Tools extension is under constant improvement, so feel free to help and contribute.  
+	</p>
+						
+						
+						
+						
+						
+
+<div class="note js-note blue-light">
+	<h4 class="note-title">Document Content</h4>
+	<ul>
+	<li class="toclevel-1 tocsection-1"><a href="#clone"> <span class="toctext">Clone Storefront Templates</span></a></li>
+	<li class="toclevel-1 tocsection-2"><a href="#files"> <span class="toctext">Exploring and editing files</span></a></li>
+	<li class="toclevel-1 tocsection-3"><a href="#header_footer"><span class="toctext">Creating head, header and footer.</span></a></li>
+	<li class="toclevel-1 tocsection-4"><a href="#blocks"><span class="toctext">Location of blocks in header/footer/content</span></a></li>
+	<li class="toclevel-1 tocsection-5"><a href="#banners"><span class="toctext">Adding banners to your template.</span></a></li>
+	<li class="toclevel-1 tocsection-6"><a href="#html_blocks"><span class="toctext">HTML Blocks.</span></a></li>
+	<li class="toclevel-1 tocsection-7"><a href="#form"><span class="toctext">Form elements and fields template files.</span></a></li>
+	</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="category-info helper">
+	<h4 id="clone" class="box-title">1. Clone Storefront Templates</h4>
+	<p class="box-description">
+Fastest way to build new template or customize "default" template is to clone template with Developer Tools extension.
+</p>
+<p class="box-description">
+<a class="jcepopup" href="/img/developer/abantecart-developer-tools-clone.png"><img src="/img/developer/abantecart-developer-tools-clone.png" border="0" width="450" /></a>
+</p>
+	<p class="box-description">
+There are two template cloning options, full and partial clone. If you develop new template and plan to edit template ".tpl" files, you will need a full clone. It will copy all the template files. Partial clone will copy only CSS, JavaScript and images. This is helpful if you only plane to change style for the template
+</p>
+</div>
+
+
+						<!-- Note -->
+						<div class="note js-note blue">
+							<span class="note-close js-close">
+								<i class="fa fa-times"></i>
+							</span>
+							<h4 class="note-title"> NOTE </h4>
+							<p class="note-description"> Important to note that if new template does not have specific template/file present, "default" template file will be used. <br>
+
+Remember to keep "default" template files intact and accessible all the time. Your clone templates will not be effected during minor updates. </p>
+						</div>
+						<!-- End of Note -->
+
+	<p class="box-description">
+When you clone, you can choose to create a core template or an extension template. We recommend to create template extensions, but if you have a specific project and do not intend to redistribute this template, you can create core clone. 
+</p>
+
+						<!-- Note -->
+						<div class="note js-note red note-pulse">
+							<h4 class="note-title"> Important </h4>
+							<p class="note-description">It is important to make sure that directory for cloned template have complete rules to write files (777). 
+<br>
+For template extension clone, you need to set /extensions/ directory to 777 and for core template clone set /storefront/view/ directory to 777.  </p>
+						</div>
+						<!-- End of Note -->
+						
+	<p class="box-description">
+After clone is completed, you will see new directory created in /extensions/ or /storefront/view/<br>
+Also, you will see new template available in design/templates section. <br>
+You can now enable extension template (if cloned as extension) and set new template to storefront. 
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="category-info helper">
+	<h4 id="files" class="box-title">2. Now we have a template to work with, we can start exploring and editing files</h4>
+	<p class="box-description">
+Let's note that AbanteCart storefront pages are constructed of templates and these templates are called "blocks". Each block has a corresponding entry in the database. <br>
+There is a main template file common/page.tpl that collects all the main parent blocks together organizing them into layout. This template file includes the following template files that are also blocks.
+</p>
+</div>
+<!-- File Tree -->
+<div class="file-tree">
+    <div class="file-tree-title"> Template files
+    	<ul class="file-tree-buttons">
+    		<li class="js-expand">
+    			<i class="fa fa-plus"></i> Expand all</li>
+    		<li class="js-collapse">
+    			<i class="fa fa-minus"></i> Collapse all</li>
+    	</ul>
+    </div>
+    <ul class="file-tree-list js-file-tree" data-expanded="true">
+    <li class="is-folder">common -
+    	<span class="file-tree-description">common folder 
+    	<a href="https://github.com/abantecart/abantecart-src/tree/master/public_html/storefront/view/default/template/common" target="_github"><i class="fa fa-code fa-fw"></i></a>
+    	</span>
+    	<ul>
+    	<li class="is-file">head.tpl -
+    		<span class="file-tree-description">head template file</span>		
+    	</li>
+    	<li class="is-file">header.tpl - 
+    	<span class="file-tree-description">
+    		header template file
+    	</span>
+    	</li>
+    	<li class="is-file">footer.tpl - 
+    	<span class="file-tree-description">
+    		footer template file
+    	</span>
+    	</li>
+    	<li class="is-file">column_left.tpl - 
+    	<span class="file-tree-description">
+    		left column template file
+    	</span>
+    	</li>
+    	<li class="is-file">column_right.tpl - 
+    	<span class="file-tree-description">
+    		
+    	</span>
+    	</li>
+    	<li class="is-file">header_bottom.tpl - 
+    	<span class="file-tree-description">
+    		
+    	</span>
+    	</li>
+    	<li class="is-file">content_top.tpl - 
+    	<span class="file-tree-description">
+    		
+    	</span>
+    	</li>
+    	<li class="is-file">content_bottom.tpl - 
+    	<span class="file-tree-description">
+    		
+    	</span>
+    	</li>
+    	<li class="is-file">footer_top.tpl - 
+    	<span class="file-tree-description">
+    		
+    	</span>
+    	</li>
+    	</ul>
+    </li>
+    
+    </ul>
+</div>
+<!-- End of FIle Tree -->
+
+	<p class="box-description">
+These template files have corresponding block names and considered to be special:
+<br>
+			'header',
+<br>
+			'header_bottom',
+<br>
+			'column_left',
+<br>
+			'content_top',
+<br>
+			'content_bottom',
+<br>
+			'column_right',
+<br>
+			'footer_top',
+<br>
+			'footer',
+<br>
+			'content'<br>
+			templates/blocks are loaded for every storefront page and put all their children blocks together to construct page layout.
+</p>
+						<!-- Note -->
+						<div class="note js-note green">
+							<span class="note-close js-close">
+								<i class="fa fa-times"></i>
+							</span>
+							<h4 class="note-title"> TIP </h4>
+							<p class="note-description"> To see where these templates/blocks are shown in action, enable template debug in admin and click storefront link </p>
+						</div>
+						<!-- End of Note -->
+
+<p class="box-description">
+<a class="jcepopup" href="/img/developer/abantecart-template-debug.png"><img src="/img/developer/abantecart-template-debug.png" border="0" width="500" class="gif-player" /></a>
+</p>
+
+<h6 class="box-title">About Layouts:</h6>
+<p class="box-description">
+Layouts are explained in <a class="jcepopup" href="/pages/developer/templates_overview.html#Blocks_and_layout">template overview section</a>. Layouts are loaded with layout.xml file that can be loaded in the installation script (install.php) with simple function call below. <br>
+
+								<!-- HTML Highlight -->
+								<div class="code-highlight">
+								<span class="js-copy-to-clipboard copy-code">copy</span> 
+								<pre><code class="language-php">
+								
+$file = DIR_EXT . '/simply_stylish/layout.xml';
+$layout = new ALayoutManager('default');
+$layout->loadXml(array('file' => $file));
+								</code>
+								</pre>
+								</div>
+								<!-- HTML Highlight -->
+<br>
+Download an example of <a class="jcepopup" href="/img/developer/layout.xml">layout.xml</a>
+<br><br>
+</p>
+
+
+<h6 class="box-title">About Blocks:</h6>
+<p class="box-description">
+
+Children Blocks are standalone elements that are linked to some parent block and the layout for specific page/template combination.<br>
+Single block can be linked to multiple layouts or templates. <br>
+Each block is identified by block_txt_id. Duplicate blocks with same "block_txt_id" will not be allowed <br>
+
+To make sure that your block does not have conflicting block_txt_id with any other block, create a unique 'block_txt_id'. 
+<br>
+In event, you load new block via XML layout, and same "block_txt_id" block already available, existing block ID will be used instead of your block and linked to your layout. 
+<br>
+It is recommended to use unique "block_txt_id" if you need to make sure you use your specific block. 
+<br>
+To lean more about AbanteCart architecture, see <a href="/pages/developer/architecture.html">this page</a>
+</p>
+
+<p id="examples" class="box-description">Reusing or extending block<br>
+
+If you need to reuse (include) or extend functionality of existing block from "default" template, you can do it. 
+<br>
+There are 3 Options for reusing existing blocks provided by default template. 
+</p>
+<ul>
+<li>1. You can reuse existing common block. If you need custom template (.tpl) file for this block, you can provide an override template in same virtual location in your extension. <br>
+								<!-- HTML Highlight -->
+								<div class="code-highlight">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-php">
+&lt;block&gt;
+          &lt;block_txt_id&gt;menu&lt;/block_txt_id&gt;          
+          &lt;templates&gt;
+            &lt;template&gt;
+              &lt;parent_block&gt;header&lt;/parent_block&gt;
+              &lt;template_name&gt;blocks/your_menu_top.tpl&lt;/template_name&gt;
+            &lt;/template&gt;
+          &lt;/templates&gt;
+          &lt;status&gt;1&lt;/status&gt;
+          &lt;position&gt;20&lt;/position&gt;
+&lt;/block&gt;</code>
+								</pre>
+								</div>
+								<!-- HTML Highlight -->
+</li>
+<li>2. You can reuse existing common block and provide override for controller in same virtual location of extension.
+<br>
+								<!-- HTML Highlight -->
+								<div class="code-highlight">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-php">
+&lt;block&gt;
+          &lt;block_txt_id&gt;currency&lt;/block_txt_id&gt;
+          &lt;controller&gt;blocks/ext_txt_id_currency&lt;/controller&gt;
+          &lt;templates&gt;
+            &lt;template&gt;
+              &lt;parent_block&gt;header&lt;/parent_block&gt;
+              &lt;template_name&gt;blocks/currency.tpl&lt;/template_name&gt;
+            &lt;/template&gt;
+          &lt;/templates&gt;
+          &lt;status&gt;1&lt;/status&gt;
+          &lt;position&gt;40&lt;/position&gt;
+&lt;/block&gt;</code>
+								</pre>
+								</div>
+								<!-- HTML Highlight -->
+</li>
+<li>3. You can reuse existing common block and hook into controller of the block to extend functionality. <br>
+hook
+								<!-- HTML Highlight -->
+								<div class="code-highlight">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-php">
+public function onControlleBlocksCurrency_InitData(){
+		$this-&gt;baseObject-&gt;view-&gt;addHookVar(&#39;your_var_name&#39;, &#39;some value&#39;);
+	}
+</code>
+								</pre>
+								</div>
+								<!-- HTML Highlight -->
+hook will add new variable to block's template.  <br>
+Then create block tpl for example blocks/currency.tpl<br>
+and get variable 
+
+								<!-- HTML Highlight -->
+								<div class="code-highlight">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-php">
+$this-&gt;getHookVar(&#39;your_var_name&#39;);
+</code>
+								</pre>
+								</div>
+								<!-- HTML Highlight -->
+
+</li>
+</ul>
+
+<h6 class="box-title">New block</h6>
+<p class="box-description">
+If you provide new block, it must include set of controller and template. In some cases, you might need a modal if special data load is required for your new block. 
+
+<br>
+Examples of block inclusion in layout XML</p>
+
+
+						<!-- Steps -->
+						<ul class="steps">
+							<li class="step">
+								<span class="step-number">1</span>
+								<h4 class="step-title">Link to existing block on default core template </h4>
+								<div class="step-content">
+								<!-- HTML Highlight -->
+								<div class="code-highlight">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-php">
+&lt;block&gt;
+
+&lt;block_txt_id&gt;language&lt;/block_txt_id&gt;
+
+&lt;/block&gt;
+								</code>
+								</pre>
+								</div>
+								<!-- HTML Highlight -->
+								</div>
+							</li>
+							<li class="step">
+								<span class="step-number">2</span>
+								<h4 class="step-title">Creating owned block provided with your extension</h4>
+								<div class="step-content">
+								<!-- HTML Highlight -->
+								<div class="code-highlight">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-php">
+                &lt;block&gt;
+
+                    &lt;block_txt_id&gt;somename_language&lt;/block_txt_id&gt;
+
+                    &lt;controller&gt;blocks/somename_language&lt;/controller&gt;
+
+                    &lt;templates&gt;
+
+                        &lt;template&gt;
+
+                            &lt;parent_block&gt;header&lt;/parent_block&gt;
+
+                            &lt;template_name&gt;blocks/somename_language.tpl&lt;/template_name&gt;
+
+                        &lt;/template&gt;
+
+                    &lt;/templates&gt;
+
+                &lt;/block&gt;
+								</code>
+								</pre>
+								</div>
+								<!-- HTML Highlight -->
+								</div>
+							</li>
+							<li class="step">
+								<span class="step-number">3</span>
+								<h4 class="step-title">Updating owned block </h4>
+								<div class="step-content">
+								<!-- HTML Highlight -->
+								<div class="code-highlight">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-php">
+                &lt;block&gt;
+
+                    &lt;block_txt_id&gt;somename_language&lt;/block_txt_id&gt;
+
+                    &lt;controller&gt;blocks/somename_language&lt;/controller&gt;
+
+                    &lt;templates&gt;
+
+                        &lt;template&gt;
+
+                            &lt;parent_block&gt;header&lt;/parent_block&gt;
+
+                            &lt;template_name&gt;blocks/somename_language.tpl&lt;/template_name&gt;
+
+                        &lt;/template&gt;
+
+                    &lt;/templates&gt;
+
+                &lt;/block&gt;
+								</code>
+								</pre>
+								</div>
+								<!-- HTML Highlight -->
+								</div>
+							</li>
+							<li class="step">
+								<span class="step-number">4</span>
+								<h4 class="step-title">Deleting owned block</h4>
+								<div class="step-content">
+								<!-- HTML Highlight -->
+								<div class="code-highlight">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-php">
+                &lt;block&gt;
+
+				&lt;action&gt;delete&lt;/action&gt;
+
+                    &lt;block_txt_id&gt;somename_language&lt;/block_txt_id&gt;
+
+                &lt;/block&gt;
+								</code>
+								</pre>
+								</div>
+								<!-- HTML Highlight -->
+								</div>
+							</li>
+						</ul>
+<p class="box-description">
+Managing blocks in admin layout:<br>
+
+There is a lazy way to create layouts/blocks in the template while you develop. You can use admin drag & drop tools to create page layout. Once you complete, you can use Dev Tools extension to export layout and include in your extension installation. </p>
+<p><img src="/img/developer/abantecart-dev-tools-save-layout.png" class="image isolated" alt="AbanteCart Upgrade" width="400"></p>
+<h6 class="box-title">Storefront menu:</h6>
+<p class="box-description">
+There is a navigation menu and categories menu available in AbanteCart storefront.
+<br>
+Storefront navigation menu is constructed in common/menu.php controller and categories menu is constructed in common/category.php 
+<br>
+If you need to build custom menu, you can provide override for these controllers or hook into controller to substitute template variables stack. 
+</p>
+
+
+
+
+						<!-- Note -->
+						<div class="note js-note green">
+							<span class="note-close js-close">
+								<i class="fa fa-times"></i>
+							</span>
+							<h4 class="note-title"> TIP </h4>
+							<p class="note-description"> You can use built in features to debug AbanteCart templates and core execution. <br>
+
+Debugging Templates:
+<br>
+[Link to page] -> create new page with instructions to debug AbanteCart 
+<br>
+Debugging AbanteCart
+<br>
+[Link to page] -> create new page with instructions to debug AbanteCart </p>
+						</div>
+						<!-- End of Note -->
+
+
+
+
+
+
+
+
+<div class="category-info helper">
+	<h4 id="header_footer" class="box-title">3. Creating head, header and footer. </h4>
+	<p class="box-description">
+Head HTML is built and displayed in common/head.tpl
+<br>
+In your custom common/head.tpl template, you must include some components that are produced by core code. 
+<br>
+These are: metadata, template debug CSS, additional styles code, and scripts 
+<br>
+Example of common/head.tpl <a href="https://github.com/abantecart/abantecart-src/blob/master/public_html/storefront/view/default/template/common/head.tpl" target="_github"><i class="fa fa-code fa-fw"></i> github</a>
+<br>
+
+Similar to head, there is a core code in footer.tpl that will need to be present. 
+<br>
+Example of common/footer.tpl <a href="https://github.com/abantecart/abantecart-src/blob/master/public_html/storefront/view/default/template/common/footer.tpl" target="_github"><i class="fa fa-code fa-fw"></i> github</a>
+
+<br>
+In the header or footer you can include local or external components to be loaded. This is the same as you would do in regular HTML. 
+<br>
+
+Examples for including CSS file:
+								<!-- HTML Highlight -->
+								<div class="code-highlight">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-php">
+&lt;link href=&quot;&lt;?php echo $this-&gt;templateResource(&#39;/stylesheet/template.css&#39;); ?&gt;&quot; rel=&quot;stylesheet&quot; type=&#39;text/css&#39; /&gt;
+								</code>
+								</pre>
+								</div>
+								<!-- HTML Highlight -->
+
+
+
+Examples for including JavaScript file:
+								<!-- HTML Highlight -->
+								<div class="code-highlight">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-php">
+&lt;script type=&quot;text/javascript&quot; defer src=&quot;&lt;?php echo $this-&gt;templateResource(&#39;/javascript/template.js&#39;); ?&gt;&quot;&gt;&lt;/script&gt;
+								</code>
+								</pre>
+								</div>
+								<!-- HTML Highlight -->
+
+</p>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="category-info helper">
+	<h4 id="blocks" class="box-title">4. Location of blocks in header/footer/content. </h4>
+	<p class="box-description">
+	<a href="/img/other/new-layout1.png" class="jcepopup"><img width="300" border="0" src="/img/other/new-layout1.png"></a>
+<br>
+
+You can build a layout for your template using Admin drag&drop page for layout. Later you can use created layout with developer tools to generate layout.xml 
+	</p>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="category-info helper">
+	<h4 id="banners" class="box-title">5. Adding banners to your template. </h4>
+	<p class="box-description">
+Banners are set in the admin design -> Banner manager. You can include your banner block and custom template with the layout.xml. If you want to load banners content automatically with template/extension installation, you will need to create insert SQL in install.sql or PHP code in install.php<br>
+
+
+Example of block inclusion in layout.xml 
+	</p>
+</div>
+								<!-- HTML Highlight -->
+								<div class="code-highlight">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-php">
+        &lt;block&gt;
+
+          &lt;custom_block_txt_id&gt;mytemplate_bannerslider&lt;/custom_block_txt_id&gt;
+
+          &lt;kind&gt;custom&lt;/kind&gt;
+
+          &lt;type&gt;banner_block&lt;/type&gt;
+
+          &lt;block_descriptions&gt;
+
+            &lt;block_description&gt;
+
+              &lt;language&gt;english&lt;/language&gt;
+
+              &lt;name&gt;&lt;![CDATA[Main Page Banner Slider]]&gt;&lt;/name&gt;
+
+              &lt;title&gt;&lt;![CDATA[Main Page Banner Slider]]&gt;&lt;/title&gt;
+
+              &lt;block_wrapper&gt;&lt;![CDATA[blocks/banner_slider.tpl]]&gt;&lt;/block_wrapper&gt;
+
+              &lt;block_framed&gt;&lt;![CDATA[0]]&gt;&lt;/block_framed&gt;
+
+              &lt;description&gt;&lt;![CDATA[]]&gt;&lt;/description&gt;
+
+              &lt;content&gt;&lt;![CDATA[a:1:{s:17:&quot;banner_group_name&quot;;s:17:&quot;Main Page Banners&quot;;}]]&gt;&lt;/content&gt;
+
+            &lt;/block_description&gt;
+
+          &lt;/block_descriptions&gt;
+
+          &lt;installed&gt;
+
+            &lt;placeholder&gt;header_bottom&lt;/placeholder&gt;
+
+          &lt;/installed&gt;
+
+          &lt;status&gt;1&lt;/status&gt;
+
+          &lt;position&gt;20&lt;/position&gt;
+
+        &lt;/block&gt;
+								</code>
+								</pre>
+								</div>
+								<!-- HTML Highlight -->
+								
+								
+								
+						<!-- Note -->
+						<div class="note js-note blue">
+							<span class="note-close js-close">
+								<i class="fa fa-times"></i>
+							</span>
+							<h4 class="note-title"> NOTE </h4>
+							<p class="note-description"> &lt;block_wrapper&gt; property provides a custom template that you can include. This template will be loaded by banner system to display your banners' content. Notice, that group name is important to be specified to identify which banner(s) will be loaded for your banner block. </p>
+						</div>
+						<!-- End of Note -->
+						
+						
+						
+						
+			
+			
+			
+			
+			
+<div class="category-info helper">
+	<h4 id="html_blocks" class="box-title">6. HTML Blocks. </h4>
+	<p class="box-description">
+If you need to add ad blocks or any other HTML content that users can change, we recommend to use HTML blocks. 
+<br>
+Static HTML content can be included in the block &lt;content&gt; and block XML included in the layout of desired page.  
+	</p>
+	
+									<!-- HTML Highlight -->
+								<div class="code-highlight">
+								<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-php">
+&lt;block&gt;
+          &lt;custom_block_txt_id&gt;creditcardicons&lt;/custom_block_txt_id&gt;          
+          &lt;type&gt;html_block&lt;/type&gt;
+          &lt;block_descriptions&gt;
+            &lt;block_description&gt;
+              &lt;language&gt;english&lt;/language&gt;
+              &lt;name&gt;&lt;![CDATA[Credit Card Icons]]&gt;&lt;/name&gt;
+              &lt;title&gt;&lt;![CDATA[Credit Card Icons]]&gt;&lt;/title&gt;
+              &lt;block_wrapper&gt;&lt;![CDATA[0]]&gt;&lt;/block_wrapper&gt;
+              &lt;block_framed&gt;&lt;![CDATA[0]]&gt;&lt;/block_framed&gt;
+              &lt;description&gt;&lt;![CDATA[HTML Block with credit card icons. ]]&gt;&lt;/description&gt;
+              &lt;content&gt;&lt;![CDATA[&amp;lt;ul class=&amp;quot;card-icons&amp;quot;&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;#&amp;quot; target=&amp;quot;_blank&amp;quot; data-toggle=&amp;quot;tooltip&amp;quot; data-placement=&amp;quot;top&amp;quot; title=&amp;quot;Paypal&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-cc-paypal&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;#&amp;quot; target=&amp;quot;_blank&amp;quot; data-toggle=&amp;quot;tooltip&amp;quot; data-placement=&amp;quot;top&amp;quot; title=&amp;quot;Mastercard&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-cc-mastercard&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;#&amp;quot; target=&amp;quot;_blank&amp;quot; data-toggle=&amp;quot;tooltip&amp;quot; data-placement=&amp;quot;top&amp;quot; title=&amp;quot;Visa&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-cc-visa&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;#&amp;quot; target=&amp;quot;_blank&amp;quot; data-toggle=&amp;quot;tooltip&amp;quot; data-placement=&amp;quot;top&amp;quot; title=&amp;quot;Discover&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-cc-discover&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;#&amp;quot; target=&amp;quot;_blank&amp;quot; data-toggle=&amp;quot;tooltip&amp;quot; data-placement=&amp;quot;top&amp;quot; title=&amp;quot;AMEX&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-cc-amex&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+]]&gt;&lt;/content&gt;
+            &lt;/block_description&gt;
+&lt;/block&gt;
+								</code>
+								</pre>
+								</div>
+								<!-- HTML Highlight -->
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="category-info helper">
+	<h4 id="form" class="box-title">7. Form elements and fields template files. </h4>
+	<p class="box-description">
+As you develop your template, you might need to change global HTML elements used by AbanteCart storefront. 
+<br>
+HTML Template elements are located in .../template/form/ directory. 
+<br>
+Important to note, changes to these template will effect storefront of application globally.  
+<a class="button button-icon stroke small green" target="_blank"  href="https://github.com/abantecart/abantecart-src/tree/master/public_html/storefront/view/default/template/form">
+							<i class="fa fa-code-fork"></i> github </a>
+	</p>
+</div>
+
+
+
+
+
+
+
+<h4 class="box-title">Creating Extension package:</h4>
+<p class="box-description">
+If you plan to provide template to your customer installation or for redistribution, you need to create template as an extension.  
+<br>
+If standard installation archive is created, extension can be installed in abantecart with simple click install.
+<br>
+<a href="https://github.com/abantecart/developer_tools_extension" target="_blank">Developer Tools extension</a> will help you to create a standard extension archive. (Tar/GZ libraries need to be present for you PHP)
+<br>
+ Please refer to <a href="/pages/developer/extension_dev.html">extension development manual</a>
+</p>
+
+
+								<div class="note js-note blue-light">
+									<h4 class="note-title"> Related pages: </h4>
+									    
+    <ul class="tags">
+    
+        
+        
+    	<li class="tag-item">
+    		<a href="/tag/architecture.html">AbanteCart Architecture</a>
+    	</li>
+    
+        
+        
+    	<li class="tag-item">
+    		<a href="/tag/templates_overview.html">Template Overview</a>
+    	</li>
+    
+    </ul>
+    
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2 col-sm-2 col-xs-6">
+						<div class="footer-logo-wrapper">
+
+							<a href="index.html" class="logo-image ">
+								<img src="/img/logos/logo.png" alt="logo">
+							</a>
+
+							<p class="slogan"> Learn.
+								<br>Create.
+								<br>Impress.
+							</p>
+
+						</div>
+					</div>
+
+					<div class="col-md-2 col-sm-2 col-xs-6">
+						<ul class="social helper center">
+						    <li>
+						    	<a href="https://www.facebook.com/AbanteCart">
+						    		<i class="fa fa-facebook"></i>
+						    	</a>
+						    </li>
+						    <li>
+						    	<a href="http://www.twitter.com/abantecart">
+						    		<i class="fa fa-twitter"></i>
+						    	</a>
+						    </li>
+						    <li>
+						    	<a href="http://www.youtube.com/user/abantecart/videos">
+						    		<i class="fa fa-youtube"></i>
+						    	</a>
+						    </li>
+						</ul>
+					</div>
+
+					<div class="col-md-8 col-sm-8 col-xs-12">
+						<div class="footer-wrapper">
+
+							<span class="scroll-top js-scroll-top">
+								<i class="fa fa-angle-up"></i>
+							</span>
+
+							<div class="docs-version js-docs-version">
+								<span class="docs-current-version js-docs-current-version">v1.2.9</span>
+								<!--<ul class="js-docs-version-list">
+									<li>
+										<a href="#">v1.2.3</a>
+									</li>
+								</ul>-->
+							</div>
+
+							<ul class="footer-menu helper right">
+								<li>
+									<a href="http://www.abantecart.com"> AbanteCart main site </a>
+								</li>
+								<li>
+									<a href="http://marketplace.abantecart.com"> Market Place </a>
+								</li>
+								<li>
+									<a href="http://forum.abantecart.com"> Community Forum </a>
+								</li>
+								<li>
+									<a href="http://pages.github.com">Published with GitHub Pages</a>
+								</li>
+								<li>
+									<a href="https://github.com/abantecart/abantecart.github.io">Modify This Site</a>
+								</li>
+							</ul>
+
+							<p class="copyright helper right"> AbanteCart, all rights reserved. 2016 &copy; </p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="/js/all.js"></script>
+	<script src="/js/custom.js"></script>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-26192520-5', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+</body>
+
+</html>

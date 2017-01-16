@@ -1,0 +1,150 @@
+---
+layout: default
+title: Currency Settings
+description: Setting up Currencies in your AbanteCart eCommerce application.
+tags: [
+    ['regular_install', 'Regular Installation'],
+    ['system_requirements', 'System Requirements']
+]
+redirect_from: "/tag/setup_currencies.html"
+---
+						<!-- Category Info -->
+						<div class="category-info ">
+							<h3 class="category-title">List of Currencies</h3>
+							<h4 class="category-description">System > Localization > Currencies</h4>
+						</div>
+						<!-- End of Caregory Info -->
+						<p> List of currencies that are in use in the store. As a rule, multiple currencies are used to display prices on the storefront while payments are usually accepted in the store primary currency only. However, if your payment gateway is configured to accept payments in different currencies, customers that use this gateway will be charged in an alternative (not primary) currency. And the order total will be calculated according to the store currency exchange rate that you define here.</p>
+						<div class="helper center">
+                                        <img src="../../../img/pages/abantecart-currency-grid.png" class="image isolated" alt="AbanteCart Installation"> </div>
+                        <p>If you have more than one currency, a select Currency drop-down will appear on the storefront pages, through which your customers can choose their preferred currency method.</p>
+						<!-- Note -->
+						<div class="note js-note note-bounce">
+							<h4 class="note-title"> Base Currency </h4>
+							<p class="note-description"> If the currency you are entering is going to be your primary currency you should set the value to 1.00000 </p>
+						</div>
+						<!-- End of Note -->
+						
+						
+						
+						<!-- Note -->
+						<div class="note js-note blue">
+							<span class="note-close js-close">
+								<i class="fa fa-times"></i>
+							</span>
+							<h4 class="note-title"> Note </h4>
+							<p class="note-description"> All prices that you enter in the Administration panel are assumed to be in the primary currency. </p>
+						</div>
+						<!-- End of Note -->
+						
+						
+						
+						
+						
+						
+						
+						
+						<a name="add"></a>
+						<!-- Category Info -->
+						<div class="category-info ">
+							<h3 class="category-title">Add new Currencies</h3>
+							<h4 class="category-description">To add a new Currency click the + button in the Currencies list System > Localization > Currencies</h4>
+						</div>
+						<!-- End of Caregory Info -->
+
+								<!-- Table -->
+								<div class="table-responsive">
+									<table class="table table-striped">
+										<thead>
+											<tr>
+												<th>Setting</th>
+												<th>Value</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="">
+												<th scope="row">Status</th>
+												<td>Currency status will determine if the currency is displayed on the front of site.</td>
+											</tr>
+											<tr class="">
+												<th scope="row">Currency Title</th>
+												<td>Name of the currency as it appears on the storefront</td>
+											</tr>
+											<tr class="">
+												<th scope="row">Code</th>
+												<td>Unique code of the currency. You can find a <a target="_blank" href="https://en.wikipedia.org/wiki/ISO_4217#Active_codes">list of codes here</a>. All currency codes must be in uppercase.</td>
+											</tr>
+											<tr class="">
+												<th scope="row">Symbol Left</th>
+												<td>The left currency symbol if the currency has one. An example would be the pound sign (&pound;) for pound sterling.</td>
+											</tr>
+											<tr class="">
+												<th scope="row">Symbol Right</th>
+												<td>The right currency symbol if the currency has one. An example would be the euro sign (&euro;).</td>
+											</tr>
+											<tr class="">
+												<th scope="row">Decimal Places</th>
+												<td>The number of decimal places used for a particular currency. Some currencies use more than 2 decimal places such as the Kuwaiti Dinar.</td>
+											</tr>
+											<tr class="">
+												<th scope="row">Value</th>
+												<td>The exchange rate to convert store prices from the primary currency to this currency. If the currency you are entering is going to be your default currency you should set the value to 1.00000. The currency value will change automatically if you have auto update currency set to yes.</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- End of Table -->
+
+						
+						
+						<!-- Note -->
+						<div class="note js-note blue">
+						<span class="note-close js-close">
+								<i class="fa fa-times"></i>
+							</span>
+							<h4 class="note-title"> Decimal Point </h4>
+							<p class="note-description"> To modify point format go to System > Localization > Language Definitions and filter grid by decimal_point or thousand_point key. </p>
+						</div>
+						<!-- End of Note -->
+						
+						
+						
+						
+						<a name="settings"></a>
+						<!-- Category Info -->
+						<div class="category-info ">
+							<h3 class="category-title">Currencies settings</h3>
+							<h4 class="category-description">Additional currency related settings</h4>
+						</div>
+						<!-- End of Caregory Info -->
+						<div class="row">
+							<div class="col-md-6">
+								<!-- Box -->
+								<div class="box box-small-icon">
+									<div class="box-icon"><i class="fa fa-home fa-2x"></i></div>
+									<h4 class="box-title">Default Storefront Currency</h4>
+									<p class="box-description">System > Settings > Details<br>
+									Will determine what currency will be displayed on the front of site by default.</p>
+									
+									<!-- Note -->
+						<div class="note js-note blue">
+						<span class="note-close js-close">
+								<i class="fa fa-times"></i>
+							</span>
+							<h4 class="note-title"> Product Prices </h4>
+							<p class="note-description"> Changing default currency does not convert all product prices</p>
+						</div>
+						<!-- End of Note -->
+								</div>
+								<!-- End of Box -->
+							</div>
+							<div class="col-md-6">
+								<!-- Box -->
+								<div class="box box-small-icon">
+									<div class="box-icon"><i class="fa fa-reply-all  fa-2x"></i></div>
+									<h4 class="box-title">Auto Update Currency</h4>
+									<p class="box-description">System > Settings > Details. <br>If set to yes your store will automatically get currency rates and update the values daily (Yahoo server used). Logout and Login again to Admin front to see changes.</p>
+								</div>
+								<!-- End of Box -->
+							</div>
+						</div>

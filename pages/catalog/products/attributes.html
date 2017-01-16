@@ -1,0 +1,122 @@
+---
+layout: default
+title: Products Options
+description: Set up and manage product options and attributes
+redirect_from: "/tag/product_options.html"
+tags: [
+    ['product_edit', 'Edit Products'],
+    ['product_listing', 'List Products'],
+    ['product_media', 'Product Media'],
+    ['product_options', 'Product Options'],
+    ['product_files', 'Product Files'], 
+    ['product_relations', 'Product Relations'],
+    ['product_promotions', 'Product Promotions'],    
+    ['product_layout', 'Edit page layout'],
+    ['global_attributes_listing', 'Add Global Options'],
+]
+---
+
+
+
+						<!-- Category Info -->
+						<div class="category-info ">
+							<h3 class="category-title">Options Tab</h3>
+							<h4 class="category-description">This tab allows you to manage the product options and option variants as well as controlling the option combinations. </h4>
+						<!-- Note -->
+						<div class="note js-note blue">
+							<span class="note-close js-close">
+								<i class="fa fa-times"></i>
+							</span>
+							<h4 class="note-title"> Note </h4>
+							<p class="note-description"> In this tab, you can also add a predefined global attributes to the product. For instructions on how to use Global attributes, please refer to the <a class="crosslink" href="/pages/catalog/global_attributes.html">Global attributes</a> section further in this guide. </p>
+						</div>
+						<!-- End of Note -->						
+						</div>
+						<!-- End of Caregory Info -->
+						
+<p>Product options appear on the product details page on the storefront as selectable or input parameters to the product.<br>
+When you decide to set up some attributes for a product, you need to consider what product properties (Colors, Sizes, Materials) may be important to buyers. This will help you to decide which type of attribute you will need to configure.
+</p>						
+<p>If some attributes are common for other products in your store, then you can create Global Attribute once. Next time you want to add attribute to product just select <a class="crosslink" href="/pages/catalog/global_attributes.html">Global Attribute</a> pattern from dropdown menu and click "Add Option" <i class="fa fa-plus-square-o"></i>
+ button.</p>
+<p>Or create 'New Option'. <br>Enter the name of new <em>Option</em>, <em>Element Type, Sort order</em> and <em>Required</em> setting.<br> Example <em>Size</em> name and option's type from <em>Element Type</em> dropdown -  <em>Selectbox</em>.</p>
+
+
+
+
+
+
+						<a name="types"></a>
+						<!-- Category Info -->
+						<div class="category-info ">
+							<h3 class="category-title">Attributes types</h3>
+							<h4 class="category-description">AbanteCart supports next field types (Element Types) for attributes</h4>
+							<p><ul>
+							<li>input</li>
+							<li>textarea - this field type for a longer text length than Input field</li>
+							<li>multiselectbox - multiple values for one attribute.</li>
+							<li>selectbox - multiple values for one attribute.</li>
+							<li>radio - multiple values for one attribute.</li>
+							<li>checkbox</li>
+							<li>checkboxgroup - multiple values for one attribute.</li>
+							<li>hidden</li>
+							<li>file - allows file uploads by customer</li>
+							</ul></p>	
+							<p>Editable attributes - Input, Textarea, File. Adding an editable attribute value  for some product attribute creates an empty editable text area field on the product page where buyers can enter their own custom text before adding the product to their shopping cart. This feature may be used if you are going to provide personalization options for products, like monogramming, embroidery, etc.</p>				
+						</div>
+						<!-- End of Caregory Info -->
+
+
+
+
+
+
+
+
+						<a name="values"></a>
+						<!-- Category Info -->
+						<div class="category-info ">
+							<h3 class="category-title">Adding Option Values</h3>
+							<h4 class="category-description"></h4>
+					
+						</div>
+						<!-- End of Caregory Info -->
+<p>After creating the new Option please select it's name in the Options list and insert new option 'values' by click on <i class="fa fa-plus-square-o"></i> button.</p>
+<a class="jcepopup" href="/img/other/catalog-products-options.png"><img src="/img/other/catalog-products-options.png" border="0" alt="" width="500" /></a>
+<p>You can fill/edit the following fields:</p>
+<p><strong>Default:</strong> When configuring multi-value attributes, you can control which of the attribute values should be shown to customers by default.</p>
+<p><strong>Option value:</strong> Enter the name of option value. Example <em>Small, Medium</em> or <em>Large</em>.</p>
+<p><strong>Quantity:</strong> If you are tracking stock, how many of this option you have. Set quantity for unique options value combination that represent one unique product variation.</p>
+<p><strong>Track Stock:</strong> Enabled option value for product to track stock and subtract the quantity after order is placed by customers. This is important setting read more about <a class="crosslink" href="/pages/catalog/products/inventory.html">Stock processing configurations</a>.</p>
+						<!-- Note -->
+						<div class="note js-note blue-light">
+							<span class="note-close js-close">
+								<i class="fa fa-times"></i>
+							</span>
+							<h4 class="note-title"> Info </h4>
+							<p class="note-description"> Attribute values for product otions can be configured as price and/or weight modifier options that will increase or decrease the price and/or weight of the product (the product's weight affects the shipping cost). </p>
+						</div>
+						<!-- End of Note -->
+<p><strong>Price Modifier:</strong> If you wish to charge extra (or less) for this product, enter the amount here. <br>EXAMPLE: Men's extra large t-shirts cost $2 more from the manufacturer. The "+$2.00" will appear in the option box of your storefront. If you wish to DISCOUNT this option, type "-2.00".</p>
+<p><strong>Modify Price By:</strong> select type of price calculation. If you select "$" the new price for this option will be 'manufacturer price' +/- 'option price value in your default currency'. If you select "%" the new price for this option will be 'manufacturer price' +/- 'option price value percents from manufacturer price'.</p>
+<p><strong>Sort Order:</strong> Sort Order set's the order of which the option value will be displayed amongst others.</p>
+<p>By clicking on <em>expand</em> link, the menu will appear with additional fields:</p>
+<p><strong>SKU:</strong> The products option value SKU. In the "SKU" text box you can set a unique identification number for this item.</p>
+<p><strong>Weight:</strong> Enter value that modifies the original product weight.</p>
+<p><strong>Weight Type:</strong> Select the type for weight modifier. % or default weight class are available</p>
+<p><strong>Add media:</strong> click to add media + button. Resource Library popup window will appear. If you add images to option value they appear on storefront only after customer select this option value.</p>
+						<!-- Note -->
+						<div class="note js-note note-bounce">
+							<h4 class="note-title"> Note </h4>
+							<p class="note-description"> Make sure you have disabled/whitelist Adblock+ (or similar) addon in your browser - by default Adblock prevent to load important scripts. </p>
+						</div>
+						<!-- End of Note -->
+
+<p>After you have made your changes, select the SAVE button</p>
+
+<p>Additional options available:</p>
+<p><strong>Placeholder:</strong> usually used with <em>input</em> attribute type. The placeholder specifies a short hint that describes the expected value of an input field (e.g. a sample value or a short description of the expected format). The short hint is displayed in the input field before the user enters a value.</p>
+<p><strong>Regular Expression Pattern for Validation of Values:</strong> is a sequence of characters that forms a pattern, mainly for use in pattern matching. Programming knowledge required!</p>
+<p><strong>Error Message of invalid Value:</strong> message text shown when attribute value does not meet Regular Expression Pattern</p>
+<p>To delete <strong>option value</strong> -click on <i class="fa fa-minus-square-o"></i> button.</p>
+<p>To delete <strong>option</strong> - select it in the list and click Remove <i class="fa fa-trash-o"></i> button</p>

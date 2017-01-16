@@ -1,0 +1,2668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Tasks API</title>
+	<meta name="description" content="AbanteCart allows to schedule and execute tasks created in the code.">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="/img/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="/img/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/img/favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/img/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/img/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon-180x180.png">
+	<link rel="stylesheet" href="/css/style.css">
+	<script src="/js/modernizr.js"></script>
+</head>
+
+<body>
+	<!--[if lt IE 8]>
+	    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<div class="page">
+		<div class="header header-over large">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<a href="/index.html" class="logo-image">
+							<img src="/img/logos/logo.png" alt="AbanteCart open source ecommerce">
+						</a>
+						<a href="/index.html" class="languages">
+						<span class="language-active js-language-active">AbanteCart Docs</span>
+						</a>
+					</div>
+					<div class="col-md-9 col-sm-6 col-xs-6">
+					<nav class="right helper">
+    					<ul class="menu sf-menu js-menu">
+						<li>
+    <a href="/pages/install/installation_options.html">Install</a>
+    <ul>
+    	<li>
+    		<a href="/pages/install/installation_options.html">Installation Options</a>
+    	</li>
+    	<li>
+    		<a href="/pages/extensions/install.html">Install Extension</a>
+    	</li>
+    	<li>
+    		<a href="/pages/install/system_requirements.html">System requirements</a>
+    	</li>
+    	<li>
+    		<a href="/pages/install/download.html">Download</a>
+    	</li>
+    </ul>
+</li>
+<li>
+    <a href="/pages/quickstart/checklist.html">Getting Started</a>
+    <ul>
+    	<li>
+    		<a href="/pages/quickstart/checklist.html">Basic Setup Checklist</a>
+    	</li>
+    	<li>
+    		<a href="/pages/quickstart/settings.html">Common Store settings</a>
+    	</li>
+    	<li>
+    		<a href="/pages/quickstart/payment_quick_start.html">Enable Payments</a>
+    	</li>
+    	<li>
+    		<a href="/pages/quickstart/shipping_quick_start.html">Enable Shipping</a>
+    	</li>
+    	<li>
+    		<a href="/pages/quickstart/email_settings.html">Email settings</a>
+    	</li>
+    </ul>
+</li>
+<li>
+    <a href="/pages/catalog/index.html">User Manual
+    	<span class="menu-label">v1.2.9</span>
+    </a>
+    <ul>
+    	<li>
+    		<a href="/pages/catalog/products/search.html">Manage Products</a>
+    	</li>
+    	<li>
+    		<a href="/pages/customers/search.html">Manage Customers</a>
+    	</li>
+    	<li>
+    		<a href="/pages/promotions/specials.html">Manage Promotions</a>
+    	</li>
+    	<li>
+    		<a href="/pages/orders/search.html">Manage Orders</a>
+    	</li>
+    	<li>
+    		<a href="/pages/settings/settings.html">Edit Settings</a>
+    	</li>
+    	<li>
+    		<a href="/pages/localization/languages/languages.html">Manage Localization</a>
+    	</li>
+    	<li>
+    		<a href="/pages/embed/embed.html">Embed your store</a>
+    	</li>
+    	<li>
+    		<a href="/pages/settings/stores.html">Set up multiple stores</a>
+    	</li>
+    	<li>
+    		<a href="/pages/reports/index.html">Store Reports</a>
+    	</li>
+    	<li>
+    		<a href="/pages/extensions/find.html">Extend Functionality</a>
+    	</li>
+    </ul>
+</li>
+<li>
+    <a href="/pages/design/index.html">Design Guide</a>
+    <ul>
+    	<li>
+    		<a href="/pages/design/templates/select.html">Manage Templates</a>
+    	</li>
+    	<li>
+    		<a href="/pages/design/layouts.html">Manage Page Layouts</a>
+    	</li>
+    	<li>
+    		<a href="/pages/design/blocks/search.html">Manage Blocks</a>
+    	</li>
+    	<li>
+    		<a href="/pages/design/menu.html">Manage Menu</a>
+    	</li>
+    	<li>
+    		<a href="/pages/design/blocks/banner_block.html">Manage Banners</a>
+    	</li>
+    	<li>
+    		<a href="/pages/design/blocks/forms_block.html">Manage Forms</a>
+    	</li>
+    </ul>
+</li>
+<li>
+    <a href="/pages/developer/index.html">Developer Guide</a>
+    <ul>
+    	<li>
+    		<a href="/pages/developer/architecture.html">Architecture</a>
+    	</li>
+    	<li>
+    		<a href="/pages/developer/extension_dev.html">Extension Development</a>
+    	</li>
+    	<li>
+    		<a href="/pages/developer/templates_overview.html">Templates Overview</a>
+    	</li>
+    	<li>
+    		<a href="/pages/developer/template_customization_or_development_guide.html">Developing Templates</a>
+    	</li>
+    	<li>
+    		<a href="/pages/developer/template_dev_tools.html">Developer Tools</a>
+    	</li>
+    	<li>
+    		<a href="/pages/developer/sf_api.html">Storefront API</a>
+    	</li>
+    </ul>
+</li>
+<li>
+    <a href="/pages/tips/troubleshooting.html">Troubleshoot</a>
+</li>
+
+						</u>
+					</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="page-info page-info-background background-2 page-info-small">
+			<div class="page-info-container">
+				<div class="container ">
+					<div class="row">
+						<div class="col-md-12">
+							<h1 class="page-title">Tasks API</h1>
+							<h2 class="page-description">AbanteCart allows to schedule and execute tasks created in the code.</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="layout with-left-sidebar">
+							<div class="left-sidebar">
+								<nav class="js-menu-fixed menu-vertical-wrapper">
+
+    <div class="search">
+<!--
+		//conflict of css and google button
+		<script>
+		  (function() {
+		    var cx = '015077254431814821964:ia6eg4e1ow4';
+		    var gcse = document.createElement('script');
+		    gcse.type = 'text/javascript';
+		    gcse.async = true;
+		    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+		        '//cse.google.com/cse.js?cx=' + cx;
+		    var s = document.getElementsByTagName('script')[0];
+		    s.parentNode.insertBefore(gcse, s);
+		  })();
+		</script>
+		<gcse:search></gcse:search>
+-->
+		<form name="cse" id="google_search" action="https://www.google.com/cse">
+		  <input type="hidden" name="cx" value="015077254431814821964:ia6eg4e1ow4" />
+		  <input type="hidden" name="ie" value="utf-8" />
+		  <input type="hidden" name="hl" value="" />
+		  <input name="q" type="text" size="40" class="search-input form-control" placeholder="Documents search" />
+		  <a href="#" onclick="document.getElementById('google_search').submit();"><i class="fa fa-search search-icon"></i></a>
+		</form>
+		                         
+    </div>
+
+	<ul class="menu-vertical js-menu-vertical">
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-cloud-download fa-fw"></i> Installation</a>
+    
+    
+        <ul >
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/install/installation_options.html"><i class="fa fa-magic fa-fw"></i> Installation Options</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/install/options/click_installation.html"><i class="fa fa-caret-right fa-fw"></i> Click Installation</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/install/options/cpanel_installation.html"><i class="fa fa-caret-right fa-fw"></i> Cpanel Installation</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/install/options/cloud_installation.html"><i class="fa fa-caret-right fa-fw"></i> Cloud Installation</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/install/options/localhost_installation.html"><i class="fa fa-caret-right fa-fw"></i> Localhost Installation</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/install/options/regular_installation.html"><i class="fa fa-caret-right fa-fw"></i> Regular installation</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/install/system_requirements.html"><i class="fa fa-caret-right fa-fw"></i> System requirements</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/install/download.html"><i class="fa fa-caret-right fa-fw"></i> Download</a>
+    
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-sign-in fa-fw"></i> Core Upgrade</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/upgrade/auto.html"><i class="fa fa-caret-right fa-fw"></i> Run Upgrade in admin</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/upgrade/manual.html"><i class="fa fa-caret-right fa-fw"></i> Upgrade manually</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/upgrade/troubleshoot.html"><i class="fa fa-caret-right fa-fw"></i> Troubleshoot</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-bicycle fa-fw"></i> Getting Started</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/quickstart/checklist.html"><i class="fa fa-caret-right fa-fw"></i> Basic Setup Checklist</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/quickstart/settings.html"><i class="fa fa-caret-right fa-fw"></i> Common Store settings</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/quickstart/payment_quick_start.html"><i class="fa fa-caret-right fa-fw"></i> Enable Payments</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/quickstart/shipping_quick_start.html"><i class="fa fa-caret-right fa-fw"></i> Enable Shipping</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/quickstart/email_settings.html"><i class="fa fa-caret-right fa-fw"></i> Email settings</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/quickstart/language_settings.html"><i class="fa fa-caret-right fa-fw"></i> Language settings</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/quickstart/currency_settings.html"><i class="fa fa-caret-right fa-fw"></i> Currency settings</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/quickstart/region_settings.html"><i class="fa fa-caret-right fa-fw"></i> Region settings</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/quickstart/setup_taxes.html"><i class="fa fa-caret-right fa-fw"></i> Enable Taxes</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/catalog/index.html"><i class="fa fa-cubes fa-fw"></i> Managing Product Catalog</a>
+    
+    
+        <ul >
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-file-text fa-fw"></i> Manage Categories</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/categories/search.html"><i class="fa fa-caret-right fa-fw"></i> List & search categories</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/categories/edit.html"><i class="fa fa-caret-right fa-fw"></i> Add & edit categories</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-files-o fa-fw"></i> Manage Products</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/products/search.html"><i class="fa fa-caret-right fa-fw"></i> List & search products</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/products/edit.html"><i class="fa fa-caret-right fa-fw"></i> Add & edit products</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/products/media.html"><i class="fa fa-caret-right fa-fw"></i> Manage product Media</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/products/attributes.html"><i class="fa fa-caret-right fa-fw"></i> Manage product options</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/products/files.html"><i class="fa fa-caret-right fa-fw"></i> Manage product files</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/products/relations.html"><i class="fa fa-caret-right fa-fw"></i> Manage product relations</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/products/product_layout.html"><i class="fa fa-caret-right fa-fw"></i> Manage product page layout</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/products/inventory.html"><i class="fa fa-caret-right fa-fw"></i> Manage product inventory</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-bookmark fa-fw"></i> Manage Manufacturers</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/manufacturers/search.html"><i class="fa fa-caret-right fa-fw"></i> List & search Manufacturers</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/manufacturers/edit.html"><i class="fa fa-caret-right fa-fw"></i> Add & edit Manufacturers</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/global_downloads.html"><i class="fa fa-caret-right fa-fw"></i> Global Downloads</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/product_reviews.html"><i class="fa fa-caret-right fa-fw"></i> Product Reviews</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/global_attributes.html"><i class="fa fa-caret-right fa-fw"></i> Global Attributes</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/resource_library.html"><i class="fa fa-caret-right fa-fw"></i> Resource Library</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/page_layout.html"><i class="fa fa-caret-right fa-fw"></i> Page Layout</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/promotions/index.html"><i class="fa fa-tags fa-fw"></i> Managing Promotions</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/promotions/specials.html"><i class="fa fa-caret-right fa-fw"></i> Manage Specials</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/promotions/discounts.html"><i class="fa fa-caret-right fa-fw"></i> Set Quantity discounts</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/promotions/featured.html"><i class="fa fa-caret-right fa-fw"></i> Set Features Products</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/promotions/banners.html"><i class="fa fa-caret-right fa-fw"></i> Place banners</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href=""><i class="fa fa-ticket fa-fw"></i> Manage Coupons</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/promotions/search_coupons.html"><i class="fa fa-caret-right fa-fw"></i> List & search coupons</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/promotions/edit_coupons.html"><i class="fa fa-caret-right fa-fw"></i> Add & edit coupons</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/customers/index.html"><i class="fa fa-users fa-fw"></i> Managing Customers</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/customers/search.html"><i class="fa fa-caret-right fa-fw"></i> List & search customers</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/customers/edit.html"><i class="fa fa-caret-right fa-fw"></i> Add & edit customer</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/customers/address.html"><i class="fa fa-caret-right fa-fw"></i> Add & edit address</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/customers/transactions.html"><i class="fa fa-caret-right fa-fw"></i> Add & edit transactions</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/customers/groups.html"><i class="fa fa-caret-right fa-fw"></i> Customer Groups</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/customers/send_mails.html"><i class="fa fa-caret-right fa-fw"></i> Send Mail/SMS</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/orders/index.html"><i class="fa fa-money fa-fw"></i> Managing Orders</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/orders/search.html"><i class="fa fa-caret-right fa-fw"></i> Search and filter</a>
+    
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-shopping-cart fa-fw"></i> View Orders</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/orders/order_details.html"><i class="fa fa-caret-right fa-fw"></i> Order Details</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/orders/order_shipping.html"><i class="fa fa-caret-right fa-fw"></i> Order Shipping Details</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/orders/order_payment.html"><i class="fa fa-caret-right fa-fw"></i> Order Payment Details</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/orders/order_files.html"><i class="fa fa-caret-right fa-fw"></i> Order Files</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/orders/order_history.html"><i class="fa fa-caret-right fa-fw"></i> Order History</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/orders/modify.html"><i class="fa fa-caret-right fa-fw"></i> Modify Orders</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/orders/order_totals.html"><i class="fa fa-caret-right fa-fw"></i> Manage Order Totals</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/reports/index.html"><i class="fa fa-file-text fa-fw"></i> Store Reports</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/reports/sales.html"><i class="fa fa-caret-right fa-fw"></i> Sales Report</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/reports/customers.html"><i class="fa fa-caret-right fa-fw"></i> Customers Report</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/reports/products.html"><i class="fa fa-caret-right fa-fw"></i> Products Report</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/design/index.html"><i class="fa fa-tint fa-fw"></i> Design Guide</a>
+    
+    
+        <ul >
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-files-o fa-fw"></i> Templates</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/design/templates/select.html"><i class="fa fa-caret-right fa-fw"></i> Select template</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/design/templates/edit.html"><i class="fa fa-caret-right fa-fw"></i> Edit template</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/design/templates/files.html"><i class="fa fa-caret-right fa-fw"></i> Template files</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/design/layouts.html"><i class="fa fa-caret-right fa-fw"></i> Layouts</a>
+    
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-th-large fa-fw"></i> Blocks</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/design/blocks/search.html"><i class="fa fa-caret-right fa-fw"></i> List & search blocks</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/design/blocks/html_block.html"><i class="fa fa-caret-right fa-fw"></i> HTML block</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/design/blocks/data_listing.html"><i class="fa fa-caret-right fa-fw"></i> Data Listing</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/design/blocks/banner_block.html"><i class="fa fa-caret-right fa-fw"></i> Banner block</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/design/blocks/forms_block.html"><i class="fa fa-caret-right fa-fw"></i> Forms Block</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/design/menu.html"><i class="fa fa-caret-right fa-fw"></i> Menu</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/design/content_pages.html"><i class="fa fa-caret-right fa-fw"></i> Content Pages</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/design/banners.html"><i class="fa fa-caret-right fa-fw"></i> Banners</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/design/banner_slider.html"><i class="fa fa-caret-right fa-fw"></i> Banner Slider Management</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/design/forms.html"><i class="fa fa-caret-right fa-fw"></i> Forms</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-money fa-fw"></i> Shippings & Payments</a>
+    
+    
+        <ul >
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/ship_and_pay/enable_shipping.html"><i class="fa fa-truck fa-fw"></i> Enable Shipping</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/shippings/fedex.html"><i class="fa fa-caret-right fa-fw"></i> Fedex</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/shippings/royal_mail.html"><i class="fa fa-caret-right fa-fw"></i> Royal Mail</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/shippings/parcelforce_48.html"><i class="fa fa-caret-right fa-fw"></i> Parcelforce 48</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/shippings/usps.html"><i class="fa fa-caret-right fa-fw"></i> USPS</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/shippings/ups.html"><i class="fa fa-caret-right fa-fw"></i> UPS</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/shippings/per_item.html"><i class="fa fa-caret-right fa-fw"></i> Per Item</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/shippings/free.html"><i class="fa fa-caret-right fa-fw"></i> Free Shipping</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/shippings/flat_rate.html"><i class="fa fa-caret-right fa-fw"></i> Flat rate</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/shippings/citylink.html"><i class="fa fa-caret-right fa-fw"></i> CityLink</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/shippings/weight_based.html"><i class="fa fa-caret-right fa-fw"></i> Weight Based</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/shippings/pickup.html"><i class="fa fa-caret-right fa-fw"></i> Pickup From Store</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/ship_and_pay/enable_payment.html"><i class="fa fa-money fa-fw"></i> Enable Payment</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/stripe.html"><i class="fa fa-caret-right fa-fw"></i> Stripe</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/paypal_payments_std.html"><i class="fa fa-caret-right fa-fw"></i> PayPal Payments Standard</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/paypal_payments_pro.html"><i class="fa fa-caret-right fa-fw"></i> PayPal Payments Pro</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/paypal_payments_pro_uk.html"><i class="fa fa-caret-right fa-fw"></i> PayPal Payments Pro (UK)</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/paypal_payments_express.html"><i class="fa fa-caret-right fa-fw"></i> PayPal Express Checkout</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/check_money_order.html"><i class="fa fa-caret-right fa-fw"></i> Cheque / Money Order</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/authorize_net.html"><i class="fa fa-caret-right fa-fw"></i> Authorize.Net (AIM)</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/payza.html"><i class="fa fa-caret-right fa-fw"></i> Payza</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/realex.html"><i class="fa fa-caret-right fa-fw"></i> Realex</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/liqpay.html"><i class="fa fa-caret-right fa-fw"></i> LIQPAY</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/worldpay.html"><i class="fa fa-caret-right fa-fw"></i> WorldPay</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/2co.html"><i class="fa fa-caret-right fa-fw"></i> 2Checkout</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/sagepay.html"><i class="fa fa-caret-right fa-fw"></i> SagePay Payments</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/sagepay_us.html"><i class="fa fa-caret-right fa-fw"></i> SagePay US Payments</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/sagepay_direct.html"><i class="fa fa-caret-right fa-fw"></i> SagePay Direct</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/paypoint.html"><i class="fa fa-caret-right fa-fw"></i> PayPoint</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/paymate.html"><i class="fa fa-caret-right fa-fw"></i> Paymate</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/cashflows.html"><i class="fa fa-caret-right fa-fw"></i> CashFlows</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/skrill.html"><i class="fa fa-caret-right fa-fw"></i> Skrill</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/cash_on_delivery.html"><i class="fa fa-caret-right fa-fw"></i> Cash on Delivery</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/ship_and_pay/payments/banktransfer.html"><i class="fa fa-caret-right fa-fw"></i> Bank Transfer</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/settings/index.html"><i class="fa fa-wrench fa-fw"></i> Settings & Tools</a>
+    
+    
+        <ul >
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/settings/settings.html"><i class="fa fa-cog fa-fw"></i> Settings</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/settings/details.html"><i class="fa fa-caret-right fa-fw"></i> Store Details</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/settings/general.html"><i class="fa fa-caret-right fa-fw"></i> General</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/settings/checkout.html"><i class="fa fa-caret-right fa-fw"></i> Checkout</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/settings/appearance.html"><i class="fa fa-caret-right fa-fw"></i> Appearance</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/settings/mail.html"><i class="fa fa-caret-right fa-fw"></i> Mail</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/settings/im.html"><i class="fa fa-caret-right fa-fw"></i> IM</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/settings/api.html"><i class="fa fa-caret-right fa-fw"></i> API</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/settings/system.html"><i class="fa fa-caret-right fa-fw"></i> System</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/settings/stores.html"><i class="fa fa-caret-right fa-fw"></i> Manage Multiple Stores</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-user-md fa-fw"></i> Admin users</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/users/users.html"><i class="fa fa-caret-right fa-fw"></i> Users</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/users/edit_user.html"><i class="fa fa-caret-right fa-fw"></i> Edit User</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/users/user_groups.html"><i class="fa fa-caret-right fa-fw"></i> User Groups</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/users/user_permissions.html"><i class="fa fa-caret-right fa-fw"></i> Permissions</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tools/backup_restore.html"><i class="fa fa-caret-right fa-fw"></i> Backup/Restore tool</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tools/migration.html"><i class="fa fa-caret-right fa-fw"></i> Migration tool</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tools/message_manager.html"><i class="fa fa-caret-right fa-fw"></i> Message manager</a>
+    
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-upload fa-fw"></i> Data Import / Export</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/tools/export.html"><i class="fa fa-caret-right fa-fw"></i> Export</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tools/import.html"><i class="fa fa-caret-right fa-fw"></i> Import</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tools/file_uploads.html"><i class="fa fa-caret-right fa-fw"></i> File Uploads</a>
+    
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-cog fa-fw"></i> Logs</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/tools/logs/install_history.html"><i class="fa fa-caret-right fa-fw"></i> install/Upgrade History</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tools/logs/error_logs.html"><i class="fa fa-caret-right fa-fw"></i> Error logs</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tools/logs/sheduled_tasks.html"><i class="fa fa-caret-right fa-fw"></i> Scheduled Tasks</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/catalog/products/inventory.html"><i class="fa fa-caret-right fa-fw"></i> Stock configuration</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/settings/encryption_data.html"><i class="fa fa-caret-right fa-fw"></i> Encryption Data Manager</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/localization/index.html"><i class="fa fa-globe fa-fw"></i> Manage Localization</a>
+    
+    
+        <ul >
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-language fa-fw"></i> Languages</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/localization/languages/languages.html"><i class="fa fa-caret-right fa-fw"></i> Languages List</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/languages/edit_language.html"><i class="fa fa-caret-right fa-fw"></i> Edit Language</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/languages/create_language.html"><i class="fa fa-caret-right fa-fw"></i> Create Language</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/language_definitions.html"><i class="fa fa-caret-right fa-fw"></i> Language Definitions</a>
+    
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-usd fa-fw"></i> Currencies</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/localization/currencies/currencies.html"><i class="fa fa-caret-right fa-fw"></i> List Currencies</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/currencies/edit_currency.html"><i class="fa fa-caret-right fa-fw"></i> Edit Currency</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="#"><i class="fa fa-suitcase fa-fw"></i> Stock and Order Statuses</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/localization/statuses/stock_status_list.html"><i class="fa fa-caret-right fa-fw"></i> List Stock Statuses</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/statuses/edit_stock_status.html"><i class="fa fa-caret-right fa-fw"></i> Edit Stock Status</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/statuses/order_status_list.html"><i class="fa fa-caret-right fa-fw"></i> List Order Statuses</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/statuses/edit_order_status.html"><i class="fa fa-caret-right fa-fw"></i> Edit Order Status</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href=""><i class="fa fa-map-marker fa-fw"></i> Countries and Zones</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/localization/country_and_zone/country_list.html"><i class="fa fa-caret-right fa-fw"></i> List Countries</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/country_and_zone/edit_country.html"><i class="fa fa-caret-right fa-fw"></i> Edit Country</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/country_and_zone/zone_list.html"><i class="fa fa-caret-right fa-fw"></i> List Zones</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/country_and_zone/edit_zone.html"><i class="fa fa-caret-right fa-fw"></i> Edit Zone</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href=""><i class="fa fa-location-arrow fa-fw"></i> Locations and Taxes</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/localization/locations_and_taxes/locations_list.html"><i class="fa fa-caret-right fa-fw"></i> List Locations</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/locations_and_taxes/edit_location.html"><i class="fa fa-caret-right fa-fw"></i> Edit Location</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/locations_and_taxes/tax_classes_list.html"><i class="fa fa-caret-right fa-fw"></i> List Tax Classes</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/locations_and_taxes/edit_tax_class.html"><i class="fa fa-caret-right fa-fw"></i> Edit Tax Class</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/locations_and_taxes/add_rates.html"><i class="fa fa-caret-right fa-fw"></i> Add Rates to Tax Class</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href=""><i class="fa fa-truck fa-fw"></i> Length & Weight classes</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/localization/length_and_weight/length_list.html"><i class="fa fa-caret-right fa-fw"></i> List Length Classes</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/length_and_weight/edit_length.html"><i class="fa fa-caret-right fa-fw"></i> Edit Length Class</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/length_and_weight/weight_list.html"><i class="fa fa-caret-right fa-fw"></i> List Weight Classes</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/length_and_weight/edit_weight.html"><i class="fa fa-caret-right fa-fw"></i> Edit Weight Class</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/localization/auto_translate.html"><i class="fa fa-caret-right fa-fw"></i> Language Auto Translate</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/embed/embed.html"><i class="fa fa-code-fork fa-fw"></i> Embed your store</a>
+    
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/extensions/index.html"><i class="fa fa-puzzle-piece fa-fw"></i> Extend Functionality</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/extensions/find.html"><i class="fa fa-caret-right fa-fw"></i> Find extension</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/extensions/install.html"><i class="fa fa-caret-right fa-fw"></i> Install new extension</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/extensions/edit.html"><i class="fa fa-caret-right fa-fw"></i> Managing extensions</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/extensions/connect.html"><i class="fa fa-caret-right fa-fw"></i> Connect store to Marketplace</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li >
+    	 <a class="sub_menu_link" href="/pages/tips/index.html"><i class="fa fa-life-ring fa-fw"></i> Helpful Tips</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/tips/global_search.html"><i class="fa fa-caret-right fa-fw"></i> Global search</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tips/troubleshooting.html"><i class="fa fa-caret-right fa-fw"></i> Troubleshooting</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tips/performance.html"><i class="fa fa-caret-right fa-fw"></i> Performance</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tips/side_panels.html"><i class="fa fa-caret-right fa-fw"></i> Side Panels</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tips/more_help.html"><i class="fa fa-caret-right fa-fw"></i> Getting more help</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tips/change_domain.html"><i class="fa fa-caret-right fa-fw"></i> Changing Domain Name</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tips/enable_seo.html"><i class="fa fa-caret-right fa-fw"></i> Enable Seo Urls</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tips/cache.html"><i class="fa fa-caret-right fa-fw"></i> Clear AbanteCart cache</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/tips/template_debug.html"><i class="fa fa-caret-right fa-fw"></i> Template Debug</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+	
+	
+     <li class="active-menu active-submenu selected">
+    	 <a class="sub_menu_link" href="/pages/developer/index.html"><i class="fa fa-code fa-fw"></i> Developer Guide</a>
+    
+    
+        <ul >
+
+	
+	
+    <li >    
+         <a href="/pages/developer/architecture.html"><i class="fa fa-caret-right fa-fw"></i> AbanteCart Architecture</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/developer/extension_dev.html"><i class="fa fa-caret-right fa-fw"></i> Extension Development</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/developer/developing_extensions_and_extension_api.html"><i class="fa fa-caret-right fa-fw"></i> Advanced Extension dev</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/developer/templates_overview.html"><i class="fa fa-caret-right fa-fw"></i> Templates Overview</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/developer/template_customization_or_development_guide.html"><i class="fa fa-caret-right fa-fw"></i> Template development guide</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/developer/template_dev_tools.html"><i class="fa fa-caret-right fa-fw"></i> Developer Tools</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/developer/adata.html"><i class="fa fa-caret-right fa-fw"></i> Import/Export AData</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/developer/sf_api.html"><i class="fa fa-caret-right fa-fw"></i> Storefront API</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/developer/rl_system.html"><i class="fa fa-caret-right fa-fw"></i> Resource Library System</a>
+    
+    
+    </li>
+
+	
+	
+    <li >    
+         <a href="/pages/developer/translating_process.html"><i class="fa fa-caret-right fa-fw"></i> Translating Process</a>
+    
+    
+    </li>
+
+	
+	
+    <li class="active-menu selected">    
+         <a href="/pages/developer/tasks_processing.html"><i class="fa fa-caret-right fa-fw"></i> Tasks Processing</a>
+    
+    
+    </li>
+
+</ul>
+    
+    </li>
+
+</ul>
+
+    <div class="separator"></div>	
+
+</nav>
+							</div>
+							<div class="main-content with-left-sidebar main-content-full">
+								<div class="category-info helper pt40">
+	<h3 class="category-title">Tasks API</h3>
+	<h4 class="category-description">
+	</h4>
+	<p class="box-description">
+	Starting with version 1.2.0 AbanteCart core provides tasks API to to create and run tasks. Task can be used to break large or long processes into smaller steps that can be ran with AJAX or with backend script. Using task/steps you can show progress to user and prevent browser or connection from timing out in longer processes.
+	<br>
+	<div class="button-list helper"><a target="_blank" href="/img/other/AbanteCart_tasks_run_flow.pdf" class="button button-icon stroke small green"><i class="fa fa-home"></i>AbanteCart Scheduled Tasks Run Flow.Pdf</a></div>
+	</p>
+	<p>Currently, tasks are used in 2 places of core AbanteCart. <br>
+
+Task is used in a backup and in bulk messaging. We use these places as example in this manual.</p>
+						<!-- Steps -->
+						<ul class="steps">
+							<li class="step">
+								<!--<span class="step-number">1</span>-->
+								<h4 class="step-title">Task core files:</h4>
+								<div class="step-content"><a href="https://github.com/abantecart/abantecart-src/blob/master/public_html/core/lib/task_manager.php" target="_new">core/lib/task_manager.php</a> - Admin class ATaskManager<br>
+<a href="https://github.com/abantecart/abantecart-src/blob/master/public_html/core/engine/task.php" target="_new">core/engine/task.php</a> - Core class ATypeTask. </div>
+							</li>
+							<li class="step">
+								<!--<span class="step-number">1</span>-->
+								<h4 class="step-title">Task related database tables:</h4>
+								<div class="step-content">
+[pefix]tasks - Main table for task information and status <br>
+
+[pefix]task_details - Task details table for settings <br>
+
+[pefix]task_steps - Task steps with settings for execution  </div>
+							</li>
+						</ul>
+						<!-- Steps -->
+		<p>
+Task is an organizational process to handle execution of created requests (steps). Execution of each step is passed to specified controller with provided settings in this given step. <br>
+
+Task can be execute right away or postponed to specified time. <br>
+
+Each task consists of steps that are organized in a sequence in which they are executed. Each task must have at least one step.<br>
+
+Now let's look into task creation and execution process and data with more details.
+		</p>
+</div>
+
+<div class="note js-note blue-light">
+	<h4 class="note-title">Document Content</h4>
+	<ul>
+	<li class="toclevel-1 tocsection-3"><a href="#Task"> <span class="toctext">Task</span></a></li>
+	<li class="toclevel-1 tocsection-4"><a href="#Steps"> <span class="toctext">Steps</span></a></li>
+	<li class="toclevel-1 tocsection-5"><a href="#Stepcontroller"><span class="toctext">Step controller</span></a></li>
+	<li class="toclevel-1 tocsection-6"><a href="#Taskexecution"><span class="toctext">Task Execution</span></a></li>
+	<li class="toclevel-1 tocsection-6"><a href="#api"><span class="toctext">API Reference</span></a></li>
+	</ul>
+</div>
+
+
+
+<div class="category-info helper">
+	<h4 id="Task" class="box-title">Task</h4>
+	<p class="box-description">
+To create a new task in the code, you need instantiate class ATaskManager in admin controller or model and run addTask() method with required parameters to create the task.
+</p>
+						<!-- HTML Highlight -->
+						<div class="code-highlight">
+							<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-php">
+		$tm = new ATaskManager();
+
+
+		$task_id = $tm-&gt;addTask(
+
+			array( &#39;name&#39; =&gt; $task_name,
+
+					&#39;starter&#39; =&gt; 1, //admin-side is starter
+
+					&#39;created_by&#39; =&gt; $this-&gt;user-&gt;getId(), //get starter id
+
+					&#39;status&#39; =&gt; 1, // schedule it!
+
+					&#39;start_time&#39; =&gt; date(&#39;Y-m-d H:i:s&#39;, mktime(0,0,0, date(&#39;m&#39;), date(&#39;d&#39;)+1, date(&#39;Y&#39;)) ),
+
+					&#39;last_time_run&#39; =&gt; &#39;0000-00-00 00:00:00&#39;,
+
+					&#39;progress&#39; =&gt; &#39;0&#39;,
+
+					&#39;last_result&#39; =&gt; &#39;0&#39;,
+
+					&#39;run_interval&#39; =&gt; &#39;0&#39;,
+
+					&#39;max_execution_time&#39; =&gt; &#39;0&#39;
+
+			)
+
+		);
+ </code>
+ 		</pre>
+</div>
+<!-- HTML Highlight -->
+
+<p>
+	Once task is creates with addTask() method, it returns new task ID. Using this task ID, tasks steps can be created with addStep() method. <br>
+
+
+In the task creation you can specify details for this task. <br>
+
+
+
+								<!-- Table -->
+								<div class="table-responsive">
+									<table class="table table-striped">
+										<thead>
+											<tr>
+												<th></th>
+												<th></th>
+												<th>Description of task parameters</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="">
+												<th scope="row">name</th>
+												<td>-></td>
+												<td>Task name. This can be any name your.</td>
+											</tr>
+											<tr class="">
+												<th scope="row">starter</th>
+												<td>-></td>
+												<td>Who will start the task Admin (1) or Storefront (0)</td>
+											</tr>
+											<tr class="">
+												<th scope="row">created_by</th>
+												<td>-></td>
+												<td>User ID who creates this task</td>
+											</tr>
+											<tr class="">
+												<th scope="row">status</th>
+												<td>-></td>
+												<td>Status of the task 0 - disabled, 1 - scheduled, 2 - active</td>
+											</tr>
+											<tr class="">
+												<th scope="row">start_time</th>
+												<td>-></td>
+												<td>time to start task with Mysql date time format</td>
+											</tr>
+											<tr class="">
+												<th scope="row">last_time_run</th>
+												<td>-></td>
+												<td>last time task ran</td>
+											</tr>
+											<tr class="">
+												<th scope="row">progress</th>
+												<td>-></td>
+												<td>Percentage of task progress</td>
+											</tr>
+											<tr class="">
+												<th scope="row">last_result</th>
+												<td>-></td>
+												<td>Status of last task ran  0 - success, 1 - failed, 2 - interrupted</td>
+											</tr>
+											<tr class="">
+												<th scope="row">run_interval</th>
+												<td>-></td>
+												<td>interval in seconds since last run, 0 - without interval or run once</td>
+											</tr>
+											<tr class="">
+												<th scope="row">max_execution_time</th>
+												<td>-></td>
+												<td>maximum execution time for this task before it gets terminated.</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- End of Table -->
+
+</p>
+</div>
+
+
+
+
+
+
+
+<div class="category-info helper">
+	<h4 id="Steps" class="box-title">Steps</h4>
+	<p class="box-description">
+At least one step is required to be created for task to be executed. To create a step use addStep() method. Before creating a step, task should be already created and there should be task ID available.
+</p>
+				<!-- HTML Highlight -->
+						<div class="code-highlight">
+							<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-php">
+				$step_id = $tm-&gt;addStep( array(
+
+				&#39;task_id&#39; =&gt; $task_id,
+
+				&#39;sort_order&#39; =&gt; 1,
+
+				&#39;status&#39; =&gt; 1,
+
+				&#39;last_time_run&#39; =&gt; &#39;0000-00-00 00:00:00&#39;,
+
+				&#39;last_result&#39; =&gt; &#39;0&#39;,
+
+				&#39;max_execution_time&#39; =&gt; ceil($db_size/2794843)*4,
+
+				&#39;controller&#39; =&gt; &#39;task/tool/backup/dumptables&#39;,
+
+				&#39;settings&#39; =&gt; array(
+
+								&#39;table_list&#39; =&gt; $data[&#39;table_list&#39;],
+
+								&#39;sql_dump_mode&#39;=&gt; $data[&#39;sql_dump_mode&#39;],
+
+								&#39;backup_name&#39; =&gt; $backup_filename
+
+								)
+
+			));
+ 		</code>
+ 		</pre>
+</div>
+<!-- HTML Highlight -->
+
+								<!-- Table -->
+								<div class="table-responsive">
+									<table class="table table-striped">
+										<thead>
+											<tr>
+												<th></th>
+												<th></th>
+												<th>Following parameters need are specified during step creation:</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="">
+												<th scope="row">task_id</th>
+												<td>-></td>
+												<td>Unique task ID provided by addTask() method</td>
+											</tr>
+											<tr class="">
+												<th scope="row">sort_order</th>
+												<td>-></td>
+												<td>Sequence of the step. This sequence starts from lower integer to higher</td>
+											</tr>
+											<tr class="">
+												<th scope="row">status</th>
+												<td>-></td>
+												<td>Step status 0 - disabled, 1 - scheduled, 2 - active</td>
+											</tr>
+											<tr class="">
+												<th scope="row">last_time_run</th>
+												<td>-></td>
+												<td>last time task ran </td>
+											</tr>
+											<tr class="">
+												<th scope="row">last_result</th>
+												<td>-></td>
+												<td>Status of last task ran  0 - success, 1 - failed, 2 - interrupted</td>
+											</tr>
+											<tr class="">
+												<th scope="row">max_execution_time</th>
+												<td>-></td>
+												<td>maximum execution time for this task before it gets terminated</td>
+											</tr>
+											<tr class="">
+												<th scope="row">controller</th>
+												<td>-></td>
+												<td>Controller path to be executed in this step</td>
+											</tr>
+											<tr class="">
+												<th scope="row">settings</th>
+												<td>-></td>
+												<td>Data values to be passed to controller at execution time</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- End of Table -->
+
+<p>
+One special setting, that is important mentioning, is interrupt_on_step_fault. If given step has interrupt_on_step_fault set to true, task execution will stop if that step returns a failure.  <br>
+
+
+After all needed steps are created task can be executed.
+</p>
+						<!-- Note -->
+						<div class="note js-note blue">
+							<span class="note-close js-close">
+								<i class="fa fa-times"></i>
+							</span>
+							<h4 class="note-title"> Note </h4>
+							<p class="note-description"> Task execution is considered successful only if all steps in that task executed sucessfuly. </p>
+						</div>
+						<!-- End of Note -->
+</div>
+
+
+
+
+
+
+
+<div class="category-info helper">
+	<h4 id="Stepcontroller" class="box-title">Step controller</h4>
+	<p class="box-description">
+Each step should have a controller that will be called during task and this step execution. <br>
+
+This is a basic response controller that is developed to perform some work required by this step. <br>
+
+In example of backup, "task/tool/backup/dumptables" controller performs task of dumping tables data. Each step is a process of damping data for one table. <br>
+
+Step response controller is expected to return appropriate Jason string with error is step has failed.
+</p>
+</div>
+
+
+
+
+
+
+<div class="category-info helper">
+	<h4 id="Taskexecution" class="box-title">Task Execution</h4>
+	<p class="box-description">
+Task execution can be initiated 2 different ways.
+</p>
+						<!-- Steps -->
+						<ul class="steps">
+							<li class="step">
+								<span class="step-number">1</span>
+								<h4 class="step-title">Start from running task.php script from browser or from command line. Request to this script will put all scheduled tasks in the queue and will process them one by one.</h4>
+								<div class="step-content"> <a href="https://github.com/abantecart/abantecart-src/blob/master/public_html/task.php" target="_new">/task.php</a> file in github </div>
+							</li>
+							<li class="step">
+								<span class="step-number">2</span>
+								<h4 class="step-title">Start task from UI with explicitly requesting task to start with button click or some other browser/user action. This is done using admin JavaScript function available in admin/view/default/javascript/general.js</h4>
+								<div class="step-content"> <a href="https://github.com/abantecart/abantecart-src/blob/master/public_html/admin/view/default/javascript/general.js" target="_new">public_html/admin/view/default/javascript/general.js</a> file in github.
+								 </div>
+							</li>
+						</ul>
+						<!-- Steps -->
+<p>Example of button to run the task:
+</p>
+<!-- HTML Highlight -->
+<div class="code-highlight">
+	<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-php">
+&lt;button class=&quot;btn btn-primary task_run&quot; data-run-task-url=&quot;&lt;?php echo $form[&#39;build_task_url&#39;]?&gt;&quot; data-complete-task-url=&quot;&lt;?php echo $form[&#39;complete_task_url&#39;]?&gt;&quot;&gt;
+
+	&lt;i class=&quot;fa fa-database&quot;&gt;&lt;/i&gt; &lt;?php echo $form[&#39;backup_now&#39;]-&gt;text; ?&gt;
+
+&lt;/button&gt;
+</code>
+ 	</pre>
+</div>
+<!-- HTML Highlight -->
+
+<p>
+
+
+
+
+
+								<!-- Table -->
+								<div class="table-responsive">
+									<table class="table table-striped">
+										<thead>
+											<tr>
+												<th></th>
+												<th></th>
+												<th></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="">
+												<th scope="row">task_run</th>
+												<td>-></td>
+												<td>class that start last even is blinded to</td>
+											</tr>
+											<tr class="">
+												<th scope="row">data-run-task-url</th>
+												<td>-></td>
+												<td>URL to the task process creation response controller</td>
+											</tr>
+											<tr class="">
+												<th scope="row">data-complete-task-url</th>
+												<td>-></td>
+												<td>URL to the task/steps execution response controller that completes the task</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- End of Table -->
+
+<p>
+
+Example of task creation and execution can be seen in store back up and bulk email
+
+See:<br>
+<a href="https://github.com/abantecart/abantecart-src/blob/master/public_html/admin/controller/responses/tool/backup.php" target="_new">public_html/admin/controller/responses/tool/backup.php</a><br>
+
+<a href="https://github.com/abantecart/abantecart-src/blob/master/public_html/admin/model/tool/backup.php" target="_new">public_html/admin/model/tool/backup.php</a><br>
+
+And <br>
+
+<a href="https://github.com/abantecart/abantecart-src/blob/master/public_html/admin/controller/responses/sale/contact.php" target="_new">public_html/admin/controller/responses/sale/contact.php</a><br>
+
+<a href="https://github.com/abantecart/abantecart-src/blob/master/public_html/admin/model/sale/contact.php" target="_new">public_html/admin/model/sale/contact.php</a></p>
+
+</div>
+
+
+
+
+<div class="category-info helper">
+	<h4 id="api" class="box-title">API Reference:</h4>
+	<p class="box-description">
+ATaskManager class API methods in <a href="https://github.com/abantecart/abantecart-src/blob/master/public_html/core/lib/task_manager.php" target="_new">task_manager.php</a> file
+</p>
+<p class="box-description">
+
+
+<a href="https://github.com/abantecart/abantecart-src/blob/master/public_html/core/lib/task_manager.php#L81" target="_new">runTasks</a><br>
+
+
+<a href="https://github.com/abantecart/abantecart-src/blob/master/public_html/core/lib/task_manager.php#L105" target="_new">runTask</a><br>
+
+
+<a href="https://github.com/abantecart/abantecart-src/blob/master/public_html/core/lib/task_manager.php#L384" target="_new">addTask</a><br>
+
+
+<a href="https://github.com/abantecart/abantecart-src/blob/master/public_html/core/lib/task_manager.php#L433" target="_new">updateTask</a><br>
+
+
+<a href="https://github.com/abantecart/abantecart-src/blob/master/public_html/core/lib/task_manager.php#L489" target="_new">updateTaskDetails</a><br>
+
+
+<a href="https://github.com/abantecart/abantecart-src/blob/master/public_html/core/lib/task_manager.php#L529" target="_new">addStep</a><br>
+
+
+<a href="https://github.com/abantecart/abantecart-src/blob/master/public_html/core/lib/task_manager.php#L564" target="_new">updateStep</a><br>
+
+
+<a href="https://github.com/abantecart/abantecart-src/blob/master/public_html/core/lib/task_manager.php#L613" target="_new">deleteTask</a><br>
+
+
+<a href="https://github.com/abantecart/abantecart-src/blob/master/public_html/core/lib/task_manager.php#L625" target="_new">deleteStep</a><br>
+
+
+<a href="https://github.com/abantecart/abantecart-src/blob/master/public_html/core/lib/task_manager.php#L634" target="_new">getTaskById</a><br>
+
+
+<a href="https://github.com/abantecart/abantecart-src/blob/master/public_html/core/lib/task_manager.php#L660" target="_new">getTaskByName</a><br>
+
+
+<a href="https://github.com/abantecart/abantecart-src/blob/master/public_html/core/lib/task_manager.php#L687" target="_new">getTaskSteps</a><br>
+
+
+
+<a href="https://github.com/abantecart/abantecart-src/blob/master/public_html/core/lib/task_manager.php#L755" target="_new">getTotalTasks</a><br>
+
+
+<a href="https://github.com/abantecart/abantecart-src/blob/master/public_html/core/lib/task_manager.php#L776" target="_new">getTasks</a>
+</p>
+
+
+
+
+
+
+
+</div>
+
+
+								<div class="note js-note blue-light">
+									<h4 class="note-title"> Related pages: </h4>
+									    
+    <ul class="tags">
+    
+        
+        
+    	<li class="tag-item">
+    		<a href="/tag/architecture.html">AbanteCart Architecture</a>
+    	</li>
+    
+        
+        
+    	<li class="tag-item">
+    		<a href="/tag/extension_dev.html">Extension API</a>
+    	</li>
+    
+    </ul>
+    
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2 col-sm-2 col-xs-6">
+						<div class="footer-logo-wrapper">
+
+							<a href="index.html" class="logo-image ">
+								<img src="/img/logos/logo.png" alt="logo">
+							</a>
+
+							<p class="slogan"> Learn.
+								<br>Create.
+								<br>Impress.
+							</p>
+
+						</div>
+					</div>
+
+					<div class="col-md-2 col-sm-2 col-xs-6">
+						<ul class="social helper center">
+						    <li>
+						    	<a href="https://www.facebook.com/AbanteCart">
+						    		<i class="fa fa-facebook"></i>
+						    	</a>
+						    </li>
+						    <li>
+						    	<a href="http://www.twitter.com/abantecart">
+						    		<i class="fa fa-twitter"></i>
+						    	</a>
+						    </li>
+						    <li>
+						    	<a href="http://www.youtube.com/user/abantecart/videos">
+						    		<i class="fa fa-youtube"></i>
+						    	</a>
+						    </li>
+						</ul>
+					</div>
+
+					<div class="col-md-8 col-sm-8 col-xs-12">
+						<div class="footer-wrapper">
+
+							<span class="scroll-top js-scroll-top">
+								<i class="fa fa-angle-up"></i>
+							</span>
+
+							<div class="docs-version js-docs-version">
+								<span class="docs-current-version js-docs-current-version">v1.2.9</span>
+								<!--<ul class="js-docs-version-list">
+									<li>
+										<a href="#">v1.2.3</a>
+									</li>
+								</ul>-->
+							</div>
+
+							<ul class="footer-menu helper right">
+								<li>
+									<a href="http://www.abantecart.com"> AbanteCart main site </a>
+								</li>
+								<li>
+									<a href="http://marketplace.abantecart.com"> Market Place </a>
+								</li>
+								<li>
+									<a href="http://forum.abantecart.com"> Community Forum </a>
+								</li>
+								<li>
+									<a href="http://pages.github.com">Published with GitHub Pages</a>
+								</li>
+								<li>
+									<a href="https://github.com/abantecart/abantecart.github.io">Modify This Site</a>
+								</li>
+							</ul>
+
+							<p class="copyright helper right"> AbanteCart, all rights reserved. 2016 &copy; </p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="/js/all.js"></script>
+	<script src="/js/custom.js"></script>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-26192520-5', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+</body>
+
+</html>

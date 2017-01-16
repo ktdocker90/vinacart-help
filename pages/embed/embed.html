@@ -1,0 +1,171 @@
+---
+layout: default
+title: Embedding store
+description: Embed your AbanteCart store ecommerce functionality
+redirect_from: "/tag/embed.html"
+tags: [
+    ['category_listing', 'Listing Categories'],
+    ['manufacturer_listing', 'List Manufacturers'],
+    ['product_edit', 'Edit Products'],
+]
+
+---
+
+						<!-- Video -->
+						<iframe class="video js-responsive-video" src="https://www.youtube.com/embed/W8CZSb5M0b0?showinfo=0" style="border:0" allowfullscreen></iframe>
+						<!-- End of Video -->
+						<!-- Category Info -->
+
+
+						<!-- Category Info -->
+						<div class="category-info ">
+							<h3 class="category-title">Embedding your AbanteCart store</h3>
+							<h4 class="category-description">You can now embed your entire AbanteCart storefront into almost any page on the web!</h4>
+							<p class="box-description">New feature starting from version 1.2.3 is a "products embed". With products embed you can sell anything from your AbanteCart webstore on any other website.</p>
+<p class="box-description">Whether you already have site, blog or you are using a cms like wordpress, joomla or drupal, its easy to embed your AbanteCart shopping cart or eCommerce functionality
+							</p>
+							<p class="box-description">AbanteCart allows you to embed:
+<ul>
+<li>products</li>
+<li>categories</li>
+<li>brands</li>
+<li>store links</li>
+</ul>
+</p>
+						</div>
+						<!-- End of Category Info -->
+
+
+
+<div>
+<a class="anchorlink" href="#Example-Embed-Products">Example 1: Embed products</a><br />
+<a class="anchorlink" href="#Example-Embed-Links">Example 2: Embed store's links</a> <br />
+<a class="anchorlink" href="#Example-Embed-Cart-Link">Example 3: Embed shopping cart link</a> <br />
+</div>
+<br />
+<a name="Example-Embed-Products" class="anchor"></a>
+						<!-- Category Info -->
+						<div class="category-info ">
+							<h3 class="category-title">This guide show how to embed your products to blog with few simple steps</h3>
+							<h4 class="category-description"></h4>
+							<p class="box-description">
+							</p>
+						</div>
+						<!-- End of Category Info -->
+
+<h4 class="category-description">Step 1</h4>
+<p class="box-description">Visit product page which one you want to embed in the blog<br />
+<a class="jcepopup" href="/img/other/embed-product-code-1.png"><img src="/img/other/embed-product-code-1.png" border="0" width="400" /></a></p>
+<h4 class="category-description">Step 2</h4>
+<p class="box-description">Select data you want to display and copy generated html code<br>
+<a class="jcepopup" href="/img/other/embed-product-code-2.png"><img src="/img/other/embed-product-code-2.png" border="0" width="400" /></a></p>
+<h4 class="category-description">Step 3</h4>
+<p class="box-description">Paste it into the target page<br />
+<a class="jcepopup" href="/img/other/abantecart-insert-embed-code.png"><img src="/img/other/abantecart-insert-embed-code.png" border="0" width="400" /></a></p>
+<h4 class="category-description">That's all</h4>
+<p class="box-description">Visit your html page<br>
+<a class="jcepopup" href="/img/other/abantecart-embeded-product.png"><img src="/img/other/abantecart-embeded-product.png" border="0" width="400" /></a></p>
+<p>
+By default product preview and checkout process in modal popup window. You can modify this by change Embed Click Action setting in <a class="crosslink" href="/pages/settings/general.html" target="_blank">General Settings page</a><br>
+<a class="jcepopup" href="/img/other/abantecart-embed-settings.png"><img src="/img/other/abantecart-embed-settings.png" border="0" width="600" /></a><br><br>
+<a class="jcepopup" href="/img/other/abantecart-embeded-product-checkout.png"><img src="/img/other/abantecart-embeded-product-checkout.png" border="0" width="400" /></a>
+</p>
+						<!-- Note -->
+						<div class="note js-note blue">
+							<span class="note-close js-close">
+								<i class="fa fa-times"></i>
+							</span>
+							<h4 class="note-title"> Note </h4>
+							<p class="note-description"> If some html page element overlap embed window please modify <strong>z-index</strong> property in CSS </p>
+						</div>
+						<!-- End of Note -->
+
+
+
+<a name="Example-Embed-Links" class="anchor"></a>
+						<!-- Category Info -->
+						<div class="category-info ">
+							<h3 class="category-title">This guide show how to embed store links</h3>
+							<h4 class="category-description"></h4>
+							<p class="box-description">
+							</p>
+						</div>
+						<!-- End of Category Info -->
+						<!-- Note -->
+						<div class="note js-note green">
+							<span class="note-close js-close">
+								<i class="fa fa-times"></i>
+							</span>
+							<h4 class="note-title"> Info </h4>
+							<p class="note-description"> You can embed links only if you have embedded product or category on same page! </p>
+						</div>
+						<!-- End of Note -->
+
+
+<h4 class="category-description">Step 1</h4>
+<p class="box-description">Copy URL your need to embed</p>
+<pre>http://demo.abantecart.com/index.php?rt=content/content&content_id=2</pre>
+<h4 class="category-description">Step 2</h4>
+<p class="box-description">Modify URL add <strong>r/</strong> and  add special tags</p>
+
+
+
+<div class="code-highlight">
+	<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-php">
+&lt;a data-href=&quot;http://demo.abantecart.com/index.php?rt=r/content/content&content_id=2&quot;  data-html=&quot;true&quot; data-target=&quot;#abc_embed_modal&quot; <br> data-toggle=&quot;abcmodal&quot; href=&quot;#&quot;&gt;your link title&lt;/a&gt;
+</code>
+ 	</pre>
+</div>
+<!-- HTML Highlight -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a name="Example-Embed-Cart-Link" class="anchor"></a>
+						<!-- Category Info -->
+						<div class="category-info ">
+							<h3 class="category-title">This guide show how to embed shopping cart link</h3>
+							<h4 class="category-description"></h4>
+							<p class="box-description">
+							</p>
+						</div>
+						<!-- End of Category Info -->
+						<!-- Note -->
+						<div class="note js-note green">
+							<span class="note-close js-close">
+								<i class="fa fa-times"></i>
+							</span>
+							<h4 class="note-title"> Info </h4>
+							<p class="note-description"> You can embed links only if you have embedded product or category on same page! </p>
+						</div>
+						<!-- End of Note -->
+
+
+<h4 class="category-description">Step 1</h4>
+<p class="box-description">Copy shopping cart page URL your need to embed</p>
+<pre>http://demo.abantecart.com/index.php?rt=checkout/cart</pre>
+<h4 class="category-description">Step 2</h4>
+<p class="box-description">Modify URL in this way <strong>http://demo.abantecart.com/index.php?rt=r/checkout/cart/embed</strong> and  add special tags</p>
+
+
+
+<div class="code-highlight">
+	<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-php">
+&lt;a data-href=&quot;http://demo.abantecart.com/index.php?rt=r/checkout/cart/embed&quot;  data-html=&quot;true&quot; data-target=&quot;#abc_embed_modal&quot; <br> data-toggle=&quot;abcmodal&quot; href=&quot;#&quot;&gt;your link title&lt;/a&gt;
+</code>
+ 	</pre>
+</div>
+<!-- HTML Highlight -->

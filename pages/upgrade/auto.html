@@ -1,0 +1,69 @@
+---
+layout: default
+title: Run upgrade in admin
+description: Upgrade your AbanteCart eCommerce application core version once in a while, since important fixes or new features will be released.
+tags: [
+    ['manual', 'Upgrade manually'],
+    ['troubleshoot', 'Troubleshoot'],
+]
+redirect_from: "/tag/auto_update.html"
+---
+						<h4 class="category-description">See short video how to upgrade in admin</h4>
+						<!-- Video -->
+						<iframe class="video js-responsive-video" src="https://www.youtube.com/embed/FnOKbvJplFU?showinfo=0" style="border:0" allowfullscreen></iframe>
+						<!-- End of Video -->
+
+
+
+						<!-- Category Info -->
+						<div class="category-info ">
+							<h3 class="category-title">AbanteCart upgrade</h3>
+							<h4 class="category-description">If there is a new version available for your AbanteCart, you will have a notification in your message box of AbanteCart administration. In addition, you might see a message to show latest version in the right top corner of the administration screen.</h4>
+
+
+
+
+							<p>Installation of the updates is carried via standard AbanteCart installation interface and reflected in Install/Upgrade History.</p>
+						</div>
+						<!-- End of Caregory Info -->
+						<!-- Note -->
+						<div class="note js-note note-pulse">
+							<h4 class="note-title"> Before upgrade </h4>
+							<p class="note-description"> Recommended that you DO NOT upgrade AbanteCart on live site. Depending on your server or OS configuration upgrades might not go all the way through and you will need more time for manual upgrade. We suggest you upgrade your test site first and always create backups.<br>
+Upgrades are available only from prior version to next. If you do not upgrade for long time, you will need to run all upgrades in between.<br>
+If you are made Core modifications in any of the files that changed, they may need to be redone.</p>
+						</div>
+						<!-- End of Note -->
+
+
+
+						<!-- Steps -->
+							<ul class="steps">
+								<li class="step">
+									<span class="step-number">1</span>
+									<h4 class="step-title">Update notification.</h4>
+									<div class="step-content"> You will see an update notification once you login to the admin. It will show in your message box. </div>
+                                    <div class="helper center">
+                                        <img src="/img/pages/abantecart-core-upgrade-1.png" class="image isolated" alt="AbanteCart Upgrade"> </div>
+								</li>
+								<li class="step">
+									<span class="step-number">2</span>
+									<h4 class="step-title">Follow the link</h4>
+									<div class="step-content"> In notification message click on upgrade link. </div>
+                                    <div class="helper center">
+                                        <img src="/img/pages/abantecart-core-upgrade-2v2.png" class="image isolated" alt="AbanteCart Upgrade"> </div>
+                                    <div class="step-content"> You can also use key abantecart_upgrade_123 (abantecart_upgrade_version) to submit to extension install section. </div>
+                                    <div class="helper center">
+                                        <img src="/img/pages/abantecart-core-upgrade-3.png" class="image isolated" alt="AbanteCart Upgrade"> </div>
+                                        <p>This will install and run upgrade process. </p>
+								</li>
+								<li class="step">
+									<span class="step-number">3</span>
+									<h4 class="step-title">Fix file permissions</h4>
+									<div class="step-content"> If you have files or directories that do not have write permissions, you will be asked to do upgrade using FTP. You can change permissions on required files to be writable (777) or just make all files and directories writable for upgrade process. This can be and recommended changed back after upgrade. If you encounter issues or do not feel comfortable with permissions, do <a href="/pages/upgrade/manual.html">manual upgrade</a> instead.  </div>
+                                    <div class="helper center">
+                                        <img src="/img/pages/abantecart-core-upgrade-4.png" class="image isolated" alt="AbanteCart Upgrade"> </div>
+								</li>
+
+							</ul>
+						<!-- End of Steps -->
