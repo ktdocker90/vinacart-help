@@ -1,190 +1,190 @@
-- text: Installation
+- text: Hướng dẫn Cài đặt
   level: /pages/install/
   icon: '<i class="fa fa-cloud-download fa-fw"></i>'
   subitems:
-    - text: Installation Options
+    - text: Tùy chọn cài đặt
       url: /pages/install/installation_options.html
       level: /pages/install/options/
       icon: '<i class="fa fa-magic fa-fw"></i>'
       subitems:
-       - text: Localhost Installation
+       - text: Cài đặt trên Localhost
          url: /pages/install/options/localhost_installation.html
-       - text: Regular installation
+       - text: Cài đặt trên Hosting
          url: /pages/install/options/regular_installation.html
-    - text: System requirements
+    - text: Yêu cầu hệ thống
       url: /pages/install/system_requirements.html
-    - text: Download
+    - text: Tải mã nguồn
       url: /pages/install/download.html
     
-- text: Getting Started
+- text: Bắt đầu thiết lập
   level: /pages/quickstart/
   icon: '<i class="fa fa-bicycle fa-fw"></i>'
   subitems:
-    - text: Basic Setup Checklist
+    - text: Danh sách kiểm tra
       url: /pages/quickstart/checklist.html
-    - text: Common Store settings
+    - text: Cài đặt chung
       url: /pages/quickstart/settings.html
-    - text: Enable Payments
+    - text: Kích hoạt Thanh toán
       url: /pages/quickstart/payment_quick_start.html
-    - text: Enable Shipping
+    - text: Kích hoạt Vận chuyển
       url: /pages/quickstart/shipping_quick_start.html
-    - text: Email settings
+    - text: Cài đặt Email
       url: /pages/quickstart/email_settings.html
-    - text: Language settings
+    - text: Cài đặt Ngôn ngữ
       url: /pages/quickstart/language_settings.html
-    - text: Currency settings
+    - text: Cài đặt Tiền tệ
       url: /pages/quickstart/currency_settings.html
-    - text: Region settings
+    - text: Cài đặt Khu vực
       url: /pages/quickstart/region_settings.html
-    - text: Enable Taxes
+    - text: Cài đặt Thuế
       url: /pages/quickstart/setup_taxes.html
-- text: Managing Product Catalog
+- text: Quản lý Danh mục sản phẩm
   url: /pages/catalog/index.html
   level: /pages/catalog/
   icon: '<i class="fa fa-cubes fa-fw"></i>'
   subitems:
-    - text: Manage Categories
+    - text: Quản lý Danh mục
       level: /pages/catalog/categories/
       icon: '<i class="fa fa-file-text fa-fw"></i>'
       subitems:
-       - text: List & search categories
+       - text: Danh sách & tìm kiếm Danh mục
          url: /pages/catalog/categories/search.html
-       - text: Add & edit categories
+       - text: Thêm & sửa Danh mục
          url: /pages/catalog/categories/edit.html
-    - text: Manage Products
+    - text: Quản lý Sản phẩm
       level: /pages/catalog/products/
       icon: '<i class="fa fa-files-o fa-fw"></i>'
       subitems:
-       - text: List & search products
+       - text: Danh sách & tìm kiếm Sản phẩm
          url: /pages/catalog/products/search.html
-       - text: Add & edit products
+       - text: Thêm & sửa Sản phẩm
          url: /pages/catalog/products/edit.html
-       - text: Manage product Media
+       - text: Thư viện sản phẩm
          url: /pages/catalog/products/media.html
-       - text: Manage product options
+       - text: Thuộc tính sản phẩm
          url: /pages/catalog/products/attributes.html
-       - text: Manage product files
+       - text: Files sản phẩm
          url: /pages/catalog/products/files.html
-       - text: Manage product relations
+       - text: Sản phẩm liên quan
          url: /pages/catalog/products/relations.html
-       - text: Manage product page layout
+       - text: Bố cục trang sản phẩm
          url: /pages/catalog/products/product_layout.html
-       - text: Manage product inventory
+       - text: Sản phẩm Tồn kho
          url: /pages/catalog/products/inventory.html
-    - text: Manage Manufacturers
+    - text: Nhà sản xuất sản phẩm
       level: /pages/catalog/manufacturers/
       icon: '<i class="fa fa-bookmark fa-fw"></i>'
       subitems:
-       - text: List & search Manufacturers
+       - text: Danh sách & tìm kiếm Nhà sản xuất
          url: /pages/catalog/manufacturers/search.html
-       - text: Add & edit Manufacturers
+       - text: Thêm & sửa Nhà sản xuất
          url: /pages/catalog/manufacturers/edit.html
-    - text: Global Downloads
+    - text: Quản lý Downloads
       url: /pages/catalog/global_downloads.html
-    - text: Product Reviews
+    - text: Quản lý Đánh giá
       url: /pages/catalog/product_reviews.html
-    - text: Global Attributes
+    - text: Quản lý Thuộc tính
       url: /pages/catalog/global_attributes.html
-    - text: Resource Library
+    - text: Quản lý Thư viện
       url: /pages/catalog/resource_library.html
-    - text: Page Layout
+    - text: Bố cục trang
       url: /pages/catalog/page_layout.html
-- text: Managing Promotions
+- text: Quản lý Khuyến mãi
   url: /pages/promotions/index.html
   level: /pages/promotions/
   icon: '<i class="fa fa-tags fa-fw"></i>'
   subitems:
-    - text: Manage Specials
+    - text: Thiết lập Giá chiết khấu
       url: /pages/promotions/specials.html
-    - text: Set Quantity discounts
+    - text: Thiết lập Giá bán buôn
       url: /pages/promotions/discounts.html
-    - text: Set Features Products
+    - text: Thiết lập Sản phẩm nổi bật
       url: /pages/promotions/featured.html
-    - text: Place banners
+    - text: Quảng cáo Banners
       url: /pages/promotions/banners.html
-    - text: Manage Coupons
+    - text: Quản lý Mã giảm giá
       icon: '<i class="fa fa-ticket fa-fw"></i>'
       subitems:
-       - text: List & search coupons
+       - text: Danh sách & tìm kiếm Mã giảm giá
          url: /pages/promotions/search_coupons.html
-       - text: Add & edit coupons
+       - text: Thêm & sửa Mã giảm giá
          url: /pages/promotions/edit_coupons.html
-- text: Managing Customers
+- text: Quản lý Khách hàng
   url: /pages/customers/index.html
   level: /pages/customers/
   icon: '<i class="fa fa-users fa-fw"></i>'
   subitems:
-    - text: List & search customers
+    - text: Danh sách & tìm kiếm Khách hàng
       url: /pages/customers/search.html
-    - text: Add & edit customer
+    - text: Thêm & sửa Khách hàng
       url: /pages/customers/edit.html
-    - text: Add & edit address
+    - text: Thêm & sửa Địa chỉ
       url: /pages/customers/address.html
-    - text: Add & edit transactions
+    - text: Thêm & sửa Giao dịch
       url: /pages/customers/transactions.html
-    - text: Customer Groups
+    - text: Nhóm Khách hàng
       url: /pages/customers/groups.html
-    - text: Send Mail/SMS
+    - text: Gửi Mail/SMS
       url: /pages/customers/send_mails.html
 
-- text: Managing Orders
+- text: Quản lý Đơn hàng
   url: /pages/orders/index.html
   level: /pages/orders/
   icon: '<i class="fa fa-money fa-fw"></i>'
   subitems:
-    - text: Search and filter
+    - text: Tìm kiếm và lọc
       url: /pages/orders/search.html
-    - text: View Orders
+    - text: Xem Đơn hàng
       level: /pages/orders/
       icon: '<i class="fa fa-shopping-cart fa-fw"></i>'
       subitems:
-        - text: Order Details
+        - text: Thông tin Đơn hàng
           url: /pages/orders/order_details.html
-        - text: Order Shipping Details
+        - text: Địa chỉ Giao hàng
           url: /pages/orders/order_shipping.html
-        - text: Order Payment Details
+        - text: Thông tin Thanh toán
           url: /pages/orders/order_payment.html
-        - text: Order Files
+        - text: Files Đơn hàng
           url: /pages/orders/order_files.html
-        - text: Order History
+        - text: Xử lý Đơn hàng
           url: /pages/orders/order_history.html
-    - text: Modify Orders
+    - text: Sửa Đơn hàng
       url: /pages/orders/modify.html
-    - text: Manage Order Totals
+    - text: Quản lý thứ tự đặt hàng
       url: /pages/orders/order_totals.html
-- text: Store Reports
+- text: Báo cáo cửa hàng
   url: /pages/reports/index.html
   level: /pages/reports/
   icon: '<i class="fa fa-file-text fa-fw"></i>'
   subitems:
-    - text: Sales Report
+    - text: Báo cáo Bán hàng
       url: /pages/reports/sales.html
-    - text: Customers Report
+    - text: Báo cáo Khách hàng
       url: /pages/reports/customers.html
-    - text: Products Report
+    - text: Báo cáo Sản phẩm
       url: /pages/reports/products.html
-- text: Design Guide
+- text: Hướng dẫn thiết kế
   url: /pages/design/index.html
   level: /pages/design/
   icon: '<i class="fa fa-tint fa-fw"></i>'
   subitems:
-    - text: Templates
+    - text: Giao diện
       level: /pages/design/templates/
       icon: '<i class="fa fa-files-o fa-fw"></i>'
       subitems:
-       - text: Select template
+       - text: Chọn giao diện
          url: /pages/design/templates/select.html
-       - text: Edit template
+       - text: Sửa giao diện
          url: /pages/design/templates/edit.html
-       - text: Template files
+       - text: Files giao diện
          url: /pages/design/templates/files.html
-    - text: Layouts
+    - text: Bố cục trang
       url: /pages/design/layouts.html
     - text: Blocks
       level: /pages/design/blocks/
       icon: '<i class="fa fa-th-large fa-fw"></i>'
       subitems:
-       - text: List & search blocks
+       - text: Danh sách & tìm  kiếm blocks
          url: /pages/design/blocks/search.html
        - text: HTML block
          url: /pages/design/blocks/html_block.html
@@ -196,56 +196,56 @@
          url: /pages/design/blocks/forms_block.html
     - text: Menu
       url: /pages/design/menu.html
-    - text: Content Pages
+    - text: Trang nội dung
       url: /pages/design/content_pages.html
     - text: Banners
       url: /pages/design/banners.html
-    - text: Banner Slider Management
+    - text: Quản lý Banner Slider
       url: /pages/design/banner_slider.html
     - text: Forms
       url: /pages/design/forms.html
-- text: Shippings & Payments
+- text: Vận chuyển & Thanh toán
   level: /pages/ship_and_pay/
   icon: '<i class="fa fa-money fa-fw"></i>'
   subitems:
-  - text: Enable Shipping
+  - text: Kích hoạt Vận chuyển
     level: /pages/ship_and_pay/shippings/
     url: /pages/ship_and_pay/enable_shipping.html
     icon: '<i class="fa fa-truck fa-fw"></i>'
     subitems:
-     - text: Free Shipping
+     - text: Vận chuyển miễn phí
        url: /pages/ship_and_pay/shippings/free.html
-     - text: Flat rate
+     - text: Giao hàng tiết kiệm
        url: /pages/ship_and_pay/shippings/flat_rate.html
      
-  - text: Enable Payment
+  - text: Kích hoạt Thanh toán
     level: /pages/ship_and_pay/payments/
     icon: '<i class="fa fa-money fa-fw"></i>'
     url: /pages/ship_and_pay/enable_payment.html
     subitems:
      - text: Stripe
        url: /pages/ship_and_pay/payments/stripe.html
-     - text: Cash on Delivery
+     - text: Giao hàng thu tiền hộ
        url: /pages/ship_and_pay/payments/cash_on_delivery.html
-     - text: Bank Transfer
+     - text: Chuyển khoản ngân hàng
        url: /pages/ship_and_pay/payments/banktransfer.html
-- text: Settings & Tools
+- text: Cài đặt & Công cụ
   url: /pages/settings/index.html
   level: /pages/settings/
   icon: '<i class="fa fa-wrench fa-fw"></i>'
   subitems:
-    - text: Settings
+    - text: Cài đặt
       url: /pages/settings/settings.html
       level: /pages/settings/
       icon: '<i class="fa fa-cog fa-fw"></i>'
       subitems:
-       - text: Store Details
+       - text: Cửa hàng
          url: /pages/settings/details.html
-       - text: General
+       - text: Tổng quát
          url: /pages/settings/general.html
-       - text: Checkout
+       - text: Thanh toán
          url: /pages/settings/checkout.html
-       - text: Appearance
+       - text: Giao diện
          url: /pages/settings/appearance.html
        - text: Mail
          url: /pages/settings/mail.html
@@ -253,126 +253,126 @@
          url: /pages/settings/im.html
        - text: API
          url: /pages/settings/api.html
-       - text: System
+       - text: Hệ thống
          url: /pages/settings/system.html
        
-    - text: Admin users
+    - text: Quản trị viên
       level: /pages/users/
       icon: '<i class="fa fa-user-md fa-fw"></i>'
       subitems:
-       - text: Users
+       - text: Người dùng
          url: /pages/users/users.html
-       - text: Edit User
+       - text: Sửa Người dùng
          url: /pages/users/edit_user.html
-       - text: User Groups
+       - text: Nhóm Người dùng
          url: /pages/users/user_groups.html
-       - text: Permissions
+       - text: Phân quyền
          url: /pages/users/user_permissions.html
-    - text: Backup/Restore tool
+    - text: Sao lưu / Khôi phục
       url: /pages/tools/backup_restore.html
-    - text: Migration tool
+    - text: Công cụ chuyển đổi
       url: /pages/tools/migration.html
-    - text: Message manager
+    - text: Quản lý Tin nhắn
       url: /pages/tools/message_manager.html
-    - text: Data Import / Export
+    - text: Nhập vào / Xuất ra
       level: /pages/tools/
       icon: '<i class="fa fa-upload fa-fw"></i>'
       subitems:
-       - text: Export
+       - text: Xuất dữ liệu
          url: /pages/tools/export.html
-       - text: Import
+       - text: Nhập dữ liệu
          url: /pages/tools/import.html
-    - text: File Uploads
+    - text: Tải lên
       url: /pages/tools/file_uploads.html
     - text: Logs
       level: /pages/tools/logs/
       icon: '<i class="fa fa-cog fa-fw"></i>'
       subitems:
-       - text: install/Upgrade History
+       - text: Cài đặt/Lịch sử
          url: /pages/tools/logs/install_history.html
-       - text: Error logs
+       - text: Bản ghi lỗi
          url: /pages/tools/logs/error_logs.html
-       - text: Scheduled Tasks
+       - text: Lịch biểu Tác vụ
          url: /pages/tools/logs/sheduled_tasks.html
-    - text: Stock configuration
+    - text: Cấu hình kho
       url: /pages/catalog/products/inventory.html
-    - text: Encryption Data Manager
+    - text: Mã hóa dữ liệu
       url: /pages/settings/encryption_data.html
-- text: Manage Localization
+- text: Quản lý ngôn ngữ
   url: /pages/localization/index.html
   level: /pages/localization/
   icon: '<i class="fa fa-globe fa-fw"></i>'
   subitems:
-    - text: Languages
+    - text: Ngôn ngữ
       level: /pages/localization/languages/
       icon: '<i class="fa fa-language fa-fw"></i>'
       subitems:
-       - text: Languages List
+       - text: Danh sách ngôn ngữ
          url: /pages/localization/languages/languages.html
-       - text: Edit Language
+       - text: Sửa ngôn ngữ
          url: /pages/localization/languages/edit_language.html
-       - text: Create Language
+       - text: Tạo ngôn ngữ
          url: /pages/localization/languages/create_language.html
-    - text: Language Definitions
+    - text: Đổi nhãn & dịch
       url: /pages/localization/language_definitions.html
-    - text: Currencies
+    - text: Tiền tệ
       level: /pages/localization/currencies/
       icon: '<i class="fa fa-usd fa-fw"></i>'
       subitems:
-       - text: List Currencies
+       - text: Danh sách Tiền tệ
          url: /pages/localization/currencies/currencies.html
-       - text: Edit Currency
+       - text: Sửa Tiền tệ
          url: /pages/localization/currencies/edit_currency.html
-    - text: Stock and Order Statuses
+    - text: Tình trạng kho và Xử lý đặt hàng
       level: /pages/localization/statuses/
       icon: '<i class="fa fa-suitcase fa-fw"></i>'
       subitems:
-       - text: List Stock Statuses
+       - text: Tình trạng kho
          url: /pages/localization/statuses/stock_status_list.html
-       - text: Edit Stock Status
+       - text: Sửa tình trạng kho
          url: /pages/localization/statuses/edit_stock_status.html
-       - text: List Order Statuses
+       - text: Xử lý đơn hàng
          url: /pages/localization/statuses/order_status_list.html
-       - text: Edit Order Status
+       - text: Sửa xử lý đơn hàng
          url: /pages/localization/statuses/edit_order_status.html
-    - text: Countries and Zones
+    - text: Quốc gia và Khu vực
       icon: '<i class="fa fa-map-marker fa-fw"></i>'
       subitems:
-       - text: List Countries
+       - text: Danh sách Quốc gia
          url: /pages/localization/country_and_zone/country_list.html
-       - text: Edit Country
+       - text: Sửa Quốc gia
          url: /pages/localization/country_and_zone/edit_country.html
-       - text: List Zones
+       - text: Danh sách Khu vực
          url: /pages/localization/country_and_zone/zone_list.html
-       - text: Edit Zone
+       - text: Sửa Khu vực
          url: /pages/localization/country_and_zone/edit_zone.html
-    - text: Locations and Taxes
+    - text: Địa điểm và Thuế
       icon: '<i class="fa fa-location-arrow fa-fw"></i>'
       subitems:
-       - text: List Locations
+       - text: Danh sách Địa điểm
          url: /pages/localization/locations_and_taxes/locations_list.html
-       - text: Edit Location
+       - text: Sửa Địa điểm
          url: /pages/localization/locations_and_taxes/edit_location.html
-       - text: List Tax Classes
+       - text: Loại Thuế
          url: /pages/localization/locations_and_taxes/tax_classes_list.html
-       - text: Edit Tax Class
+       - text: Sửa Thuế
          url: /pages/localization/locations_and_taxes/edit_tax_class.html
-       - text: Add Rates to Tax Class
+       - text: Thêm và sửa các mức thuế
          url: /pages/localization/locations_and_taxes/add_rates.html
-    - text: Length & Weight classes
+    - text: Chiều dài & Cân nặng
       icon: '<i class="fa fa-truck fa-fw"></i>'
       subitems:
-       - text: List Length Classes
+       - text: Đơn vị Chiều dài
          url: /pages/localization/length_and_weight/length_list.html
-       - text: Edit Length Class
+       - text: Sửa Đơn vị Chiều dài
          url: /pages/localization/length_and_weight/edit_length.html
-       - text: List Weight Classes
+       - text: Đơn vị Cân nặng
          url: /pages/localization/length_and_weight/weight_list.html
-       - text: Edit Weight Class
+       - text: Sửa Đơn vị Cân nặng
          url: /pages/localization/length_and_weight/edit_weight.html
-    - text: Language Auto Translate
+    - text: Ngôn ngữ tự động dịch
       url: /pages/localization/auto_translate.html
-- text: Embed your store
+- text: Nhúng cửa hàng của bạn
   url: /pages/embed/embed.html
   level: /pages/embed/
   icon: '<i class="fa fa-code-fork fa-fw"></i>'
