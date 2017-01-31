@@ -1,44 +1,44 @@
 ---
 layout: default
-title: Data Import
-description: Get quick access to any database table or record in the database
+title: Nhập dữ liệu
+description: Có truy cập nhanh đến bất kỳ bảng cơ sở dữ liệu hoặc bản ghi trong cơ sở dữ liệu
 redirect_from: "/tag/import.html"
 tags: [
-	['export', 'Data Export'],
-    ['pages_tool_backup', 'Backup and restore'],
+	['export', 'Nhập dữ liệu'],
+    ['pages_tool_backup', 'Sao chép và khôi phục'],
 ]
 
 ---
 
                             <div class="category-info ">
-							<h3 class="category-title">Data Import</h3>
+							<h3 class="category-title">Nhập dữ liệu</h3>
 							<h4 class="category-description"> System > Data > Import </h4>
 							</div>
 
 
 
 
-<p><a class="anchorlink" href="#Example1:update">Example 1: Update products</a><br />
-<a class="anchorlink" href="#Example2:insert">Example 2: Insert Products</a> <br />
-<a class="anchorlink" href="#Example3:insert">Example 3: Insert Products with Images</a><br />
-<a class="anchorlink" href="#Example4:inserturl">Example 4: Import Product Media by URLs</a></p>
+<p><a class="anchorlink" href="#Example1:update">Ví dụ 1: Cập nhật các sản phẩm</a><br />
+<a class="anchorlink" href="#Example2:insert">Ví dụ 2: Thêm các sản phẩm</a> <br />
+<a class="anchorlink" href="#Example3:insert">Ví dụ 3: Thêm các sản phẩm có hình ảnh</a><br />
+<a class="anchorlink" href="#Example4:inserturl">Ví dụ 4: nhập Product Media bởi URLs</a></p>
 
 <p></p>
 
-<p>You able to import data into your AbanteCart store using '.xml' or '.csv' files. 
-Some of fields are required for a successful import, yet nearly almost all fields are supported, allowing you to determine the level of detail you wish to import.<br>
+<p>Bạn có thể nhập dữ liệu vào cửa hàng Vinacart sử dụng các file .csv hoặc xml.
+Một số trường cần thiết để nhập thành công dữ liệu, nhưng hầu hết tất cả các trường được hỗ trợ, cho phép bạn xác định mức độ chi tiết mà bạn muốn nhập dữ liệu.<br>
     
-    This is particularly useful when migrating and importing from a different eCommerce platform.
+    Điều này đặc biệt hữu ích khi di chuyển và nhập dữ liệu từ một nền tảng thương mại điện tử khác.
 </p>
 						<!-- Note -->
 						<div class="note js-note red note-pulse">
 
-							<h4 class="note-title"> Note </h4>
+							<h4 class="note-title"> Chú ý </h4>
 							<p class="note-description"> 
 							<ul>
-							<li>Please select correct CSV delimiter.</li>
-							<li>You can run import in Test Mode to prevent any unexpected results.</li>
-							<li>If you import data with table auto-increment index columns provided (example: product_id), default auto action will be <strong>update</strong>. In case, new inserts required with auto-increment columns values, action <strong>insert</strong> needs to be specified manually. For example in XML file, you need to add <strong>&lt;action&gt;insert&lt;/action&gt;</strong> for each table or new column in CSV file.</li>
+							<li>Vui lòng chọn đúng dấu phân cách CSV.</li>
+							<li>Bạn có thể chạy nhập dữ liệu ở chế độ thử nghiệm để ngăn chặn kết quả không mong muốn.</li>
+							<li>Nếu bạn nhập dữ liệu với bảng có cột auto-increment (ví dụ: product_id), hành động sử lý tự động mặc định sẽ là <strong>update</strong>. Trong trường hợp, chèn mới yêu cầu giá trị cột auto-increment, hành động <strong>insert</strong> cần phải được xác định bằng tay. Ví dụ: trong fike XML, bạn cần phải thêm <strong>&lt;action&gt;insert&lt;/action&gt;</strong>  vào mỗi bảng hoặc cột mới trong file CSV.</li>
 							</ul>
 							</p>
 						</div>
@@ -49,22 +49,22 @@ Some of fields are required for a successful import, yet nearly almost all field
 
                             <a name="Example1:update"></a>
                             <div class="category-info ">
-							<h3 class="category-title">Example 1: Update products</h3>
-							<h4 class="category-description"> In this example we will show how to easily update your exiting products. </h4>
+							<h3 class="category-title">Ví dụ 1: Cập nhật các sản phẩm</h3>
+							<h4 class="category-description"> Trong ví dụ này, bạn sẽ học cách cập nhật các sản phẩm hiện có một cách dễ dàng. </h4>
 							</div>
 
-<p><strong>First export it.</strong> Go to <em>System-&gt;Data-&gt;Import/Export</em>. In the <em>Export</em> Tab find <em>Products</em>, click to expand table and select only <em>product_descriptions</em> table.</p>
+<p><strong>Đầu tiên xuất dữ liệu.</strong> Truy cập <em>System-&gt;Data-&gt;Import/Export</em>. Ở tab <em>Export</em> tìm <em>Products</em>, nhấn để mở rộng table và chỉ chọn bảng <em>product_descriptions</em> .</p>
 <a class="jcepopup" href="/img/other/export2.png"><img src="/img/other/export2.png" border="0" alt="" width="500" /></a><br />
-<p>In the bottom of the page select this export options:</p>
+<p>Ở bên dưới cùng của trang này chọn các tùy chọn xuất bản:</p>
 <div class="padding">
 <p>File Format: <em>CSV</em></p>
 <p>CSV/TXT delimiter: <em>TAB</em></p>
-<p>Click <em>Export</em> button.</p>
+<p>Nhấn nút <em>Export</em> .</p>
 </div>
 <a class="jcepopup" href="/img/other/export3.png"><img src="/img/other/export3.png" border="0" alt="" width="400" /></a><br />
-<p>Then open exported CSV file in CSV editor like OpenOffice Calc, Microsoft Excel etc. Be sure to open file with correct CSV delimiter.</p>
-<a class="jcepopup" href="/img/other/abantecart-import-exampleone-3.png"><img src="/img/other/abantecart-import-exampleone-3.png" border="0" alt="" width="740" /></a><br />
-<p>In the opened CSV file easy to update/edit this products fields:</p>
+<p>Sau đó mở file CSV đã tạo ra trong trình soạn thảo CSV như OpenOffice Calc, Microsoft Excel ..Hãy chắc chắn để mở tập tin với đúng dấu phân cách CSV.</p>
+<a class="jcepopup" href="/img/other/vinacart-import-exampleone-3.png"><img src="/img/other/vinacart-import-exampleone-3.png" border="0" alt="" width="740" /></a><br />
+<p>Trong tập tin CSV đã mở, dễ dàng để cập nhật / chỉnh sửa các trường của sản phẩm:</p>
 <div class="padding">
 <p><em>products.model</em></p>
 <p><em>products.quantity</em></p>
@@ -78,19 +78,19 @@ Some of fields are required for a successful import, yet nearly almost all field
 <p><em>product_descriptions[0].description</em></p>
 </div>
 <p> </p>
-<p>Also You can edit other fields. But You need to know your<span style="text-decoration: underline;"> correct</span> exiting in your data <em>ids/values</em> for this fields:</p>
+<p>Ngoài ra bạn có thể chỉnh sửa các trường khác. Nhưng bạn cần phải biết <span style="text-decoration: underline;">chính xác</span> dữ liệu <em>(ids/các giá trị)</em> cho các trường này:</p>
 <div class="padding">
 <p><em>products.stock_status_id</em></p>
 <p><em>products.manufacturer_id</em></p>
 <p><em>products.shipping</em></p>
 <p><em>products.tax_class_id</em></p>
-<p>and others</p>
+<p>và những trường khác</p>
 </div>
-<p><strong>Then Import file</strong>. Go to <em>System-&gt;Data-&gt;Import/Export</em>. In the <em>Import</em> Tab select correct <em>File to import</em> and correct <em>CSV/TXT delimiter</em>. Click <em>Import</em> button.</p>
+<p><strong>Sau đó nhập file</strong>. Truy cập <em>System-&gt;Data-&gt;Import/Export</em>. Trong tab <em>Import</em> chọn đúng <em>File để import</em> và <em>dấu phân cách CSV/TXT</em>. Nhấn nút <em>Import</em> .</p>
 <a class="jcepopup" href="/img/other/export4.png"><img src="/img/other/export4.png" border="0" alt="" width="400" /></a><br />
-<p>After processing the message will be shown. Normally <em>0 errors</em> should be displayed.</p>
-<p>Update complete.</p>
-<img src="/img/other/abantecart-import-exampleone-5.png" border="0" alt="" />
+<p>Sau khi xử lý, các thông báo sẽ được hiển thị. Để nhập dữ liệu không sai sót, thông thường không phát hiện ra lỗi nào <em>0 errors</em> nên được hiển thị.</p>
+<p>Cập nhật hoàn tất.</p>
+<img src="/img/other/vinacart-import-exampleone-5.png" border="0" alt="" />
 <p></p>
 
 
@@ -104,41 +104,41 @@ Some of fields are required for a successful import, yet nearly almost all field
 
                             <a name="Example2:insert"></a>
                             <div class="category-info ">
-							<h3 class="category-title">Example 2: Insert products</h3>
+							<h3 class="category-title">Ví dụ 2: Thêm các sản phẩm</h3>
 							<h4 class="category-description"> </h4>
 							</div>
 
 
-<p>Before insert a lot of new products just create sample product in Admin > Catalog > Products and configure it.</p>
-<p>Then export to CSV file. Make sure to select required tables like:</p>
+<p>Trước khi chèn thêm rất nhiều sản phẩm mới , chỉ tạo ra các sản phẩm mẫu trong Admin> sản phẩm > sản phẩm và cấu hình nó.</p>
+<p>Sau đó xuất ra các tập tin CSV. Hãy chắc chắn chọn các bảng cần thiết như:</p>
 
 <p>product_descriptions</p>
 <p>products_to_categories</p>
 <p>products_to_stores</p>
-<p>or any others tables which one contain needed data for configured sample product.</p>
+<p>hoặc bất kỳ bảng nào khác chứa dữ liệu cần thiết để cấu hình cho sản phẩm mẫu.</p>
 
 
-<p>Then open exported CSV file in CSV editor like OpenOffice Calc, Microsoft Excel etc. Be sure to open file with correct CSV delimiter.</p>
-<p>Copy row with sample product to make sure new product will be configured in the same way.</p>
-<p>To <em>insert</em> new products using import tool you need to add new column named <em><strong>action</strong></em> in the exported file. See example for CSV file.</p>
-<a class="jcepopup" href="/img/other/abantecart-import-exampleone-7.png"><img src="/img/other/abantecart-import-exampleone-7.png" border="0" alt="" width="600" /></a><br />
-<p>Make sure to:</p>
+<p>Sau đó mở file CSV đã tạo ra trong trình soạn thảo CSV như OpenOffice Calc, Microsoft Excel vv. Hãy chắc chắn mở tập tin với đúng dấu phân cách CSV.</p>
+<p>Sao chép hàng với sản phẩm mẫu để đảm bảo sản phẩm mới sẽ được cấu hình theo cách tương tự.</p>
+<p>Để <em>thêm</em> các sản phẩm mới sử dụng công cụ import bạn cần thêm cột mới có tên <em><strong>action</strong></em> trong file đã xuất bản. Xem ví dụ cho tập tin CSV.</p>
+<a class="jcepopup" href="/img/other/vinacart-import-exampleone-7.png"><img src="/img/other/vinacart-import-exampleone-7.png" border="0" alt="" width="600" /></a><br />
+<p>Hãy chắc chắn để:</p>
 
-<p>leave empty <strong>products.product_id</strong></p>
-<p>type <strong>insert</strong> in the <strong>action</strong> column</p>
-<p>and fill others columns like in exiting sample product.</p>
+<p>để trống <strong>products.product_id</strong></p>
+<p>nhập <strong>insert</strong> trong cột <strong>action</strong> </p>
+<p>và điền vào các cột khác như sản phẩm mẫu đã có.</p>
 
-<p><strong>Then Import file</strong>. Go to <em>System-&gt;Data-&gt;Import/Export</em>. In the <em>Import</em> Tab select correct <em>File to import</em> and correct <em>CSV/TXT delimiter</em>. Click <em>Import</em> button.</p>
+<p><strong>Sau đó Import file</strong>. Truy cập <em>System-&gt;Data-&gt;Import/Export</em>. Trong tab <em>Import</em> chọn đúng <em>File để import</em> và đúng <em>ký tự phần cách CSV/TXT</em>. Nhấn nút <em>Import</em>.</p>
 <a class="jcepopup" href="/img/other/export4.png"><img src="/img/other/export4.png" border="0" alt="" width="500" /></a>
-<p>After processing the message will be shown. Normally <em>0 errors</em> should be displayed.</p>
-<img src="/img/other/abantecart-import-exampleone-8.png" border="0" alt="" />
-<p>Insert complete. See CSV (TAB delimeted) examples for insert :</p>
+<p>Sau khi xử lý, các thông báo sẽ được hiển thị. Để nhập dữ liệu không sai sót, thông thường không phát hiện ra lỗi nào <em>0 errors</em> nên được hiển thị.</p>
+<img src="/img/other/vinacart-import-exampleone-8.png" border="0" alt="" />
+<p>Thêm thành công. Xem CSV (phân cách bởi ký tự TAB) ví dụ cho việc chèn mới :</p>
 
                         <div class="row">
 							<div class="col-md-4">
 								<!-- Box -->
 								<div class="box ">
-									<h4 class="box-title">Categories</h4>
+									<h4 class="box-title">Categories (danh mục)</h4>
 									<p class="box-description"></p>
 									<a class="button green " href="/img/other/categories-insert-example-tab.csv" target="_blank" title="CSV file">Download</a>
 								</div>
@@ -179,7 +179,7 @@ Some of fields are required for a successful import, yet nearly almost all field
 
                             <a name="Example3:insert"></a>
                             <div class="category-info ">
-							<h3 class="category-title">Example 3: Insert products with Images</h3>
+							<h3 class="category-title">Ví dụ 3: Thêm các sản phẩm có chứa ảnh</h3>
 							<h4 class="category-description"> </h4>
 							</div>
 
@@ -187,25 +187,25 @@ Some of fields are required for a successful import, yet nearly almost all field
 						<ul class="steps">
 							<li class="step">
 								<span class="step-number">1</span>
-								<h4 class="step-title">upload images by ftp to this path ../resources/image/somefolder/</h4>
+								<h4 class="step-title">tải lên hình ảnh bằng ftp vào đường dẫn này ../resources/image/somefolder/</h4>
 								<div class="step-content">  </div>
 							</li>
 						    <li class="step">
 								<span class="step-number">2</span>
-								<h4 class="step-title">update permission for this folder to 777 (or 755)</h4>
+								<h4 class="step-title">cập nhật quyền cho thư mục này với 777 (hoặc 755)</h4>
 								<div class="step-content">  </div>
 							</li>
 							<li class="step">
 								<span class="step-number">3</span>
-								<h4 class="step-title">change/add this columns in your csv file</h4>
+								<h4 class="step-title">thay đổi / thêm các cột này trong tập tin csv của bạn</h4>
 								<div class="step-content">
-								resource_map[0].resource_id              = leave empty<br />resource_map[0].object_name            = products<br />resource_library[0][0].type_id            = 1<br />resource_descriptions[0][0][0].language_id      = 1  (the id of installed language)<br />resource_descriptions[0][0][0].name             =    anyname (usually imagefile name)<br />resource_descriptions[0][0][0].title            =    leave empty or fill if you need title<br />resource_descriptions[0][0][0].description      =    leave empty or fill if you need description for the resource<br />resource_descriptions[0][0][0].resource_path    =    somefolder/product_image_1.jpg<br /><br />in case You have 2 languages installed in your cart add next columns<br />resource_descriptions[0][0][1].language_id      = 9  (the correct id of second installed language)<br />resource_descriptions[0][0][1].name             =    anyname (usually imagefile name)<br />resource_descriptions[0][0][1].title            =    leave empty or fill if you need it<br />resource_descriptions[0][0][1].description      =    leave empty or fill if you need it<br />resource_descriptions[0][0][1].resource_path    =    somefolder/product_image_1.jpg<br /><br />------------------------------------------------------------------------------------<br />in case If you need to add multiply images to one product please add more columns<br /><br />resource_map[1].resource_id              = leave empty<br />resource_map[1].object_name           = products<br />resource_library[1][0].type_id            = 1<br />resource_descriptions[1][0][0].language_id   = 1 (the id of installed language)<br />resource_descriptions[1][0][0].name          = sometext (any resource name to second image)<br />resource_descriptions[1][0][0].title            =    leave empty or fill if you need it<br />resource_descriptions[1][0][0].description      =    leave empty or fill if you need it<br />resource_descriptions[1][0][0].resource_path = somefolder/product_image_2.jpg   (path to second image)<br /><br />same for second language if you have it installed<br />resource_descriptions[1][0][1].language_id   = 9 (the correct id of second installed language)<br />resource_descriptions[1][0][1].name          = sometext (any resource name to second image)<br />resource_descriptions[1][0][1].title            =    leave empty or fill if you need it<br />resource_descriptions[1][0][1].description      =    leave empty or fill if you need it<br />resource_descriptions[1][0][1].resource_path = somefolder/product_image_2.jpg   (path to second image)<br /><br /><br />---------------------------------------------------------------------------------------<br />and to add one more image <br />resource_map[2].resource_id                     = leave empty<br />resource_map[2].object_name            = products<br />resource_library[2][0].type_id            = 1<br />resource_descriptions[2][0][0].language_id   = 1 (the id of installed language)<br />resource_descriptions[2][0][0].name          = sometext (any resource name to 3rd image)<br />resource_descriptions[2][0][0].title            =    leave empty or fill if you need it<br />resource_descriptions[2][0][0].description      =    leave empty or fill if you need it<br />resource_descriptions[2][0][0].resource_path = somefolder/product_image_3.jpg   (path to second image)<br /><br />resource_descriptions[2][0][1].language_id   = 9 (the id of second installed language)<br />resource_descriptions[2][0][1].name          = sometext (any resource name to 3rd image)<br />resource_descriptions[2][0][1].title            =    leave empty or fill if you need it<br />resource_descriptions[2][0][1].description      =    leave empty or fill if you need it<br />resource_descriptions[2][0][1].resource_path = somefolder/product_image_3.jpg   (path to second image)<br /><br />You can and more and more images for one product with similar way
+								resource_map[0].resource_id              = leave empty<br />resource_map[0].object_name            = products<br />resource_library[0][0].type_id            = 1<br />resource_descriptions[0][0][0].language_id      = 1  (the id of installed language)<br />resource_descriptions[0][0][0].name             =    anyname (usually imagefile name)<br />resource_descriptions[0][0][0].title            =    leave empty or fill if you need title<br />resource_descriptions[0][0][0].description      =    leave empty or fill if you need description for the resource<br />resource_descriptions[0][0][0].resource_path    =    somefolder/product_image_1.jpg<br /><br />in case You have 2 languages installed in your cart add next columns<br />resource_descriptions[0][0][1].language_id      = 9  (the correct id of second installed language)<br />resource_descriptions[0][0][1].name             =    anyname (usually imagefile name)<br />resource_descriptions[0][0][1].title            =    leave empty or fill if you need it<br />resource_descriptions[0][0][1].description      =    leave empty or fill if you need it<br />resource_descriptions[0][0][1].resource_path    =    somefolder/product_image_1.jpg<br /><br />------------------------------------------------------------------------------------<br />in case If you need to add multiply images to one product please add more columns<br /><br />resource_map[1].resource_id              = leave empty<br />resource_map[1].object_name           = products<br />resource_library[1][0].type_id            = 1<br />resource_descriptions[1][0][0].language_id   = 1 (the id of installed language)<br />resource_descriptions[1][0][0].name          = sometext (any resource name to second image)<br />resource_descriptions[1][0][0].title            =    leave empty or fill if you need it<br />resource_descriptions[1][0][0].description      =    leave empty or fill if you need it<br />resource_descriptions[1][0][0].resource_path = somefolder/product_image_2.jpg   (path to second image)<br /><br />same for second language if you have it installed<br />resource_descriptions[1][0][1].language_id   = 9 (the correct id of second installed language)<br />resource_descriptions[1][0][1].name          = sometext (any resource name to second image)<br />resource_descriptions[1][0][1].title            =    leave empty or fill if you need it<br />resource_descriptions[1][0][1].description      =    leave empty or fill if you need it<br />resource_descriptions[1][0][1].resource_path = somefolder/product_image_2.jpg   (path to second image)<br /><br /><br />---------------------------------------------------------------------------------------<br />and to add one more image <br />resource_map[2].resource_id                     = leave empty<br />resource_map[2].object_name            = products<br />resource_library[2][0].type_id            = 1<br />resource_descriptions[2][0][0].language_id   = 1 (the id of installed language)<br />resource_descriptions[2][0][0].name          = sometext (any resource name to 3rd image)<br />resource_descriptions[2][0][0].title            =    leave empty or fill if you need it<br />resource_descriptions[2][0][0].description      =    leave empty or fill if you need it<br />resource_descriptions[2][0][0].resource_path = somefolder/product_image_3.jpg   (path to second image)<br /><br />resource_descriptions[2][0][1].language_id   = 9 (the id of second installed language)<br />resource_descriptions[2][0][1].name          = sometext (any resource name to 3rd image)<br />resource_descriptions[2][0][1].title            =    leave empty or fill if you need it<br />resource_descriptions[2][0][1].description      =    leave empty or fill if you need it<br />resource_descriptions[2][0][1].resource_path = somefolder/product_image_3.jpg   (path to second image)<br /><br />Bạn có thể thêm nhiều ảnh cho một sản phẩm với cách tương tự.
 								
 								</div>
 							</li>
 						</ul>
 
-<p>products with images CSV Tab delimited example <a class="button green " href="/img/other/insert_product_with_images.csv" target="_blank" title="CSV file">Download</a></p>
+<p>các sản phẩm có hình ảnh, ví dụ về dấu phân cách TAB cho CSV  file <a class="button green " href="/img/other/insert_product_with_images.csv" target="_blank" title="CSV file">Download</a></p>
 
 
 
@@ -225,32 +225,32 @@ Some of fields are required for a successful import, yet nearly almost all field
 
 						<a name="Example4:inserturl"></a>
                             <div class="category-info ">
-							<h3 class="category-title">Example 4: Import Resources by URL</h3>
-							<h4 class="category-description"> For AbanteCart 1.2.6 and higher!</h4>
+							<h3 class="category-title">Ví dụ 4: Nhập tài nguyên bởi URL</h3>
+							<h4 class="category-description"> Với vinacart 1.2.6 và cao hơn!</h4>
 							</div>
 
                         <!-- Steps -->
 						<ul class="steps">
 							<li class="step">
 								<span class="step-number">1</span>
-								<h4 class="step-title">change/add this columns in your csv file</h4>
+								<h4 class="step-title">thay đổi / thêm các cột này trong tập tin csv của bạn</h4>
 								<div class="step-content">
 								resource_map[0].type           = image<br />
-								resource_map[0].source_url     = http://www.abantecart.com/images/devices.png<br />
+								resource_map[0].source_url     = http://www.vinacart.com/images/devices.png<br />
 								resource_map[0].source_path    = leave empty<br />
 								resource_map[0].html_code      = &lt;i class=&quot;fa fa-optin-monster&quot;&gt;</i>  (if you want to add html resource or leave empty)<br />
-								<br />------------------------------------------------------------------------------------<br />in case If you need to add multiply images to one product please add more columns<br /><br />resource_map[1].type          = image<br />
-								resource_map[1].source_url    = http://www.abantecart.com/images/banners/admin_iphone.jpg<br />
+								<br />------------------------------------------------------------------------------------<br />Nếu trong trường hợp bạn cần phải thêm nhiều hình ảnh cho một sản phẩm xin vui lòng bổ sung thêm các cột<br /><br />resource_map[1].type          = image<br />
+								resource_map[1].source_url    = http://www.vinacart.com/images/banners/admin_iphone.jpg<br />
 								resource_map[2].type          = pdf<br />
 								resource_map[2].source_url    = http://www.pdf995.com/samples/pdf.pdf<br />
-								<br />You can and more and more images for one product with similar way
+								<br />Bạn có thể thêm nhiều hình ảnh cho một sản phẩm với cách tương tự
 								
 								</div>
 							</li>
 						</ul>
 
-<p>products with images CSV COMMA delimited examples <a class="button green " href="/img/other/abantecart_import_test_new.csv" target="_blank" title="CSV file">Download New Product Example</a>
-<a class="button green " href="/img/other/abantecart_import_test_existing.csv" target="_blank" title="CSV file">Download Update Product Example</a>
+<p>các sản phẩm có hình ảnh, ví dụ cho dấu phân cách (dấu phẩy) trong file CSV <a class="button green " href="/img/other/vinacart_import_test_new.csv" target="_blank" title="CSV file">Tải ví dụ chèn sản phẩm mới</a>
+<a class="button green " href="/img/other/vinacart_import_test_existing.csv" target="_blank" title="CSV file">Tải ví dụ cập nhật sản phẩm</a>
 </p>
 
 
@@ -262,15 +262,15 @@ Some of fields are required for a successful import, yet nearly almost all field
                             <p></p>
                             <a name="csv"></a>
                             <div class="category-info ">
-							<h3 class="category-title">CSV file format</h3>
+							<h3 class="category-title">Định dạng tập tin CSV</h3>
 							<h4 class="category-description">  </h4>
 							</div>
 							<div class="step-content">
 							   <ul>
-							   <li>The first row must include column headers and the column headers must match those given in the documentation.</li>
-							   <li>Values must be separated by a delimiter, which is expected to be a tab, comma “,” by default, though this can be set during the import process to any other character, so long as you are consistent within your file.</li>
-							   <li>Each imported item (Products, Category) belongs on its own row</li>
-							   <li>Some CSV file editor like MS Excel may automaticly change price or date fields format and broke your file.</li>
+							   <li>Hàng đầu tiên phải bao gồm các tiêu đề cột và các tiêu đề cột phải khớp với những gì nêu trong tài liệu.</li>
+							   <li>Các giá trị phải được ngăn cách bởi một dấu phân cách, mặc định như TAB, dấu phẩy, mặc dù điều này có thể được thiết lập trong quá trình nhập liệu với bất kỳ ký tự nào, miễn là phù hợp trong tập tin của bạn.</li>
+							   <li>Mỗi mục được nhập (sản phẩm, danh mục) dữ liệu nằm trên một dòng.</li>
+							   <li>Một số trình soạn tệp CSV  như MS Excel có thể tự động thay đổi định dạng trường giá hoặc ngày tháng và phá vỡ tập tin của bạn.</li>
 							   </ul>
 							   </div>
 							   
@@ -288,24 +288,24 @@ Some of fields are required for a successful import, yet nearly almost all field
                             <p></p>
                             <a name="trouble"></a>
                             <div class="category-info ">
-							<h3 class="category-title">Troubleshooting</h3>
+							<h3 class="category-title">Xử lý sự cố</h3>
 							<h4 class="category-description">  </h4>
 							</div>
 							<!-- Steps -->
 						<ul class="steps">
 							<li class="step">
 								<span class="step-number">1</span>
-								<h4 class="step-title">Allowed memory size of xxx bytes exhausted</h4>
-								<div class="step-content"> Your server may not have enough memory to perform the import. </div>
+								<h4 class="step-title">Cho phép kích thước bộ nhớ xxx bytes exhausted</h4>
+								<div class="step-content"> Máy chủ của bạn có thể không có đủ bộ nhớ để thực hiện việc nhập liệu. </div>
 							</li>
 							<li class="step">
 								<span class="step-number">2</span>
-								<h4 class="step-title">Import is timing out</h4>
-								<div class="step-content"> Increase the <strong>max_execution_time</strong>. If its not possible for you to increase the <strong>max_execution_time</strong> you can either break your CSVs into multiple parts and import each separately</div>
+								<h4 class="step-title">Nhập liệu hết thời gian hiệu lực</h4>
+								<div class="step-content"> Tăng thiết lập <strong>max_execution_time</strong>. Nếu không thể sửa giá trị <strong>max_execution_time</strong> bạn có thể tách file CSVs thành nhiều phần và nhập từng phần riêng rẽ.</div>
 							</li>
 							<li class="step">
 								<span class="step-number">3</span>
-								<h4 class="step-title">Special / foreign characters imported not properly</h4>
-								<div class="step-content"> The file you are importing must be properly encoded as UTF-8.</div>
+								<h4 class="step-title">Các ký tự đặc biệt/ngôn ngữ khác sẽ import không chính xác.</h4>
+								<div class="step-content"> Các tập tin bạn đang nhập liệu phải được mã hóa dạng UTF-8.</div>
 							</li>
 						</ul>

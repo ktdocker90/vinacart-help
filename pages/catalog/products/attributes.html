@@ -1,19 +1,19 @@
 ---
 layout: default
-title: Products Options
-description: Set up and manage product options and attributes
+title: Thuộc tính sản phẩm
+description: Thiết lập và quản lý tùy chọn và thuộc tính cho sản phẩm
 redirect_from: "/tag/product_options.html"
 tags: [
-    ['product_edit', 'Edit Products'],
-    ['product_listing', 'List Products'],
+    ['product_edit', 'Sửa sản phẩm'],
+    ['product_listing', 'Danh sách các sản phẩm'],
     ['product_media', 'Product Media'],
-    ['product_options', 'Product Options'],
+    ['product_options', 'Thuộc tính sản phẩm'],
     ['product_files', 'Product Files'], 
-    ['product_relations', 'Product Relations'],
-    ['product_promotions', 'Product Promotions'],    
-    ['product_layout', 'Edit page layout'],
-    ['product_setting', 'Product setting'],
-    ['global_attributes_listing', 'Add Global Options'],
+    ['product_relations', 'Sản phẩm có liên quan'],
+    ['product_promotions', 'Sản phẩm khuyến mãi'],    
+    ['product_layout', 'Sửa bố cục trang'],
+    ['product_setting', 'Cài đặt sản phẩm'],
+    ['global_attributes_listing', 'Thêm thuộc tính chung'],
 ]
 ---
 
@@ -21,26 +21,24 @@ tags: [
 
 						<!-- Category Info -->
 						<div class="category-info ">
-							<h3 class="category-title">Options Tab</h3>
-							<h4 class="category-description">This tab allows you to manage the product options and option variants as well as controlling the option combinations. </h4>
+							<h3 class="category-title">Tab Options</h3>
+							<h4 class="category-description">Tab này cho phép bạn quản lý các tùy chọn sản phẩm và lựa chọn các biến cũng như kết hợp nhiều tùy chọn cho một sản phẩm. </h4>
 						<!-- Note -->
 						<div class="note js-note blue">
 							<span class="note-close js-close">
 								<i class="fa fa-times"></i>
 							</span>
-							<h4 class="note-title"> Note </h4>
-							<p class="note-description"> In this tab, you can also add a predefined global attributes to the product. For instructions on how to use Global attributes, please refer to the <a class="crosslink" href="/pages/catalog/global_attributes.html">Global attributes</a> section further in this guide. </p>
+							<h4 class="note-title"> Chú ý </h4>
+							<p class="note-description"> Trong tab này, bạn cũng có thể thêm một thuộc tính có sẵn được xác định trước cho sản phẩm. Để xem hướng dẫn về cách sử dụng các thuộc tính toàn cục, vui lòng tham khảo <a class="crosslink" href="/pages/catalog/global_attributes.html">Global attributes</a> trong hướng dẫn này. </p>
 						</div>
 						<!-- End of Note -->						
 						</div>
 						<!-- End of Caregory Info -->
 						
-<p>Product options appear on the product details page on the storefront as selectable or input parameters to the product.<br>
-When you decide to set up some attributes for a product, you need to consider what product properties (Colors, Sizes, Materials) may be important to buyers. This will help you to decide which type of attribute you will need to configure.
+<p>Các tùy chọn sản phẩm xuất hiện trên trang chi tiết sản phẩm trên cửa hàng có thể lựa chọn hoặc nhập giá trị cho sản phẩm để đặt hàng.<br> Khi bạn quyết định thiết lập một số thuộc tính cho một sản phẩm, bạn cần phải xem xét những gì thuộc tính gì cho sản phẩm (vd: màu sắc, kích cỡ, vật liệu) có thể là quan trọng đối với người mua. Điều này sẽ giúp bạn quyết định loại thuộc tính bạn sẽ cần phải cấu hình.
 </p>						
-<p>If some attributes are common for other products in your store, then you can create Global Attribute once. Next time you want to add attribute to product just select <a class="crosslink" href="/pages/catalog/global_attributes.html">Global Attribute</a> pattern from dropdown menu and click "Add Option" <i class="fa fa-plus-square-o"></i>
- button.</p>
-<p>Or create 'New Option'. <br>Enter the name of new <em>Option</em>, <em>Element Type, Sort order</em> and <em>Required</em> setting.<br> Example <em>Size</em> name and option's type from <em>Element Type</em> dropdown -  <em>Selectbox</em>.</p>
+<p>Nếu một số thuộc tính là áp dụng chung cho các sản phẩm khác trong cửa hàng của bạn, bạn có thể tạo ra thuộc tính toàn cục chỉ một lần. Lần tiếp theo bạn muốn thêm thuộc tính vào sản phẩm chỉ cần chọn <a class="crosslink" href="/pages/catalog/global_attributes.html">Global Attribute</a> từ  trình đơn thả xuống và nhấn nút "Add Option" <i class="fa fa-plus-square-o"></i>.</p>
+<p>Hoặc tạo 'New Option'. <br>Nhập tên cho <em>Option</em> mới, <em>Element Type, Sort order</em> và thiết lập có bắt buộc không <em>Required</em>.<br> Ví dụ <em>Size</em> và kiểu trường  <em>Element Type</em> là <em>Selectbox</em>.</p>
 
 
 
@@ -50,20 +48,21 @@ When you decide to set up some attributes for a product, you need to consider wh
 						<a name="types"></a>
 						<!-- Category Info -->
 						<div class="category-info ">
-							<h3 class="category-title">Attributes types</h3>
-							<h4 class="category-description">AbanteCart supports next field types (Element Types) for attributes</h4>
+							<h3 class="category-title">Các loại trường thuộc tính</h3>
+							<h4 class="category-description">VinaCart hỗ trợ các loại trường (Element Types) cho các thuộc tính</h4>
 							<p><ul>
 							<li>input</li>
-							<li>textarea - this field type for a longer text length than Input field</li>
-							<li>multiselectbox - multiple values for one attribute.</li>
-							<li>selectbox - multiple values for one attribute.</li>
-							<li>radio - multiple values for one attribute.</li>
+							<li>textarea - loại trường này để nhập một văn bản nhiều ký tự hơn là input</li>
+							<li>multiselectbox - chọn nhiều giá trị cho một thuộc tính.</li>
+							<li>selectbox - nhiều giá trị cho một thuộc tính.</li>
+							<li>radio - nhiều giá trị cho một thuộc tính.</li>
 							<li>checkbox</li>
-							<li>checkboxgroup - multiple values for one attribute.</li>
+							<li>checkboxgroup - nhiều giá trị cho một thuộc tính.</li>
 							<li>hidden</li>
-							<li>file - allows file uploads by customer</li>
+							<li>file - cho phép tải file bởi khách hàng</li>
+							<li>color - bảng chọn mầu sắc</li>
 							</ul></p>	
-							<p>Editable attributes - Input, Textarea, File. Adding an editable attribute value  for some product attribute creates an empty editable text area field on the product page where buyers can enter their own custom text before adding the product to their shopping cart. This feature may be used if you are going to provide personalization options for products, like monogramming, embroidery, etc.</p>				
+							<p>thuộc tính có thể chỉnh sửa - input, textarea, File. Thêm một giá trị thuộc tính có thể chỉnh sửa cho một số thuộc tính sản phẩm, tạo một trường nhập giá trị trên trang sản pẩm mà người mua có thể nhập văn bản tùy ý trước khi thêm sản phẩm vào giỏ mua hàng của họ. Tính năng này có thể được sử dụng nếu bạn sẽ cung cấp tùy chọn cá nhân cho các sản phẩm, như thêu ...</p>				
 						</div>
 						<!-- End of Caregory Info -->
 
@@ -77,47 +76,47 @@ When you decide to set up some attributes for a product, you need to consider wh
 						<a name="values"></a>
 						<!-- Category Info -->
 						<div class="category-info ">
-							<h3 class="category-title">Adding Option Values</h3>
+							<h3 class="category-title">Thêm giá trị cho tùy chọn</h3>
 							<h4 class="category-description"></h4>
 					
 						</div>
 						<!-- End of Caregory Info -->
-<p>After creating the new Option please select it's name in the Options list and insert new option 'values' by click on <i class="fa fa-plus-square-o"></i> button.</p>
+<p>Sau khi tạo tùy chọn mới xin vui lòng chọn tên vừa tạo trong danh sách các tùy chọn và thêm giá trị cho tùy chọn mới bằng cách nhấp chuột vào nút <i class="fa fa-plus-square-o"></i> .</p>
 <a class="jcepopup" href="/img/other/catalog-products-options.png"><img src="/img/other/catalog-products-options.png" border="0" alt="" width="500" /></a>
-<p>You can fill/edit the following fields:</p>
-<p><strong>Default:</strong> When configuring multi-value attributes, you can control which of the attribute values should be shown to customers by default.</p>
-<p><strong>Option value:</strong> Enter the name of option value. Example <em>Small, Medium</em> or <em>Large</em>.</p>
-<p><strong>Quantity:</strong> If you are tracking stock, how many of this option you have. Set quantity for unique options value combination that represent one unique product variation.</p>
-<p><strong>Track Stock:</strong> Enabled option value for product to track stock and subtract the quantity after order is placed by customers. This is important setting read more about <a class="crosslink" href="/pages/catalog/products/inventory.html">Stock processing configurations</a>.</p>
+<p>Bạn có thể điền/sửa các trường sau:</p>
+<p><strong>Default:</strong> Khi cấu hình các thuộc tính đa giá trị, bạn có thể cho phép các giá trị thuộc tính mặc định được hiển thị cho khách hàng.</p>
+<p><strong>Option value:</strong> Nhập tên của giá trị tùy chọn. Ví dụ <em>Small, Medium</em> hoặc <em>Large</em>.</p>
+<p><strong>Quantity:</strong> Nếu bạn đang theo dõi kho, có bao nhiêu tùy chọn này bạn có. Thiết lập số lượng kết hợp cho từng giá trị tùy chọn của sản phẩm đại diện cho một sản phẩm.</p>
+<p><strong>Track Stock:</strong> Kích hoạt giá trị tùy chọn cho sản phẩm để theo dõi kho và trừ vào số lượng sau khi khách hàng đặt hàng. Đây là thiết lập quan trọng, xem thêm về <a class="crosslink" href="/pages/catalog/products/inventory.html">cấu hình sử lý kho</a>.</p>
 						<!-- Note -->
 						<div class="note js-note blue-light">
 							<span class="note-close js-close">
 								<i class="fa fa-times"></i>
 							</span>
-							<h4 class="note-title"> Info </h4>
-							<p class="note-description"> Attribute values for product otions can be configured as price and/or weight modifier options that will increase or decrease the price and/or weight of the product (the product's weight affects the shipping cost). </p>
+							<h4 class="note-title"> Thông tin </h4>
+							<p class="note-description"> Các giá trị thuộc tính cho tùy chọn sản phẩm có thể được cấu hình như tùy chọn sửa giá (Price Modifier) và/hoặc trọng lượng  sẽ tăng hoặc giảm giá và/hoặc trọng lượng của sản phẩm (trọng lượng của sản phẩm ảnh hưởng đến chi phí vận chuyển). </p>
 						</div>
 						<!-- End of Note -->
-<p><strong>Price Modifier:</strong> If you wish to charge extra (or less) for this product, enter the amount here. <br>EXAMPLE: Men's extra large t-shirts cost $2 more from the manufacturer. The "+$2.00" will appear in the option box of your storefront. If you wish to DISCOUNT this option, type "-2.00".</p>
-<p><strong>Modify Price By:</strong> select type of price calculation. If you select "$" the new price for this option will be 'manufacturer price' +/- 'option price value in your default currency'. If you select "%" the new price for this option will be 'manufacturer price' +/- 'option price value percents from manufacturer price'.</p>
-<p><strong>Sort Order:</strong> Sort Order set's the order of which the option value will be displayed amongst others.</p>
-<p>By clicking on <em>expand</em> link, the menu will appear with additional fields:</p>
-<p><strong>SKU:</strong> The products option value SKU. In the "SKU" text box you can set a unique identification number for this item.</p>
-<p><strong>Weight:</strong> Enter value that modifies the original product weight.</p>
-<p><strong>Weight Type:</strong> Select the type for weight modifier. % or default weight class are available</p>
-<p><strong>Add media:</strong> click to add media + button. Resource Library popup window will appear. If you add images to option value they appear on storefront only after customer select this option value.</p>
+<p><strong>Price Modifier:</strong> Nếu bạn muốn tính thêm tiền (hoặc ít hơn)  cho sản phẩm này, nhập số tiền ở đây.<br> Ví dụ: áo thun cỡ lớn của nam mất thêm $2 từ nhà sản xuất. Giá "+$2.00" sẽ xuất hiện trong box tùy chọn trên cửa hàng. Nếu bạn muốn giảm giá ở tùy chọn này, gõ "-2.00".</p>
+<p><strong>Modify Price By:</strong> Chọn kiểu tính giá. Nếu bạn chọn "$" giá mới cho tùy chọn này sẽ là 'giá nhà sản xuất' +/- 'giá của tùy chọn với tiền tệ mặc định'. Nếu bạn chọn '%' giá mới cho tùy chọn này sẽ là 'giá nhà sản xuất' +/- 'giá của tùy chọn phần trăm giá trị so vớ giá của nhà sản xuất'.</p>
+<p><strong>Sort Order:</strong> Xếp theo thứ tự các giá trị tùy chọn của sản phẩm hiển thị trên cửa hàng.</p>
+<p>Nhấn vào liên kết <em>expand</em> , menu sẽ xuất hiện với các trường bổ sung:</p>
+<p><strong>SKU:</strong> giá trị tùy chọn SKU của sản phẩm. Trong hộp nhập 'SKU' bạn có thể thiết lập một số nhận dạng duy nhất cho mặt hàng này.</p>
+<p><strong>Weight:</strong> Nhập giá trị sẽ thay đổi trọng lượng mặc định của sản phẩm.</p>
+<p><strong>Weight Type:</strong> Chọn kiểu cho việc sửa đổi trọng lượng. % hoặc lớp trọng lượng mặc định có sẵn</p>
+<p><strong>Add media:</strong> nhấn vào nút +  để thêm media (file). Cửa sổ Resource Library sẽ xuất hiện. Nếu bạn thêm hình ảnh cho giá trị tùy chọn chúng sẽ xuất hiện trên cửa hàng chỉ sau khi  khách hàng chọn giá trị tùy chọn này.</p>
 						<!-- Note -->
 						<div class="note js-note note-bounce">
-							<h4 class="note-title"> Note </h4>
-							<p class="note-description"> Make sure you have disabled/whitelist Adblock+ (or similar) addon in your browser - by default Adblock prevent to load important scripts. </p>
+							<h4 class="note-title"> Chú ý </h4>
+							<p class="note-description"> Hãy chắc chắn rằng bạn đã vô hiệu hóa addon Adblock+ (hoặc tương tự) trên trình duyệt - mặc định Adblock ngăn chặn tải những kịch bản scripts quan trọng. </p>
 						</div>
 						<!-- End of Note -->
 
-<p>After you have made your changes, select the SAVE button</p>
+<p>Sau khi bạn đã thực hiện những thay đổi của bạn, chọn nút SAVE</p>
 
-<p>Additional options available:</p>
-<p><strong>Placeholder:</strong> usually used with <em>input</em> attribute type. The placeholder specifies a short hint that describes the expected value of an input field (e.g. a sample value or a short description of the expected format). The short hint is displayed in the input field before the user enters a value.</p>
-<p><strong>Regular Expression Pattern for Validation of Values:</strong> is a sequence of characters that forms a pattern, mainly for use in pattern matching. Programming knowledge required!</p>
-<p><strong>Error Message of invalid Value:</strong> message text shown when attribute value does not meet Regular Expression Pattern</p>
-<p>To delete <strong>option value</strong> -click on <i class="fa fa-minus-square-o"></i> button.</p>
-<p>To delete <strong>option</strong> - select it in the list and click Remove <i class="fa fa-trash-o"></i> button</p>
+<p>Các tùy chọn bổ sung:</p>
+<p><strong>Placeholder:</strong> Thường được sử dụng với loại thuộc tính <em>input</em>. placeholder gợi ý về giá trị đúng để nhập vào trường. Giá trị này được hiển thị trên trường input trước khi người dùng nhập vào một giá trị.</p>
+<p><strong>Regular Expression Pattern for Validation of Values:</strong> là một chuỗi các ký tự hình để kiểm sự hợp lệ của một chuỗi đầu vào, kiến thức lập trình được yêu cầu !</p>
+<p><strong>Error Message of invalid Value:</strong> Tin nhắn văn bản được hiển thị khi giá trị thuộc tính không khớp với biểu mẫu Regular Expression</p>
+<p>Để xóa <strong>giá trị tùy chọn</strong> -nhấn vào nút <i class="fa fa-minus-square-o"></i> .</p>
+<p>Để xóa <strong>tùy chọn</strong> - chọn nó từ danh sách và nhấn nút xóa <i class="fa fa-trash-o"></i> </p>

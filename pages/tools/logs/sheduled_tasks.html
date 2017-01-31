@@ -1,62 +1,60 @@
 ---
 layout: default
-title: Scheduled tasks
-description: Starting with version 1.2.0 AbanteCart support the creation of scheduled tasks.
+title: Thực thi nhiệm vụ theo lịch trình
+description: VinaCart hỗ trợ việc tạo ra các nhiệm vụ theo lịch trình.
 redirect_from: "/tag/pages_tool_task.html"
 tags: [
-    ['pages_tool_backup', 'Backup and restore'],
+    ['pages_tool_backup', 'Sao lưu và khôi phục'],
 ]
 
 ---
                             <div class="category-info ">
-							<h3 class="category-title">Scheduled Tasks list</h3>
+							<h3 class="category-title">Danh sách các tác vụ theo lịch trình</h3>
 							<h4 class="category-description"> System > Logs > Scheduled Tasks </h4>
 							</div>
-<p>Starting with version 1.2.0 AbanteCart support the creation of scheduled tasks.</p>
+<p>VinaCart hỗ trợ việc tạo ra các nhiệm vụ theo lịch trình.</p>
 <p><a class="jcepopup" href="/img/other/task-grid.png"><img src="/img/other/task-grid.png" border="0" width="400" /></a></p>
-<p>These task can be of two types - with immediate execution and deferred.</p>
-<p>Each task has its own properties, which are stored in a database table <strong>tasks</strong>.</p>
-<p>These properties include:
+<p>Công việc có thể được chia làm 2 loại - thực hiện ngay lập tức và trì hoãn.</p>
+<p>Mỗi công việc có các thuộc tính riêng, được lưu trữ trong một bảng cơ sở dữ liệu <strong>tasks</strong>.</p>
+<p>Các thuộc tính này bao gồm:
  <ul>
 <li>task_id</li><li>
-name - a unique name for the job</li><li>
-starter - user_id of the user who has the right to run the task (top-administrator has it always)</li><li>
-status - status</li><li>
-start_time - task start time</li><li>
-last_time_run - the last task start</li><li>
-progress - the percentage of completion</li><li>
-last_result - 0  - success,  1 - failed </li><li>
-run_interval - start task interval in seconds.</li><li>
-max_execution_time - the maximum duration of the task (not available yet)</li></ul></p>
+name - tên duy nhất cho việc</li><li>
+starter - user_id của người dùng (user) người sẽ chạy công việc (top-administrator has it always: luôn bao gồm quản trị viên)</li><li>
+status - tình trạng</li><li>
+start_time - thời gian bắt đầu nhiệm vụ</li><li>
+last_time_run - thời gian cuối cùng đã chạy</li><li>
+progress - tỷ lệ phần trăm hoàn thành</li><li>
+last_result - 0  - thành công,  1 - lỗi </li><li>
+run_interval - bắt đầu nhiệm vụ trong khoảng thời gian bằng giây.</li><li>
+max_execution_time - thời gian tối đa thực thi nhiệm vụ</li></ul></p>
 
-<p>Table is also used for the extended properties <strong>task_details</strong> in which:
+<p>Bảng dữ liệu (task_details) cũng được sử dụng cho các thuộc tính mở rộng <strong></strong> trong đó:
 <ul><li>task_id</li><li>
-created_by - the name of the one who created the task</li><li>
-settings - abstract serialized array with additional task settings</li></ul></p>
-<p>Each task consists of steps. A description of each step is stored in the database table <strong>task_steps</strong>. As the task, each step has a status sequence number, the last run time and result. In addition, the table must specify RT controller performing step. For example: task / tool / backup / backupfiles</p>
+created_by - tên của một người đã tạo ra nhiệm vụ</li><li>
+settings - chuỗi mã hóa mảng với các cài đặt cho nhiệm vụ</li></ul></p>
+<p>Mỗi nhiệm vụ sẽ bao gồm các bước. Một mô tả của mỗi bước được lưu trữ trong bảng cơ sở dữ liệu <strong>task_steps</strong>. Với các nhiệm vụ, mỗi bước có một trạng thái thể hiển bởi con số, thời gian chạy và kết quả. Ngoài ra, cần chỉ định địa chỉ controller (rt) để thực hiện bước. Ví dụ: task / tool / backup / backupfiles</p>
 
-<p>Also in the table present  <strong>settings</strong> column in which should be recorded the serialized array. This array can be as arguments to functions and additional information on the launch step. For example <strong>interrupt_on_step_fault</strong> set to true or 1 will stop the execution of the remaining steps of the job, if the execution of the step failed.</p>
+<p>Ngoải ra, trong bảng dữ liệu có cột <strong>settings</strong> trong đó lưu dữ liệu mảng mã hóa (serialized). Mảng này có thể là đối số cho hàm và các thông tin bổ xung để thực thi bước (step). Ví dụ <strong>interrupt_on_step_fault=true/1</strong> sẽ dữ thực thi các bước còn lại của công việc, nếu bước thực hiện bị lỗi.</p>
 
-<p>In cases where the execution of at least one of the listed task steps fails, the task is generally considered a failed. In other words, successfully completed task, this task is complete all the steps successfully.</p>
+<p>Trong trường hợp thực hiện ít nhất một trong các bước của công việc bị thất bại,nhiệm vụ đó được coi là thất bại. Nói cách khác, nhiệm vụ hoàn thành, tức là nhiệm vụ này là sử lý thành công ở tất cả các bước.</p>
 
-<p>Running tasks can occur in two ways.</p>
+<p>Chạy nhiệm vụ có thể xảy ra theo hai cách.</p>
 						<!-- Steps -->
 						<ul class="steps">
 							<li class="step">
 								<span class="step-number">1</span>
 								<h4 class="step-title"> </h4>
-								<div class="step-content"> console launch script task.php (from cron). task.php receive a list of all waiting tasks, then sort all in order and run in the background </div>
+								<div class="step-content"> chạy từ console với file task.php (từ cron job). task.php nhận một danh sách các nhiệm vụ đang trong hàng đợi, sau đó sắp xếp tất cả theo thứ tự và chạy ở chế độ ẩn. </div>
 							</li>
 							<li class="step">
 								<span class="step-number">2</span>
 								<h4 class="step-title"> </h4>
-								<div class="step-content"> The launch of the UI (meaning immediately start the event, such as clicking a button). </div>
+								<div class="step-content"> Thao tác chạy nhiệm vụ trên giao diện. </div>
 							</li>
 						</ul>
-<p> In the template admin file public_html / admin / view / default / javascript / general.js there are several js-functions for starting task, opening a modal window and display the start process steps.</p>
+<p> Trong giao diện admin, file public_html / admin / view / default / javascript / general.js có một số hàm để chạy nhiệm vụ (task), mở một cửa sổ modal và hiển thị bắt đầu sử lý các bước.</p>
 
-<p>Functions hang event on an element with the css-class "<strong>task_run</strong>". Also, this element must be two custom attribute: <strong>data-run-task-url</strong> (url to which js-script gets the job description and all the steps in the json-format to run in a loop)
- and <strong>data-complete-task-url</strong> - URL, which will be forwarded to the browser after successful completion of the task.</p>
-<p>As an example of creating and launching an urgent job, see button.
-Admin > Data > <a class="crosslink" href="/pages/tools/backup_restore.html">Backup</a> > “Backup now”.</p>
-<p>To see examples of the data in the database tables described above, click Admin > Data > <a class="crosslink" href="/pages/tools/backup_restore.html">Backup</a> > "Schedule backup".</p>
+<p>Chức năng tạo sự kiện trên thành phần HTML với css-class "<strong>task_run</strong>". Ngoài ra, thành phần này cần có thêm 2 thuộc tính html5: <strong>data-run-task-url</strong> (url mà mã js sẽ lấy thông tin mô tả của nhiệm vụ và tất cả các bước dưới dạng JSON để chạy) và <strong>data-complete-task-url</strong> - URL mà sẽ được chuyển tiếp đến trình duyệt sau khi hoàn thành nhiệm vụ.</p>
+<p>Như ví dụ tạ và chạy một công việc cấp bách, nhìn thấy nút: Admin > Data > <a class="crosslink" href="/pages/tools/backup_restore.html">Backup</a> > “Backup now”.</p>
+<p>Để xem các ví dụ về dữ liệu trong các bảng cơ sở dữ liệu được mô tả ở trên, nhấn Admin > Data > <a class="crosslink" href="/pages/tools/backup_restore.html">Backup</a> > "Schedule backup".</p>

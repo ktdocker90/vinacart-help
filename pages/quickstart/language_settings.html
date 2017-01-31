@@ -1,32 +1,31 @@
 ---
 layout: default
-title: Language Settings
-description: Setting up Languages in your AbanteCart eCommerce application.
+title: Cài đặt ngôn ngữ
+description: Thiết lập cấu hình ngôn ngữ.
 tags: [
-    ['language_listing', 'List Languages'],
-    ['details', 'Details Settings'],
-    ['language_definitions_listing', 'Edit Language Definitions'],
-    ['language_create', 'Create Language'],
+    ['language_listing', 'Danh sách ngôn ngữ'],
+    ['details', 'Cài đặt tổng quan chi tiết'],
+    ['language_definitions_listing', 'Sửa ngôn ngữ'],
+    ['language_create', 'Tạo ngôn ngữ'],
 ]
 redirect_from: "/tag/language_settings.html"
 ---
 
 						<!-- Category Info -->
 						<div class="category-info ">
-							<h3 class="category-title">AbanteCart Settings</h3>
-							<h4 class="category-description"> All installed languages are located in System > Localization > 	<a href="/pages/localization/languages/languages.html">Languages</a></h4>
-						<p>You can easily add new languages using Language extensions. There are several free Language Extensions available on AbanteCart Marketplace, You can find it just right in your AbanteCart Admin > Extensions > Get Extensions section.</p>
-						<p>In case you want to add language manually AbanteCart give you choice to translate all language definitions manually or via <a href="/pages/localization/auto_translate.html">Google Translate API v2 (paid service)</a></p>
+							<!-- <h3 class="category-title">vinacart Settings</h3> -->
+							<h4 class="category-description"> Xem tất cả các ngôn ngữ đã cài đặt tại "Hệ thống > Dịch thuật > 	<a href="/pages/localization/languages/languages.html">ngôn ngữ</a></h4>
+						<p>Bạn có thể dễ dàng thêm một ngôn ngữ mới sử dụng phần mở rộng (Language extensions). Mặc định Vinacart hỗ trợ 2 ngôn ngữ Engish & Vietnamese.</p>
+						<p>Trong trường hợp bạn thêm ngôn ngữ trong admin, vinacart có tùy chọn để dịch tất cả văn bản của ngôn ngữ bằng tay hoặc thông qua <a href="/pages/localization/auto_translate.html">Google Translate API v2 (dịch vụ có phí)</a></p>
 						</div>
 						<!-- Note -->
 						<div class="note js-note ">
-							<h4 class="note-title"> Create New Language Manually </h4>
-							<p class="note-description"> <em>Take a note when you create new language there are two approach:</em><br>
-Create language as an extension for your new language. Pros - you can share after you are done. Cons - you need translate all definitions in the files only.</p>
+							<h4 class="note-title"> Tạo một nguôn ngữ mới (manually) </h4>
+							<p class="note-description"> <em>Hãy chú ý khi bạn tạo ra ngôn ngữ mới có hai cách tiếp cận:</em><br>
+Tạo ngôn ngữ dưới dạng extension. ưu điểm - Bạn có thể chia sẻ sau khi tạo xong. nhược điểm - Bạn chỉ duy nhất dịch được tất cả các văn bản trong file.</p>
 <div class="separator"></div>
-<p class="note-description">Create new language in admin with basic settings. Pros - easy manage translation in Admin > System > Localization > Language Definitions and able to run Automatic Translation (Install google translate extension and translate
-all your store to any language you want. This will use google <em>paid</em> service
-and will cost few dollars). Cons - you can not share your work.
+<p class="note-description">Tạo một ngôn ngữ mới trong admin với cấu hình cơ bản. ưu điểm - dễ dàng quản lý dịch trong "Admin > Hệ thống > Dịch thuật > Đổi nhãn và dịch" và có thể chạy tự động dịch (Cài đặt google translate extension và dịch tất cả những gì trên cửa hàng
+tới mọi ngôn ngữ bạn muốn. Cần sử dụng dịch vụ có phí của google và chi trả một vài dollars). nhược điểm - bạn không thể chia sẻ chúng.
 							 </p>
 						</div>
 						<!-- End of Note -->
@@ -38,8 +37,8 @@ and will cost few dollars). Cons - you can not share your work.
 
 						<!-- Category Info -->
 						<div class="category-info ">
-							<h3 class="category-title">Language Settings</h3>
-							<h4 class="category-description"> Various language settings can be configured in AbanteCart Admin</h4>
+							<h3 class="category-title">Cấu hình ngôn ngữ</h3>
+							<h4 class="category-description"> Các cấu hình liên quan tới ngôn ngữ</h4>
 						</div>
 						<!-- End of Category Info -->
 						<div class="row">
@@ -47,8 +46,8 @@ and will cost few dollars). Cons - you can not share your work.
 								<!-- Box -->
 								<div class="box box-small-icon">
 									<div class="box-icon"><i class="fa fa-home fa-2x"></i></div>
-									<h4 class="box-title">Storefront Language</h4>
-									<p class="box-description">The default language your store uses. Clear your browser cache to see changes. </p>
+									<h4 class="box-title">Ngôn ngữ trên web (Storefront)</h4>
+									<p class="box-description">Ngôn ngữ mặc định cho cửa hàng bạn sử dụng. Xóa bộ nhớ đệm của trình duyệt (browser cache) để thấy thay đổi. Bạn cũng có thể tắt tự động phát hiện ngôn ngữ dựa vào cookie/session tại "Hệ thống > Cài đặt khác > Tổng quan" và tắt "Tự động phát hiện ngôn ngữ". Bởi vì nếu kích hoạt ngôn ngữ trên storefront xác định theo thứ tự bởi session, cookie, ngôn ngữ trình duyệt và cuối cùng bởi cấu hình bạn thiết lập.</p>
 								</div>
 								<!-- End of Box -->
 							</div>
@@ -56,8 +55,11 @@ and will cost few dollars). Cons - you can not share your work.
 								<!-- Box -->
 								<div class="box box-small-icon">
 									<div class="box-icon"><i class="fa fa-reply-all  fa-2x"></i></div>
-									<h4 class="box-title">Auto-translate Status</h4>
-									<p class="box-description">This globally enabled translation of missing text definitions or language specific data if text values are missing for used language. Note: Auto-translate will translate newly created content only, if you want to translate content when edit, please set Override if source language text was changed setting to ON.</p>
+									<h4 class="box-title">Tự động dịch</h4>
+									<p class="box-description">Điều này cho phép sử dụng toàn cục cho việc dịch những văn bản thiếu xót (các nội dung có thể sửa trong admin hỗ trợ nhiều ngôn ngữ) hoặc ngôn ngữ dữ liệu cụ thể nếu giá trị văn bản bị thiếu cho ngôn ngữ được sử dụng. Chú ý: Auto-translate sẽ chỉ dịch nội dung mới được tạo ra, nếu bạn muốn dịch nội dung khi chỉnh sửa, vui lòng bật "translate_override_existing" (dịch nếu văn bản ngôn ngữ nguồn được sửa đổi).<br/>
+
+									Chú ý: Vinacart tắt tính năng này vì lý do người dùng luôn cần dịch lại cho hiển thị chính xác trên website.
+									</p>
 								</div>
 								<!-- End of Box -->
 							</div>
@@ -70,8 +72,8 @@ and will cost few dollars). Cons - you can not share your work.
 								<!-- Box -->
 								<div class="box box-small-icon">
 									<div class="box-icon"><i class="fa fa-th-large fa-2x"></i></div>
-									<h4 class="box-title">Override if source language text was changed</h4>
-									<p class="box-description">If set, text in all languages will be replaced with new translation if source language text is edited. NOTE for Google translate API users: Can cause many translations.</p>
+									<h4 class="box-title">Dịch (Ghi đè) nếu văn bản ngôn ngữ nguồn đã được thay đổi</h4>
+									<p class="box-description">Nếu thiết lập, văn bản của tất cả các ngôn ngữ sẽ được dịch thay thế nếu văn bản ngôn ngữ nguồn được sửa đổi. Chú ý: với người dùng Google translate API: Có thể gây ra nhiều bản dịch.</p>
 								</div>
 								<!-- End of Box -->
 							</div>
@@ -83,8 +85,8 @@ and will cost few dollars). Cons - you can not share your work.
 								<!-- Box -->
 								<div class="box box-small-icon">
 									<div class="box-icon"><i class="fa fa-envelope-o  fa-2x"></i></div>
-									<h4 class="box-title">Source language for translation</h4>
-									<p class="box-description">Select source language to be used for auto-translation. Will work only if you save translatable content in selected source language only. If you change texts in any other languages, translation will not be happening.
+									<h4 class="box-title">Dịch ngôn ngữ nguồn</h4>
+									<p class="box-description">Lựa chọn ngôn ngữ nguồn được sử dụng cho việc tự động dịch (auto-translation). Sẽ chỉ hoạt động nếu bạn lưu nội dung (có thể dịch) với ngôn ngữ nguồn được lựa chọn. Nếu bạn thay đổi văn bản ở mọi ngôn ngữ khác, dịch sẽ không thể xảy ra.
 </p>
 								</div>
 								<!-- End of Box -->
@@ -93,15 +95,8 @@ and will cost few dollars). Cons - you can not share your work.
 								<!-- Box -->
 								<div class="box box-small-icon">
 									<div class="box-icon"><i class="fa fa-envelope  fa-2x"></i></div>
-									<h4 class="box-title">Text Translation Method</h4>
-									<p class="box-description">Select method you want to use for translation. Default method is a straight <em>copy of source language text</em> also others methods can be available if any translation extensions installed. For example: <em>Google translate</em> extension which one use Google Translate API v2 to translate from source language to all other available. See <a target="_blank" href="https://cloud.google.com/translate/v2/using_rest#language-params">list of supported languages by Google translate API v2</a>.</p><p>
-							<div class="row">
-
-							</div>
-
-
-
-</p>
+									<h4 class="box-title">Phương thức dịch văn bản</h4>
+									<p class="box-description">Chọn phương thức bạn muốn sử dụng cho việc dịch. Mặc định là bản sao của ngôn ngữ nguồn và sẽ có thêm những phương thức khác nếu cài đặt thêm phần mở rộng cho dịch thuật (translation extensions) . Ví dụ: <em>Google translate</em> extension sử dụng Google Translate API v2 để dịch ngôn ngữ nguồn ra mọi ngôn ngữ khác. Xem chi tiết <a target="_blank" href="https://cloud.google.com/translate/v2/using_rest#language-params">danh sách các ngôn ngữ được hỗ trợ bởi Google translate API v2</a>.</p>
 								</div>
 								<!-- End of Box -->
 							</div>
@@ -120,15 +115,15 @@ and will cost few dollars). Cons - you can not share your work.
 						<a name="load"></a>
 						<!-- Category Info -->
 						<div class="category-info ">
-							<h3 class="category-title">Load missing language data</h3>
-							<h4 class="category-description">Easiest way to fill missed dynamic language data like menu, category names etc </h4>
+							<h3 class="category-title">Nạp dữ liệu ngôn ngữ còn thiếu</h3>
+							<h4 class="category-description">Cách dễ nhất để điền dữ liệu ngôn ngữ động còn thiếu vd như menu, tên các danh mục .. </h4>
 						</div>
 						<!-- End of Category Info -->
 
 
 
 						<p>
-						<p>Once new language installed You able to <strong>Load missing (not translated) language data</strong> from any other language installed in your store. In Admin Front go to System-&gt;Localization-&gt;Languages and click Edit button opposite new language. Just select Source Language to copy from and click <em>Load</em> button.</p>
+						<p>Khi một ngôn ngữ mới được cài đặt Bạn có thể tiến hành <strong>nạp dữ liệu ngôn ngữ còn thiếu (chưa được dịch) </strong> từ mọi ngôn ngữ khác được cài đặt trên cửa hàng. Trên Admin truy cập Hệ thống-&gt;Dịch thuật-&gt;Ngôn ngữ và nhấn vào nút sửa (Edit) tại dòng ngôn ngữ mới. Chỉ đơn giản chọn ngôn ngữ nguồn để sao chép và nhấn nút <em>Load</em>.</p>
 						</p>
 
 
@@ -138,7 +133,7 @@ and will cost few dollars). Cons - you can not share your work.
 							<span class="note-close js-close">
 								<i class="fa fa-times"></i>
 							</span>
-							<h4 class="note-title"> No Undo </h4>
-							<p class="note-description"> This action will copy all missed language data like Product's and Categories names, descriptions, Length & Weight classes, Order statuses, Tax classes ... etc. </p>
+							<h4 class="note-title"> Không hoàn lại thao tác </h4>
+							<p class="note-description"> Hành động này sẽ sao chép tất cả dữ liệu ngôn ngữ còn thiếu như sản phẩm & tên danh mục, mô tả, Length & Weight classes, trạng thái đơn hàng, Tax classes ... . </p>
 						</div>
 						<!-- End of Note -->

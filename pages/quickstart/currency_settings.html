@@ -1,27 +1,27 @@
 ---
 layout: default
-title: Currency Settings
-description: Setting up Currencies in your AbanteCart eCommerce application.
+title: Cấu hình tiền tệ
+description: Thiết lập tiền tệ trong Vinacart eCommerce.
 tags: [
-    ['regular_install', 'Regular Installation'],
-    ['system_requirements', 'System Requirements']
+    ['regular_install', 'Cài đặt thông thường'],
+    ['system_requirements', 'Yêu cầu hệ thống']
 ]
 redirect_from: "/tag/setup_currencies.html"
 ---
 						<!-- Category Info -->
 						<div class="category-info ">
-							<h3 class="category-title">List of Currencies</h3>
-							<h4 class="category-description">System > Localization > Currencies</h4>
+							<h3 class="category-title">Danh sách tiền tệ</h3>
+							<h4 class="category-description">Hệ thống > Dịch thuật > Tiền tệ</h4>
 						</div>
 						<!-- End of Caregory Info -->
-						<p> List of currencies that are in use in the store. As a rule, multiple currencies are used to display prices on the storefront while payments are usually accepted in the store primary currency only. However, if your payment gateway is configured to accept payments in different currencies, customers that use this gateway will be charged in an alternative (not primary) currency. And the order total will be calculated according to the store currency exchange rate that you define here.</p>
+						<p> Danh sách tiền tệ được sử dụng trong cửa hàng. Nhiều loại tiền tệ được sử dụng để hiển thị giá trên website, trong quá trình thanh toán được chấp thuận. Tuy nhiên, Nếu cổng thanh toán của bạn đã được cấu hình cho phép sử dụng nhiều tiền tệ, khách hàng khi sử dụng thanh toán đó sẽ bị trừ tiền. Và tổng giá trị hóa đơn sẽ tính dựa trên tỷ giá tiền tệ trong cửa hàng mà bạn đã thiết lập.</p>
 						<div class="helper center">
-                                        <img src="../../../img/pages/abantecart-currency-grid.png" class="image isolated" alt="AbanteCart Installation"> </div>
-                        <p>If you have more than one currency, a select Currency drop-down will appear on the storefront pages, through which your customers can choose their preferred currency method.</p>
+                                        <img src="../../../img/pages/vinacart-currency-grid.png" class="image isolated" alt="vinacart Installation"> </div>
+                        <p>Nếu bạn thiết lập nhiều hơn một tiền tệ, currency block sẽ hiển thị danh sách lựa chọn trên website, cho phép khách hàng của bạn có thể chọn loại tiền tệ mà họ muốn.</p>
 						<!-- Note -->
 						<div class="note js-note note-bounce">
-							<h4 class="note-title"> Base Currency </h4>
-							<p class="note-description"> If the currency you are entering is going to be your primary currency you should set the value to 1.00000 </p>
+							<h4 class="note-title"> Tiền tệ mặc định </h4>
+							<p class="note-description"> Nếu tiền tệ bạn muốn thiết lập mặc định (tiền tệ chính) thì đặt giá trị 1.00000 </p>
 						</div>
 						<!-- End of Note -->
 						
@@ -32,8 +32,8 @@ redirect_from: "/tag/setup_currencies.html"
 							<span class="note-close js-close">
 								<i class="fa fa-times"></i>
 							</span>
-							<h4 class="note-title"> Note </h4>
-							<p class="note-description"> All prices that you enter in the Administration panel are assumed to be in the primary currency. </p>
+							<h4 class="note-title"> Chú ý </h4>
+							<p class="note-description"> Tất cả các giá bạn nhập trong quản trị đều là giá thuộc về tiền tệ mặc định. </p>
 						</div>
 						<!-- End of Note -->
 						
@@ -47,8 +47,8 @@ redirect_from: "/tag/setup_currencies.html"
 						<a name="add"></a>
 						<!-- Category Info -->
 						<div class="category-info ">
-							<h3 class="category-title">Add new Currencies</h3>
-							<h4 class="category-description">To add a new Currency click the + button in the Currencies list System > Localization > Currencies</h4>
+							<h3 class="category-title">Thêm tiền tệ mới</h3>
+							<h4 class="category-description">Để thêm một tiền tệ mới nhấn vào nút + trong trang danh sách tiền tệ Hệ thống > Dịch thuật > Tiền tệ</h4>
 						</div>
 						<!-- End of Caregory Info -->
 
@@ -57,38 +57,38 @@ redirect_from: "/tag/setup_currencies.html"
 									<table class="table table-striped">
 										<thead>
 											<tr>
-												<th>Setting</th>
-												<th>Value</th>
+												<th>Cài đặt</th>
+												<th>Giá trị</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr class="">
-												<th scope="row">Status</th>
-												<td>Currency status will determine if the currency is displayed on the front of site.</td>
+												<th scope="row">Status/Trạng thái</th>
+												<td>Trạng thái tiền tệ bật/tắt cho phép sử dụng tiền tệ đó trên website.</td>
 											</tr>
 											<tr class="">
-												<th scope="row">Currency Title</th>
-												<td>Name of the currency as it appears on the storefront</td>
+												<th scope="row">Currency Title/Tên tiền tệ</th>
+												<td>Tên của tiền tệ sẽ xuất hiện trên web</td>
 											</tr>
 											<tr class="">
 												<th scope="row">Code</th>
-												<td>Unique code of the currency. You can find a <a target="_blank" href="https://en.wikipedia.org/wiki/ISO_4217#Active_codes">list of codes here</a>. All currency codes must be in uppercase.</td>
+												<td>Mã số tiền tệ. Bạn có thể tìm ở <a target="_blank" href="https://en.wikipedia.org/wiki/ISO_4217#Active_codes">danh sách mã tiền tệ</a>. Mã tiền tệ cần viết chữ thường.</td>
 											</tr>
 											<tr class="">
-												<th scope="row">Symbol Left</th>
-												<td>The left currency symbol if the currency has one. An example would be the pound sign (&pound;) for pound sterling.</td>
+												<th scope="row">Symbol Left/Ký hiệu trái</th>
+												<td>Ký hiệu tiền tệ bên trái nếu có. VD đồng pound (&pound;).</td>
 											</tr>
 											<tr class="">
-												<th scope="row">Symbol Right</th>
-												<td>The right currency symbol if the currency has one. An example would be the euro sign (&euro;).</td>
+												<th scope="row">Symbol Right/Ký hiệu phải</th>
+												<td>Ký hiệu tiền tệ bên phải nếu có. VD đồng euro (&euro;).</td>
 											</tr>
 											<tr class="">
-												<th scope="row">Decimal Places</th>
-												<td>The number of decimal places used for a particular currency. Some currencies use more than 2 decimal places such as the Kuwaiti Dinar.</td>
+												<th scope="row">Decimal places/Số thập phân</th>
+												<td>Số lượng các chữ số thập phân sử dụng cho một loại tiền tệ đặc biệt. Một số đồng tiền sử dụng nhiều hơn 2 chữ số thập phân như Dinar Kuwait.</td>
 											</tr>
 											<tr class="">
-												<th scope="row">Value</th>
-												<td>The exchange rate to convert store prices from the primary currency to this currency. If the currency you are entering is going to be your default currency you should set the value to 1.00000. The currency value will change automatically if you have auto update currency set to yes.</td>
+												<th scope="row">Value/Giá trị</th>
+												<td>Tỷ giá hối đoái để chuyển đổi giá cửa hàng từ tiền tệ chính đến đồng tiền này. Nếu tiền tệ bạn đang nhập sẽ là tiền tệ mặc định của bạn, bạn nên thiết lập giá trị 1.00000. Giá trị tiền tệ sẽ thay đổi tự động nếu bạn thiết lập tự động cập nhật bộ tiền tệ.</td>
 											</tr>
 										</tbody>
 									</table>
@@ -102,8 +102,8 @@ redirect_from: "/tag/setup_currencies.html"
 						<span class="note-close js-close">
 								<i class="fa fa-times"></i>
 							</span>
-							<h4 class="note-title"> Decimal Point </h4>
-							<p class="note-description"> To modify point format go to System > Localization > Language Definitions and filter grid by decimal_point or thousand_point key. </p>
+							<h4 class="note-title"> Dấu thập phân </h4>
+							<p class="note-description"> Để thay đổi định dạng dấu truy cập "Hệ thống > Dịch thuật > Đổi nhãn và dịch" và sử dụng bộ lọc tìm tên cấu hình decimal_point hoặc thousand_point. </p>
 						</div>
 						<!-- End of Note -->
 						
@@ -113,8 +113,8 @@ redirect_from: "/tag/setup_currencies.html"
 						<a name="settings"></a>
 						<!-- Category Info -->
 						<div class="category-info ">
-							<h3 class="category-title">Currencies settings</h3>
-							<h4 class="category-description">Additional currency related settings</h4>
+							<h3 class="category-title">Cấu hình tiền tệ</h3>
+							<h4 class="category-description">Cài đặt bổ sung tiền tệ liên quan</h4>
 						</div>
 						<!-- End of Caregory Info -->
 						<div class="row">
@@ -122,17 +122,17 @@ redirect_from: "/tag/setup_currencies.html"
 								<!-- Box -->
 								<div class="box box-small-icon">
 									<div class="box-icon"><i class="fa fa-home fa-2x"></i></div>
-									<h4 class="box-title">Default Storefront Currency</h4>
-									<p class="box-description">System > Settings > Details<br>
-									Will determine what currency will be displayed on the front of site by default.</p>
+									<h4 class="box-title">Tiền tệ mặc định trên web</h4>
+									<p class="box-description">Hệ thống > Cài đặt > Chi tiết<br>
+									Sẽ xác định tiền tệ mặc định được dùng trên website (storefront).</p>
 									
 									<!-- Note -->
 						<div class="note js-note blue">
 						<span class="note-close js-close">
 								<i class="fa fa-times"></i>
 							</span>
-							<h4 class="note-title"> Product Prices </h4>
-							<p class="note-description"> Changing default currency does not convert all product prices</p>
+							<h4 class="note-title"> Giá các sản phẩm </h4>
+							<p class="note-description"> Thay đổi tiền tệ mặc định không làm thay đổi tất cả các giá cũ của sản phẩm.</p>
 						</div>
 						<!-- End of Note -->
 								</div>
@@ -142,9 +142,16 @@ redirect_from: "/tag/setup_currencies.html"
 								<!-- Box -->
 								<div class="box box-small-icon">
 									<div class="box-icon"><i class="fa fa-reply-all  fa-2x"></i></div>
-									<h4 class="box-title">Auto Update Currency</h4>
-									<p class="box-description">System > Settings > Details. <br>If set to yes your store will automatically get currency rates and update the values daily (Yahoo server used). Logout and Login again to Admin front to see changes.</p>
+									<h4 class="box-title">Tự động cập nhật tiền tệ</h4>
+									<p class="box-description">Hệ thống > Cài đặt > Chi tiết. <br>Nếu kích hoạt sẽ tự động lấy tỷ giá tiền tệ và cập nhật hàng ngày (Sử dụng Yahoo server). Đăng xuất & đăng nhập quay trở lại Admin bạn sẽ thấy thay đổi.</p>
 								</div>
 								<!-- End of Box -->
+							</div>
+							<div class="col-md-6">
+								<div class="box box-small-icon">
+									<!-- <div class="box-icon"><i class="fa fa-reply-all  fa-2x"></i></div> -->
+									<h4 class="box-title">Tự động phát hiện tiền tệ</h4>
+									<p class="box-description">Mặc định tiền tệ trên storefront dựa theo cấu hình bạn cài đặt. Nếu kích hoạt tự động phát hiện tiền tệ "Hệ thống > Cài đặt khác > Tổng quan" thì tiền tệ sẽ xác định theo thứ tự bởi: tham số URL, session, cookie, và cuối cùng lấy bởi cấu hình bạn thiết lập.</p>
+								</div>
 							</div>
 						</div>

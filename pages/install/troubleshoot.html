@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Installation Troubleshoot
-description: In case you run in to an install issue, check below most common problems and solutions.
+title: Sửa lỗi cài đặt
+description: Trường hợp bạn gặp vấn đề trong quá trình cài đặt vinacart, kiểm tra những lỗi thông thường dưới đây.
 redirect_from: "/tag/install_troubleshoot.html"
 tags: [
     ['auto_update', 'Run upgrade in admin'],
@@ -11,15 +11,15 @@ tags: [
 <ul class="steps">
     <li class="step">
     	<span class="step-number"><i class="fa fa-exclamation fa-fw"></i></span>
-    	<h4 class="step-title">Warning: Your server have opcache php module enabled. Please disable it before installation! </h4>
+    	<h4 class="step-title">Cảnh báo: Nếu server của bạn có kích hoạt opcache php module. Vui lòng tắt đi trước khi tiến hành cài đặt! </h4>
     	<div class="step-content">
-    	Solution: You can try one of the following:
+    	Giải pháp: Thực hiện một trong hai cách sau để tắt opcache:
 <br>
-1. If PHP runs as Apache module, use an .htaccess file:<br>
+1. Nếu PHP chạy dưới Apache module, sử dụng file .htaccess:<br>
 php_flag opcache.enable Off<br><br>
 
 
-2.If PHP runs as CGI/FastCGI, use a .user.ini file:<br>
+2.Nếu PHP chạy dưới CGI/FastCGI, sử dụng file .user.ini:<br>
 opcache.enable=0</div>
     </li>
 

@@ -1,43 +1,45 @@
 ---
 layout: default
-title: Backup
-description: AbanteCart backup and restore
+title: Sao lưu
+description: Sao lưu và khôi phục
 redirect_from: "/tag/pages_tool_backup.html"
 tags: [
-    ['pages_tool_updater', 'Run upgrade in admin'],
+    
 ]
 
 ---
-
+<!--
+	['pages_tool_updater', 'Run upgrade in admin'],
+-->
 <p>
-<a class="anchorlink" href="#abantecartbackup">AbanteCart built in backup and restore</a><br>
-<a class="anchorlink" href="#externalbackup">External backup and restore</a><br><br>
+<a class="anchorlink" href="#vinacartbackup">Tích hợp sao lưu và khôi phục nội bộ</a><br>
+<a class="anchorlink" href="#externalbackup">Sao lưu bên ngoài và khôi phục</a><br><br>
 </p>
 						<!-- Category Info -->
 						<div class="category-info ">
-						<a id="abantecartbackup" class="anchor"></a>
-							<h3 class="category-title">AbanteCart built in Backup and Restore</h3>
+						<a id="vinacartbackup" class="anchor"></a>
+							<h3 class="category-title">Vinacart tích hợp sao lưu Và khôi phục dữ liệu</h3>
 							<h4 class="category-description">System > Data > Backup & Restore</h4>
-							<p>Save or restore a full or partial copy of your store's database to your personal computer</p>
+							<p>Lưu và khôi phục đầy đủ hoặc một phần cơ sở dữ liệu từ cửa hàng vào máy tính.</p>
 						</div>
 						<!-- Category Info -->
 
 
 <p>
 <a class="jcepopup" href="/img/other/backup.png"><img src="/img/other/backup.png"  width="500" /></a></p>
-<p><strong>Backup</strong> - Save a full or partial copy of your store's database to your personal computer in SQL database format.<br /> This does NOT save a copy of your all store files like <em>.php</em> . Partial copy mean that you can backup (and restore it later) only part of your database for example backup only main products info by selecting <em>products, products_description </em>and<em> products_to_category, products_to_store</em> tables and backup Resource Library Files.<br>Starting with version 1.2.0 AbanteCart support the creation of scheduled <a class="crosslink" href="/pages/tools/logs/sheduled_tasks.html">backup</a><br>
+<p><strong>Backup</strong> - Lưu đầy đủ hoặc một phần cơ sở dữ liệu của cửa hàng của bạn vào máy tính ở định dạng cơ sở dữ liệu SQL.<br /> Điều này không sao chép tất cả các file như <em>.php</em> . bản sao một phần có nghĩa là bạn có thể sao lưu (và khôi phục lại nó sau này) chỉ là một phần của cơ sở dữ liệu, ví dụ chỉ sao lưu thông tin sản phẩm bằng cách chọn bảng <em> sản phẩm, products_description </em> và <em>products_to_category, products_to_store</em> và sao lưu tập tin tài nguyên Thư viện (Resource Library).<br> vinacart hỗ trợ việc tạo <a class="crosslink" href="/pages/tools/logs/sheduled_tasks.html">sao lưu</a> theo lịch trình<br>
 </p>
 						<!-- Note -->
 						<div class="note js-note blue">
-							<h4 class="note-title"> Note </h4>
-							<p class="note-description">  backup process execution depends on your AbanteCart data size as well as your server virtual memory size:
- <br>in most cases that error related to 2 causes:<br>
-1. memory for php is not enough<br>
-2. time for executing php-script exceeds limit<br>
-3. check directory /../admin/system/backup permissions to be set to -rw-rw-rw <br>
+							<h4 class="note-title"> Chú ý </h4>
+							<p class="note-description">  Thực hiện quá trình sao lưu phụ thuộc vào kích thước dữ liệu vinacart của bạn cũng như kích thước bộ nhớ ảo máy chủ của bạn:
+ <br>trong hầu hết các trường hợp lỗi có liên quan đến 2 nguyên nhân:<br>
+1. không đủ bộ nhớ cho php<br>
+2. vượt quá giới hạn thời gian để thực hiện mã php<br>
+3. Kiểm tra thư mục /../admin/system/backup thiết lập quyền -rw-rw-rw <br>
 
-Both causes regulated by <a href="http://php.net/manual/en/ini.core.php#ini.memory-limit" target="_blank">php.ini</a> directives but have global server limitations (hosting limitations).
- If you can not to change them we recommended to do full backup of your abantecart in hosting provider CPanel (ask hosting provider support about this, or just do export of whole database from phpmyadmin and copy all files via ftp access) </p>
+Cả hai nguyên nhân theo quy định của tệp <a href="http://php.net/manual/en/ini.core.php#ini.memory-limit" target="_blank">php.ini</a> nhưng có giới hạn toàn cục trên server (giới hạn hosting).
+ Nếu bạn không thể thay đổi chúng, chúng ta nên sao lưu đầy đủ bản vinacart trên trang quản trị nhà cung cấp hosting CPanel (yêu cầu nhà cung cấp hosting hỗ trợ điều này hoặc chỉ export toàn bộ cơ sở dữ liệu từ phpmyadmin và sao chép tất cả các file thông qua truy cập ftp)</p>
 						</div>
 						<!-- End of Note -->
 
@@ -45,15 +47,15 @@ Both causes regulated by <a href="http://php.net/manual/en/ini.core.php#ini.memo
 
 
 
-<h4 class="category-description">Restore</h4>
-<p>Restore a full or partial copy of your store's database from your local computer. <br /> To restore backup unpack archive file and browse <em>dump.sql</em> file from unarchived \manual_backup_20xx\data\ folder then click GO button. To restore Resource Library Files copy all contents of "code" directory to your AbanteCart directory. You need to override directories and files if your copy process request confirmation.</p>
+<h4 class="category-description">Restore/Khôi phục</h4>
+<p>Khôi phục đầy đủ hoặc một phần của cơ sở dữ liệu của cửa hàng từ máy tính của bạn. <br /> Để khôi phục bản backup, giải nén tệp nén và duyệt file <em>dump.sql</em> từ thư mục \manual_backup_20xx\data\ và nhấn nút GO. Để khôi phục các thư viện tập tin tài nguyên sao chép tất cả các nội dung của thư mục "code" vào thư mục vinacart của bạn. Bạn cần phải ghi đè lên các thư mục và tập tin nếu quá trình sao chép yêu cầu xác nhận của bạn.</p>
 						<!-- Note -->
 						<div class="note js-note blue">
 							<span class="note-close js-close">
 								<i class="fa fa-times"></i>
 							</span>
-							<h4 class="note-title"> Note </h4>
-							<p class="note-description"> All Backup files are located in the Admin > System > Logs > <a class="crosslink" href="/pages/tools/logs/install_history.html">Install/Upgrade History</a> section and saved in <em>.tar.gz</em> archive format. To extract tar.gz file upload it to your PC then open using archive software for example free <em>7-Zip</em> and unpack. </p>
+							<h4 class="note-title"> Chú ý </h4>
+							<p class="note-description"> Tất cả các file sao lưu được đặt tại Admin > System > Logs > <a class="crosslink" href="/pages/tools/logs/install_history.html">Install/Upgrade History</a> và lưu với định dạng nén <em>.tar.gz</em>. Để giải nén tập tin tar.gz tải nó về máy tính của bạn, sau đó mở bằng phần mềm lưu trữ miễn phí ví dụ <em> 7-Zip </em> và giải nén. </p>
 						</div>
 						<!-- End of Note -->
 
@@ -69,24 +71,24 @@ Both causes regulated by <a href="http://php.net/manual/en/ini.core.php#ini.memo
 						<!-- Category Info -->
 						<div class="category-info ">
 						<a id="externalbackup" class="anchor"></a>
-							<h3 class="category-title">External backup and restore</h3>
+							<h3 class="category-title">Sao lưu bên ngoài và khôi phục</h3>
 							<h4 class="category-description"></h4>
 							
 						</div>
 						<!-- Category Info -->
 
-<p>If for any reason built in backup is not working for you, you can use standard way to back up code and database. There are 2 steps in the back up and you need linux shell access:</p>
+<p>Nếu vì bất kỳ lý do nào, tích hợp sao lưu không hoạt động, bạn có thể sử dụng cách đơn thuần để sao lưu code và cơ sở dữ liệu. Có 2 bước để sao lưu, bạn cần truy cập shell Linux:</p>
 <!-- Steps -->
 						<ul class="steps">
 							<li class="step">
 								<span class="step-number">1</span>
-								<h4 class="step-title">Backup code using  tar and gz command line tools.</h4>
+								<h4 class="step-title">Sao lưu code sử dụng công cụ tar và gz bằng dòng lệnh.</h4>
 								<div class="step-content"> cd /your_webdirectory<br>
 tar -cvpz backup.tar.gz *<br> </div>
 							</li>
 							<li class="step">
 								<span class="step-number">2</span>
-								<h4 class="step-title">Create database export.</h4>
+								<h4 class="step-title">Xuất cơ sở dữ liệu.</h4>
 								<div class="step-content"> mysqldump -u database_username -p[password] database_name --opt > filename.sql</div>
 							</li>
 						</ul>
@@ -102,7 +104,7 @@ tar -cvpz backup.tar.gz *<br> </div>
 						<!-- Category Info -->
 						<div class="category-info ">
 						<a id="externalbackup2" class="anchor"></a>
-							<h3 class="category-title">Cpanel backup and restore</h3>
+							<h3 class="category-title">Sao lưu và khôi phục với Cpanel</h3>
 							<h4 class="category-description"></h4>
 							
 						</div>
@@ -111,25 +113,25 @@ tar -cvpz backup.tar.gz *<br> </div>
 							<span class="note-close js-close">
 								<i class="fa fa-times"></i>
 							</span>
-							<h4 class="note-title"> Warning </h4>
-							<p class="note-description"> Cpanel backup is not AbanteCart related. Below information is for general information purposes only. </p>
+							<h4 class="note-title"> Cảnh báo </h4>
+							<p class="note-description"> Sao lưu sử dụng Cpanel không liên quan đến vinacart. Thông tin bên dưới với mục đích dành cho thông tin chung. </p>
 						</div>
 						<!-- End of Note -->
 						<!-- Category Info -->
-<p>You can create a backup of your site quite easily. Account backups can be performed using the cPanel -> Backups functionality for your hosting account.</p>
-<p>Additionally you can use standard way to back up all files and database. There are 2 steps in the back up and you need hosting cPanel access:</p>
+<p>Bạn có thể tạo một bản sao lưu của website một cách nhanh chóng. Được thực hiện trên tính năng cpanel -> Backups cho tài khoản hosting của bạn.</p>
+<p>Ngoài ra, bạn có thể sử dụng cách thông thường để sao lưu toàn bộ files và cơ sở dữ liệu. Có 2 bước để backup và bạn cần truy cập cPanel:</p>
 
 						<!-- Steps -->
 						<ul class="steps">
 							<li class="step">
 								<span class="step-number">1</span>
-								<h4 class="step-title">Backup code (files).</h4>
-								<div class="step-content"> In order to backup your files, you should download all the files from your public_html folder to your computer using your favorite FTP client. After that you can easily upload back the files to your hosting account and your website will be restored. </div>
+								<h4 class="step-title">Sao lưu code (tệp tin).</h4>
+								<div class="step-content"> Để sao lưu tệp tin của bạn, bạn nên tải về tất cả các tập tin từ thư mục public_html của bạn vào máy tính sử dụng phần mềm FTP yêu thích. Sau đó bạn có thể dễ dàng tải lên hosting của bạn và trang web của bạn sẽ được phục hồi. </div>
 							</li>
 							<li class="step">
 								<span class="step-number">2</span>
-								<h4 class="step-title">Create database export.</h4>
-								<div class="step-content"> Once having all the files on your computer, you should make a dump of your MySQL database. In order to do so you should access the phpMyAdmin tool available in your cPanel. You can select the database that you would like to backup from the Database menu (located in the upper left corner of the page). In order to proceed with the backup click on the Export tab. </div>
+								<h4 class="step-title">Xuất cơ sở dữ liệu.</h4>
+								<div class="step-content"> Một khi có tất cả các tập tin trên máy tính của bạn, bạn nên thực hiện xuất nội dung cơ sở dữ liệu MySQL. Để làm như vậy, bạn cần truy cập vào các công cụ database có sẵn trong cpanel như cụ phpMyAdmin. Bạn có thể chọn các cơ sở dữ liệu mà bạn muốn sao lưu từ menu Database (nằm ở góc trên bên trái của trang). Và nhấn vào tab Export. </div>
 							</li>
 						</ul>
 

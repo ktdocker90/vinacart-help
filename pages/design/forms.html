@@ -1,54 +1,56 @@
 ---
 layout: default
 title: Forms 
-description: Manage Forms
+description: Quản lý Forms
 redirect_from: "/tag/forms_manager.html"
 tags: [
-    ['block_listing', 'Blocks List'],
-    ['menu_listing', 'Edit Menu'],
-    ['content_listing', 'Content Pages'],
+    ['block_listing', 'Danh sách Blocks'],
+    ['menu_listing', 'Sửa Menu'],
+    ['content_listing', 'Các trang nội dung'],
     ['forms_block_edit', 'Form Block'],
     ['pages_tool_files', 'File Uploads'],
 ]
 ---
 						<!-- Category Info -->
 						<div class="category-info ">
-							<h3 class="category-title">Forms Manager</h3>
-							<h4 class="category-description">Design > Forms Manager</h4>
+							<h3 class="category-title">Quản lý Forms</h3>
+							<h4 class="category-description">Thiết kế > Forms</h4>
 							
 						</div>
 						<!-- Category Info -->
-<p>Forms manager extension provides very powerful tools to manage customer's forms in AbanteCart. You can create and edit forms with various data/html fields types and pre-defined values. <br /></p>
+<p>Mở rộng quản lý forms cung cấp công cụ hữu ihcsh giúp bạn quản lý form trong vinacart. Bạn có thể tạo và sửa forms với các kiểu trường đa dạng khác nhau và một số trường có giá trị mặc định. <br /></p>
 <p><a class="jcepopup" href="/img/other/forms-grid.png"><img src="/img/other/forms-grid.png" border="0" width="500" /></a></p>
 <p>
-Fields in the form will be selected and submitted by your customers.<br />
-To add a new form click the + button. Look for all available field types and values and select and fill what is needed for your form.
-Once you add new field you can set details value or values to created field.
-Fields can be required. This will require your customers to select or provide input. 
+Trường trong form được sử dụng bởi khách hàng.<br />
+Để thêm một form mới nhấn nút + . Điền vào tất cả các trường, nhập giá trị, chọn giá trị mà bạn muốn gửi thông tin.
+Khi bạn thêm một trường mới bạn có thể thiết lập một hay nhiều giá trị.
+Các trường có thể được yêu cầu. Điều này sẽ yêu cầu khách hàng chọn từ danh sách hoặc nhập giá trị. 
 </p><p> <a class="jcepopup" href="/img/other/edit-form.png"><img src="/img/other/edit-form.png" border="0" width="500" /></a></p>
 
-<p><strong>Form Name:</strong> The form name as it will appear in the admin front.</p>
-<p><strong>Description:</strong>  as it will appear in the front-end.</p>
-<p><strong>Processing Controller:</strong> select <em>Default Email</em>. Submitted forms will be emailed to your store email</p>
-<p><strong>Success page:</strong> Leave it empty if you want to redirect to the same page as controller</p>
-<p>After you have made your changes, select the SAVE button.</p>
+<p><strong>Form Name/Tên form:</strong> Tên form sẽ hiển trị trong admin.</p>
+<p><strong>Description/Mô tả:</strong>  mô tả của form sẽ hiển thị trên website.</p>
+<p><strong>Processing Controller:</strong> Chọn controller sử lý cho form khi gửi thông tin, mặc định là <em>Default Email</em>. Form được gửi thông tin sẽ gửi mail cho chủ cửa hàng với nội dung nhập.</p>
+<p><strong>Success page:</strong> địa chỉ thành công. Để trống nếu bạn muốn form chuyển hướng cùng với controller sử lý dữ liệu (Processing Controller).</p>
+<p>Sau khi thiết lập thay đổi, chọn nút Lưu.</p>
 
 						<!-- Note -->
 						<div class="note js-note blue">
-							<h4 class="note-title"> Info </h4>
-							<p class="note-description"> Few more important settings require configuration are Default Sender and Default Sender Email available in Admin > Extensions > All extensions > Forms Manager extension.</p>
+							<h4 class="note-title"> Thông tin </h4>
+							<p class="note-description"> Một số cài đặt quan trọng yêu cầu cấu hình: tên người gửi. Email có sẵn trong Admin > Extensions > All extensions > Forms Manager.</p>
 						</div>
 						<!-- End of Note -->
 
-<p>Create block that will include your new form. Form can be added to block and located on any placeholder of existing pages. To create Custom Forms Block go to Admin-Design-<a class="crosslink" href="/pages/design/blocks/search.html">Blocks</a> and click the + button, select <em>Custom Forms Block</em> option.<br />
-Once block created select pages there you want to show form block. This can be done in Admin > Design > <a class="crosslink" href="/pages/design/layouts.html">Layouts</a> or in the layout for product, category, manufacturer and content edit pages.<br />
-Locate placeholder in the page layout, there you like form to be located, add form block. Save<br />
-Note: New page can be created just for form in Admin > Design-<a class="crosslink" href="/pages/design/content_pages.html">Content</a> section and form block can be added to this page.
+<p>Tạo block để chèn form của bạn. Form có thể được thêm vào block và nằm trên bất kỳ vị trí nào trên một trang nào đó. Để tạo Custom Forms Block chuyển đến Admin-Thiết kế-<a class="crosslink" href="/pages/design/blocks/search.html">Blocks</a> và nhấn nút + , lựa chọn mục <em>Custom Forms Block</em> .<br />
+Khi block tạo, chọn pages mà bạn muốn hiển thị form trên đó. Thực hiện điều này trong Admin > Thiết kế > <a class="crosslink" href="/pages/design/layouts.html">Bố cục</a> hoặc bố cục cho sản phẩm, danh mục, nhà sản xuất và các trang sửa nội dung.<br />
+Xác định vị trí trên trang bố cục, bạn muốn đặt form và thêm block form. Lưu lại<br />
+Chú ý: Trang mới có thể tạo để chỉ chứa form , tại Admin > Thiết kế-<a class="crosslink" href="/pages/design/content_pages.html">Trang nội dung</a> và form block có thể được thêm vào trang này.
 </p>
-<p>File Upload Field Type Notes:<br />
-To set up "file upload" field type you'll see additional non-required settings:<br />
-<ul><li>Allowed Extensions are file extensions (ex.: png) that are allowed for upload. Several extensions may be separated with coma.</li><li>
-Min/Max Size - min/max allowed file size in Kb.</li><li>
-Upload Directory - directory where uploaded files will be saved. Your directory will be created in _your_site_folder_/admin/system/uploads. If you'll leave this field empty, files will be uploaded to default directory.</li></ul>
+<p>Ghi chú kiểu trường tải file:<br />
+Để thiết lập kiểu trường tải file "file upload" bạn sẽ thấy thêm các thiết lập không bắt buộc yêu cầu:<br />
+<ul><li>Cho phép tải các tệp mở rộng (vd: png). Nhiều đuôi mở rộng ngăn cách bởi dấu phẩy.</li>
+	<li>Min/Max Size - min/max cho phép kích thước tối thiểu/tối đa (Kb).</li>
+	<li>
+Thư mục tải - thư mục nơi mà các files được tải lên. Thư mục này sẽ được tạo trong _your_site_folder_/admin/system/uploads. Nếu bạn để trống trường này, files sẽ được tải vào thư mục mặc định.</li>
+</ul>
 </p><p>
-You can see uploaded files at Control Panel > System > Data > <a class="crosslink" href="/pages/tools/file_uploads.html">File Uploads</a></p>
+bạn có thể xem các files đã tải ở Control Panel > Hệ thống > Dữ liệu > <a class="crosslink" href="/pages/tools/file_uploads.html">Tải lên</a></p>

@@ -1,18 +1,18 @@
 ---
 layout: default
-title: Going live checklist
-description: Setting up Mail in your AbanteCart eCommerce application.
+title: Kiểm tra cấu hình
+description: Cấu hình Mail.
 redirect_from: "/tag/checklist.html"
 tags: [
-    ['regular_install', 'Regular Installation'],
-    ['system_requirements', 'System Requirements']
+    ['regular_install', 'Cài đặt thông thường'],
+    ['system_requirements', 'Yêu cầu hệ thống']
 ]
 ---
 
 						<!-- Category Info -->
 						<div class="category-info ">
-							<h3 class="category-title">Going live checklist</h3>
-							<h4 class="category-description"> Making sure everything is ready for the actual first day of live use.</h4>
+							<h3 class="category-title">Danh sách cần kiểm tra</h3>
+							<h4 class="category-description"> Hãy đảm bảo mọi thứ đã được cấu hình ngay sau khi đã xuất bản vinacart.</h4>
 						</div>
 						<!-- End of Caregory Info -->
 
@@ -23,25 +23,26 @@ tags: [
 							
 							<!-- Steps -->
 							<ul class="steps">
+								<!--
 								<li class="step">
 									<span class="step-number">1</span>
 									<h4 class="step-title">Install an SSL certificate for the website.</h4>
 									<div class="step-content"> Note: your domain name with and without the "www" part to be two different websites. </div>
-								</li>
+								</li> -->
 								<li class="step">
 									<span class="step-number">2</span>
-									<h4 class="step-title">Put the payment processor in live mode.</h4>
-									<div class="step-content"> To use a payment gateway in AbanteCart, you will first need to create an account with one of the payment gateway providers. </div>
+									<h4 class="step-title">Cổng thanh toán.</h4>
+									<div class="step-content"> Nếu sử dụng cổng thanh toán trực tuyến, bạn sẽ cần đăng ký một tài khoản từ nhà cung cấp dịch vụ thanh toán (vd: paypal,..). </div>
 								</li>
 								<li class="step">
 									<span class="step-number">3</span>
-									<h4 class="step-title">Test shipping options (FedEx, UPS)</h4>
-									<div class="step-content"> If you are selling goods that need to be shipped to your customers (as opposed to digital products such as software than can be downloaded), you need to add at least one shipping option </div>
+									<h4 class="step-title">Tùy chọn vận chuyển (FedEx, UPS)</h4>
+									<div class="step-content"> Nếu bạn đang bán hàng hóa bạn cần vận chuyển đến khách hàng (không như sản phẩm số "digital products" vd phần mềm thì có trang cho phép tải về ), mặc định chúng tôi sử dụng phương thức vận chuyển là giao hàng thu tiền </div>
 								</li>
 								<li class="step">
 									<span class="step-number">4</span>
-									<h4 class="step-title">Test credit card transaction.</h4>
-									<div class="step-content"> Process test transactions through payment. </div>
+									<h4 class="step-title">Kiểm tra giao dịch thẻ tín dụng.</h4>
+									<div class="step-content"> Nếu sử dụng giao dịch này thì kiểm tra. </div>
 								</li>
 								<li class="step">
 									<span class="step-number">5</span>
@@ -50,59 +51,59 @@ tags: [
 								</li>
 								<li class="step">
 									<span class="step-number">6</span>
-									<h4 class="step-title">Reset Order start number.</h4>
-									<div class="step-content"> System > Settings > Checkout. Note: some online payment processors like PayPal may cause duplicate orders ID problem in case you reinstall cart (AbanteCart order id numbers being the same as invoice numbers already used in Paypal with old cart installation).</div>
+									<h4 class="step-title">Thiết lập số hóa đơn bắt đầu.</h4>
+									<div class="step-content"> Hệ thống > Cài đặt > Thanh toán. Chú ý: một vài nhà thanh toán trực tuyến như PayPal sẽ xẩy ra lỗi nếu trùng lặp số hóa đơn (orders ID) trong trường hợp bạn cài đặt lại vinacart (Chỉ số hóa đơn trong Vinacart sẽ trùng với các hóa đơn đã tồn tại trong Paypal với cài đặt trước).</div>
 								</li>
 								<li class="step">
 									<span class="step-number">7</span>
-									<h4 class="step-title">Test placing an order, check tax, subtotal, totals.</h4>
-									<div class="step-content"> You must configure the tax rate for your business before accepting sales.  The moment your online store is activated, we recommend you complete an "end to end" test of the payment process. </div>
+									<h4 class="step-title">Đặt một đơn hàng , kiểm tra thuế (tax), tổng phụ, tổng.</h4>
+									<div class="step-content"> Vinacart thiết lập thuế mặc định 10% ở việt nam cho kinh doanh của bạn. </div>
 								</li>
 								<li class="step">
 									<span class="step-number">8</span>
-									<h4 class="step-title">Confirm order is placed.</h4>
-									<div class="step-content"> Once an order is completed and payment is taken by the payment gateway, full details of the order will appear in your list of orders Sales > Orders  </div>
+									<h4 class="step-title">Xác nhận hóa đơn.</h4>
+									<div class="step-content"> Sau khi khách hàng đã đặt hàng , thông tin đầy đủ về hóa đơn sẽ hiển thị trong menu Bán hàng > Hóa đơn.  </div>
 								</li>
 								<li class="step">
 									<span class="step-number">9</span>
-									<h4 class="step-title">Verify New Customer Registration.</h4>
-									<div class="step-content"> When a customer submits an online registration, a new account is created immediately. Make sure that the customer record exists in Sales > Customers </div>
+									<h4 class="step-title">Xác nhận khách hàng đăng ký mới.</h4>
+									<div class="step-content"> Khi một khách hàng đăng ký trực tuyến, một tài khoản được tạo ngay lập tức. Hãy chắc chắn thông tin khách hàng được lưu tại "Bán hàng > khách hàng" </div>
 								</li>
 								<li class="step">
 									<span class="step-number">10</span>
-									<h4 class="step-title">Clear out dummy records and test orders.</h4>
-									<div class="step-content"> Delete test orders in Sales > Orders section  </div>
+									<h4 class="step-title">Xóa các dữ liệu thêm vào trong khi bạn thử nghiệm.</h4>
+									<div class="step-content"> Xóa khách hàng, đơn hàng và dữ liệu khác bạn thử nghiệm tính năng.  </div>
 								</li>
 								<li class="step">
 									<span class="step-number">11</span>
-									<h4 class="step-title">Make sure you have a privacy policy and Terms & Conditions.</h4>
-									<div class="step-content"> Add or edit your polices in Design > Content </div>
+									<h4 class="step-title">Đảm bảo rằng bạn có chính sách điều khoản.</h4>
+									<div class="step-content"> Thêm hoặc sửa trang trang điều khoản áp dụng cho cửa hàng của bạn, tại "Thiết kế > Trang nội dung" </div>
 								</li>
 								<li class="step">
 									<span class="step-number">12</span>
-									<h4 class="step-title">Configure Google Analytics</h4>
-									<div class="step-content"> Save your Google Analytics Account Number in System > Settings > General </div>
+									<h4 class="step-title">Cấu hình Google Analytics</h4>
+									<div class="step-content"> Thiết lập mã số tài khoản Google Analytics ở "Hệ thống > Cài đặt > Tổng quan" </div>
 								</li>
 								<li class="step">
 									<span class="step-number">13</span>
-									<h4 class="step-title">Test email to customer and to merchant.</h4>
-									<div class="step-content"> When a sale is made on your site, you will be notified by email. This will often happen twice - one email from your payment processor, and one from AbanteCart for confirmation in case you have enabled Alert Mail setting in System > Settings > Mail. </div>
+									<h4 class="step-title">Kiểm tra email gửi khách hàng và người bán.</h4>
+									<div class="step-content"> Khi một hóa đơn được tạo, bạn sẽ nhận được email thông báo. Thường xuất hiện 2 mail - email 1 từ xử lý thanh toán, và email 2 là mail xác nhận trường hợp bạn kích hoạt "Thêm cảnh báo Email" tại "Hệ thống > Cài đặt > Mail". </div>
 								</li>
 								<li class="step">
 									<span class="step-number">14</span>
-									<h4 class="step-title">Make sure you have contacts of the merchant, including phone number.</h4>
-									<div class="step-content"> System > Settings > Details  </div>
+									<h4 class="step-title">Đảm bảo bạn điền thông tin liên hệ của người bán, gồm SĐT.</h4>
+									<div class="step-content"> Hệ thống > Cài đặt > Cửa hàng  </div>
 								</li>
 								<li class="step">
 									<span class="step-number">15</span>
-									<h4 class="step-title">Make sure your currencies exchange rates are up to date.</h4>
-									<div class="step-content"> System > Localization > Currencies  </div>
+									<h4 class="step-title">Kiểm lại tiền tệ đã chính xác.</h4>
+									<div class="step-content"> Hệ thống > Dịch thuật > Tiền tệ  </div>
 								</li>
 								<li class="step">
 									<span class="step-number">16</span>
-									<h4 class="step-title">Check Security</h4>
-									<div class="step-content"> Set secure permission for /system/config.php file. Needs to be set to read and execute modes (0444) to keep it secured from editing!<br>
-									Also make sure you remove INSTALL folder in your site root directory.</div>
+									<h4 class="step-title">Kiểm tra bảo mật</h4>
+									<div class="step-content"> Thiết lập quyền bảo mật cho file /system/config.php. Chi yêu cầu đọc và thực thi file này (0444) !<br>
+									Và hãy chắc chắn thư mục install/ đã được xóa.</div>
 								</li>
 							</ul>
 							<!-- End of Steps -->

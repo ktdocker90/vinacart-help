@@ -19,13 +19,13 @@ AbanteCart runs on most server configurations, Windows or Linux based servers th
     <div class="list-item">
     	<div class="list-item-header">
     		<h3 class="list-item-title">
-    			<a href="#">Getting Started with AbanteCart</a>
+    			<a href="#">Bắt đầu với VinaCart</a>
     		</h3>
     		<span class="list-item-meta">
     			<a href="#">PHP version</a>
     		</span>
     	</div>
-    	<div class="list-item-content"> PHP version 5.3.1 or above. PHP configuration should include the following options (all these values are default):
+    	<div class="list-item-content"> Yêu cầu PHP v 5.4 hoặc cao hơn. Cấu hình PHP sau được yêu cầu:
     	<!-- HTML Highlight -->
 						<div class="code-highlight">
 							<span class="js-copy-to-clipboard copy-code">copy</span> <pre><code class="language-markup">
@@ -46,19 +46,19 @@ AbanteCart runs on most server configurations, Windows or Linux based servers th
     			<a href="#">database</a>
     		</span>
     	</div>
-    	<div class="list-item-content"> MySQLi database version 5.0+ or above, MySQL, PDO_MYSQL. </div>
+    	<div class="list-item-content"> MySQLi database phiên bản 5.0+ hoặc cao hơn, MySQL, PDO_MYSQL. </div>
     </div>
     <div class="list-item">
     	<div class="list-item-header">
     		<h3 class="list-item-title">
-    			<a href="#">cURL support</a>
+    			<a href="#">cURL</a>
     		</h3>
     		<span class="list-item-meta">
     			<a href="#">PHP extension</a>
     		</span>
     	</div>
-    	<div class="list-item-content"> PHP CURL is required for operation of several payment gateways and systems
-(such as PayPal, Authorize.NET etc) and real-time shipping services (FedEx, UPS). </div>
+    	<div class="list-item-content"> PHP CURL là cần thiết cho hoạt động của một số cổng thanh toán và hệ thống
+(vd PayPal, Authorize.NET etc) và dịch vụ vận chuyển thời gian thực (FedEx, UPS). </div>
     </div>
     <div class="list-item">
     	<div class="list-item-header">
@@ -69,7 +69,7 @@ AbanteCart runs on most server configurations, Windows or Linux based servers th
     			<a href="#">library</a>
     		</span>
     	</div>
-    	<div class="list-item-content"> GD php library is installed </div>
+    	<div class="list-item-content"> Thư viện GD php cần được cài đặt </div>
     </div>
     <div class="list-item">
     	<div class="list-item-header">
@@ -80,7 +80,40 @@ AbanteCart runs on most server configurations, Windows or Linux based servers th
     			<a href="#">extension</a>
     		</span>
     	</div>
-    	<div class="list-item-content"> ZipArchive extension is enabled </div>
+    	<div class="list-item-content"> ZipArchive phần mở rộng này yêu cầu kích hoạt. </div>
     </div>
-    <p>AbanteCart will not work properly (or at all) without these technologies.</p>
+    <div class="list-item">
+        <div class="list-item-header">
+            <h3 class="list-item-title">
+                <a href="#">Pcntl</a>
+            </h3>
+            <span class="list-item-meta">
+                <a href="#">extension</a>
+            </span>
+        </div>
+        <div class="list-item-content"> Không bắt buộc, sử dụng để chạy background job cho các tác vụ sử lý lâu (như gửi email khi đặt hàng...). </div>
+    </div>
+    <div class="list-item">
+        <div class="list-item-header">
+            <h3 class="list-item-title">
+                <a href="#">Redis</a>
+            </h3>
+            <span class="list-item-meta">
+                <a href="#">extension</a>
+            </span>
+        </div>
+        <div class="list-item-content"> Không bắt buộc kích hoạt cùng với Pcntl extension. </div>
+    </div>
+    <div class="list-item">
+        <div class="list-item-header">
+            <h3 class="list-item-title">
+                <a href="#">ionCube</a>
+            </h3>
+            <span class="list-item-meta">
+                <a href="#">extension</a>
+            </span>
+        </div>
+        <div class="list-item-content"> Yêu cầu cài đặt ioncube loader phiên bản 5.6 trở lên. </div>
+    </div>
+    <p>Vinacart sẽ không làm việc chính xác hoặc không hoạt động nếu không thỏa mãn cấu hình trên.</p>
 </div>

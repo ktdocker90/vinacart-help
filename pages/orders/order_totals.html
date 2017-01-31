@@ -1,30 +1,30 @@
 ---
 layout: default
-title: Order Totals
-description: Manage Order Totals
+title: Thiết lập đặt hàng
+description: Quản lý cài đặt đơn hàng
 redirect_from: "/tag/total.html"
 tags: [
-    ['order_listing', 'List Orders'],
+    ['order_listing', 'Danh sách đơn hàng'],
 ]
 ---
 						<!-- Category Info -->
 						<div class="category-info ">
-							<h3 class="category-title">Order Totals</h3>
-							<h4 class="category-description">Admin > Extensions > Order Totals</h4>
+							<h3 class="category-title">Thiết lập đặt hàng</h3>
+							<h4 class="category-description">Admin > Phần mở rộng > Thiết lập đặt hàng</h4>
 						</div>
 						<!-- Category Info -->
 
-<div><a class="anchorlink" href="#Coupon"><h6 class="category-description">Coupon</a></h6>
- <a class="anchorlink" href="#Handling Fee"><h6 class="category-description">Handling Fee</a> </h6>
- <a class="anchorlink" href="#Low Order Fee"><h6 class="category-description">Low Order Fee</a></h6>
- <a class="anchorlink" href="#Sub-Total"><h6 class="category-description">Sub-Total</a></h6>
- <a class="anchorlink" href="#Shipping"><h6 class="category-description">Shipping</a></h6>
- <a class="anchorlink" href="#Taxes"><h6 class="category-description">Taxes</a> </h6>
- <a class="anchorlink" href="#Total"><h6 class="category-description">Total</a></div>
-<p><em>Order Totals</em> are the screens that appear to the customer during checkout. </span>Some require additional setup in other menus. Not every menu is required to appear during check-out.</p>
+<div><a class="anchorlink" href="#Coupon"><h6 class="category-description">Phiếu mua hàng</a></h6>
+ <a class="anchorlink" href="#Handling Fee"><h6 class="category-description">Phí xử lý</a> </h6>
+ <a class="anchorlink" href="#Low Order Fee"><h6 class="category-description">Chi phí bổ xung</a></h6>
+ <a class="anchorlink" href="#Sub-Total"><h6 class="category-description">Tổng số phụ</a></h6>
+ <a class="anchorlink" href="#Shipping"><h6 class="category-description">Vận chuyển</a></h6>
+ <a class="anchorlink" href="#Taxes"><h6 class="category-description">Thuế</a> </h6>
+ <a class="anchorlink" href="#Total"><h6 class="category-description">Tổng số</a></div>
+<p><em>Thiết lập đơn hàng</em> là những thành phần hiển thị cho khách hàng trong quá trình thanh toán. </span>Một số yêu cầu cài đặt thêm ở menu khác. Không phải mọi mục được yêu cầu hiển thị trên trang thanh toán.</p>
 <p> <a class="jcepopup" href="/img/other/order-total-grid.png"><img src="/img/other/order-total-grid.png" border="0" width="400" /></a></p>
-<p>To install any Order Totals module click install button. Then You can edit or uninstall it.</p>
-<p><em>note: You able to change Status and/or Sort Order directly from the Extensions > Order Totals listing</em></p>
+<p>Để cài đặt các thành phần trong đơn hàng nhấn vào nút cài đặt. Và bạn có thể sửa hoặc hủy cài đặt nó.</p>
+<p><em>Chú ý: Bạn có thể thay đổi trạng thái hoặc thứ tự hiển thị trực tiếp từ danh sách "Phần mở rộng > Thiết lập đặt hàng"</em></p>
 
 
 
@@ -35,19 +35,18 @@ tags: [
 <a name="Coupon" class="anchor"></a>
 						<!-- Category Info -->
 						<div class="category-info ">
-							<h3 class="category-title">Setting up Coupon</h3>
-							<h4 class="category-description">Admin > Extensions > Order Totals</h4>
+							<h3 class="category-title">Thiết lập phiếu giảm giá</h3>
+							<h4 class="category-description">Admin > Phần mở rộng > Thiết lập đặt hàng</h4>
 						</div>
 						<!-- Category Info -->
 
-<p>Allow customer to use a coupon towards the purchase price.</p>
-<p>Fill in the following fields:</p>
-<p><strong>Status:</strong> - MUST be "ON" for the order total extension is displayed when checking out.</p>
-<p><strong>Type:</strong> - select type to display. Default is <em>Discount</em></p>
-<p><strong>Sort Order:</strong> - Sort Order set's the order of which the Order Total extension will be displayed amongst others.</p>
-<p><strong>Calculation Order:</strong> - set's the order of which the Order Total extension will be calculated amongst others.</p>
-<p>After you have made your changes, click the SAVE</p>
-<p>With the discount <a class="crosslink" href="/pages/promotions/search_coupons.html">coupons</a> feature enabled and active discount coupons in your database, a user might apply a discount to an order which will be deducted from the sub total of the order. This field tells you what the total amount of discount is which has been applied for the specified order.</p>
+<p>Cho phép khách hàng sử dụng một phiếu giảm giá áp dụng vào giá mua.</p>
+<p>Điền vào các trường dưới:</p>
+<p><strong>Status/Trạng thái:</strong> - Cần bật "ON" cho mở rộng phần đơn hàng này được hiển thị khi thanh toán.</p>
+<p><strong>Type/Loại:</strong> - chọn loại phiếu. Mặc định là <em>Giảm giá</em></p>
+<p><strong>Sort Order/Thứ tự sắp xếp:</strong> - Thứ tự xắp xếp cho mở rộng đặt hàng này.</p>
+<p><strong>Calculation Order/Thứ tự tính toán:</strong> - Thiết lập thứ tự tính toán cho mở rộng đơn hàng này cho tổng số chi phí cần tính. Sau khi thay đổi nhấn nút lưu.</p>
+<p>Với tính năng <a class="crosslink" href="/pages/promotions/search_coupons.html">phiếu giảm giá</a> được kích hoạt và kích hoạt mã giảm giá trong CSDL, khách hàng có thể áp dụng phiếu giảm giá vào đơn hàng của họ mà sẽ sẽ khấu trừ tổng phụ của đơn hàng. trường này, sẽ cho bạn biết tổng số tiền chiết khấu đã được áp dụng cho đơn hàng của bạn.</p>
 
 
 
@@ -59,23 +58,23 @@ tags: [
 						<a name="Handling Fee" class="anchor"></a>
 						<!-- Category Info -->
 						<div class="category-info ">
-							<h3 class="category-title">Setting up Handling Fee</h3>
-							<h4 class="category-description">Admin > Extensions > Order Totals</h4>
+							<h3 class="category-title">Thiết lập phí sử lý</h3>
+							<h4 class="category-description">Admin > Phần mở rộng > Thiết lập đặt hàng</h4>
 						</div>
 						<!-- Category Info -->
 
-<p>Charge an extra fee to customer during checkout. Handling charges are typically used by merchants as a way of recouping order payment costs.</p>
-<a class="jcepopup" href="/img/other/abantecart-handling-fee.png"><img src="/img/other/abantecart-handling-fee.png" border="0" alt="" width="500" /></a>
-<p>Fill in the following fields:</p>
-<p><strong>Status:</strong> - MUST be "ON" for the order total extension is displayed when checking out.</p>
-<p><strong>Order Total:</strong> Minimum order amount to be reached to apply the fee. If customer order total will exceed this amount, handling feee will not be applied. This is main value but overridden with payment specific settings.</p>
-<p><strong>Fee:</strong> - Free to be added to order total if minimum amount condition is not met. This amount is overridden by payment specific setting.</p>
-<p><strong>Payments:</strong> - Select a specific payment you need to add the fee to. These settings will override the main settings if selected payment is used by customer.</p>
-<p><strong>Tax Class:</strong> - Select <a class="crosslink" href="/pages/localization/locations_and_taxes/tax_classes_list.html">Tax Class</a>. Select if you need tax to be applied on-top of the handling fee.</p>
-<p><strong>Type:</strong> - select type to display.</p>
-<p><strong>Sort Order:</strong> - Sort Order set's the order of which the Order Total extension will be displayed amongst others.</p>
-<p><strong>Calculation Order:</strong> - set's the order of which the Order Total extension will be calculated amongst others.</p>
-<p>After you have made your changes, click the SAVE</p>
+<p>Thu thêm phí của khách hàng trong quá trình thanh toán. Phí xử lý thường được sử dụng bởi các thương gia (merchants) như một cách bù lại chi phí thanh toán của đơn hàng.</p>
+<a class="jcepopup" href="/img/other/vinacart-handling-fee.png"><img src="/img/other/vinacart-handling-fee.png" border="0" alt="" width="500" /></a>
+<p>Điền vào các trường sau:</p>
+<p><strong>Status/Trạng thái:</strong> - Cần bật ON để cho mở rộng thiết lập đơn hàng này được hiển thị khi thanh toán.</p>
+<p><strong>Order Total/Tổng đơn hàng:</strong> Số lượng tối thiểu đặt hàng phải đạt được để tính lệ phí. Nếu tổng giá trị đơn hàng của khách vượt quá số tiền này, phí sử lý sẽ không được áp dụng. Đây là giá trị chính nhưng được ghi đè bởi các cài đặt cụ thể cho thanh toán.</p>
+<p><strong>Fee/Phí:</strong> - Miễn phí trên tổng giá trị đơn hàng nếu không đạt được số tiền tối thiểu. Số tiền này được ghi đè bởi cài đặt thanh toán cụ thể.</p>
+<p><strong>Payments/Thanh toán:</strong> - Lựa chọn một thanh toán cụ thể bạn cần phải thêm chi phí. Các thiết lập này sẽ ghi đè lên các thiết lập chính nếu thanh toán được chọn sẽ được sử dụng bởi khách hàng.</p>
+<p><strong>Tax Class/Lớp thuế:</strong> - Chọn <a class="crosslink" href="/pages/localization/locations_and_taxes/tax_classes_list.html">lớp thuế</a>. Chọn nếu bạn cần áp dụng thuế trước tiên cho phí xử lý.</p>
+<p><strong>Type/Loại:</strong> - lựa chọn kiểu để hiển thị.</p>
+<p><strong>Sort Order/Thứ tự:</strong> - Xếp theo thứ tự hiển thị của mở rộng này so với các mục khác trong đơn hàng.</p>
+<p><strong>Calculation Order/Thư tự tính toán:</strong> - Thiết lập thứ tự tính toán cho mở rộng đơn hàng này cho tổng số chi phí cần tính.</p>
+<p>Sau khi thay đổi nhấn nút lưu.</p>
 
 
 
@@ -86,22 +85,22 @@ tags: [
 <a name="Low Order Fee" class="anchor"></a>
 						<!-- Category Info -->
 						<div class="category-info ">
-							<h3 class="category-title">Setting up Low Order Fee</h3>
-							<h4 class="category-description">Admin > Extensions > Order Totals</h4>
+							<h3 class="category-title">Thiết lập phí thấp đơn hàng</h3>
+							<h4 class="category-description">Admin > Phần mở rộng > THiết lập đặt hàng</h4>
 						</div>
 						<!-- Category Info -->
 
 
-<p>Charge an extra fee if the customer's order is below an amount you specify. You can set up a low order fee if you want to add a fee to orders that are under a specific amount. If for example a customer buys something for only 2 Euro, you can decide to take an extra fee for the order handling.</p>
+<p>Thu thêm phí nếu giá trị đơn hàng của khách hàng dưới mức bạn chỉ định. Bạn có thể thiết lập một khoản phí nhỏ cho đơn hàng nếu bạn muốn thêm một phí vào đơn hàng nếu tổng giá trị dưới mức được chỉ định. VD: Nếu một khách hàng mua một cái gì đó chỉ 2 Euro, bạn có thể quyết định lấy thêm phí cho việc sử lý đơn hàng.</p>
 <p>Fill in the following fields:</p>
-<p><strong>Order Total:</strong> - --.</p>
-<p><strong>Fee:</strong> - the cost value.</p>
-<p><strong>Tax Class:</strong> - Select <a class="crosslink" href="/pages/localization/locations_and_taxes/tax_classes_list.html">Tax Class</a>.</p>
-<p><strong>Status:</strong> - MUST be "ON" for the order total extension is displayed when checking out.</p>
-<p><strong>Type:</strong> - select type to display.</p>
-<p><strong>Sort Order:</strong> - Sort Order set's the order of which the Order Total extension will be displayed amongst others.</p>
-<p><strong>Calculation Order:</strong> - set's the order of which the Order Total extension will be calculated amongst others.</p>
-<p>After you have made your changes, click the SAVE</p>
+<p><strong>Order Total/Tổng đơn hàng:</strong> - --.</p>
+<p><strong>Fee/Phí:</strong> - trị giá số tiền.</p>
+<p><strong>Tax Class/Thuế:</strong> - Lựa chọn <a class="crosslink" href="/pages/localization/locations_and_taxes/tax_classes_list.html">lớp thuế</a>.</p>
+<p><strong>Status/Tình trạng:</strong> - Cần bật ON để cho mở rộng thiết lập đơn hàng này được hiển thị khi thanh toán.</p>
+<p><strong>Type/Loại:</strong> - chọn kiểu để hiển thị.</p>
+<p><strong>Sort Order/Thứ tự:</strong> - Xếp theo thứ tự hiển thị của mở rộng này so với các mục khác trong đơn hàng.</p>
+<p><strong>Calculation Order/Thứ tự tính toán:</strong> - Thiết lập thứ tự tính toán cho mở rộng đơn hàng này cho tổng số chi phí cần tính.</p>
+<p>Sau khi thay đổi nhấn nút lưu.</p>
 
 
 
@@ -112,20 +111,20 @@ tags: [
 <a name="Sub-Total" class="anchor"></a>
 						<!-- Category Info -->
 						<div class="category-info ">
-							<h3 class="category-title">Setting up Sub-Total</h3>
-							<h4 class="category-description">Admin > Extensions > Order Totals</h4>
+							<h3 class="category-title">THiết lập tổng số phụ</h3>
+							<h4 class="category-description">Admin > Phần mở rộng > Thiết lập đặt hàng</h4>
 						</div>
 						<!-- Category Info -->
 
 
-<p>Allow customer to see the sub-total on a separate screen.</p>
-<p>Fill in the following fields:</p>
-<p><strong>Status:</strong> - MUST be "ON" for the order total extension is displayed when checking out.</p>
-<p><strong>Type:</strong> - select type to display.</p>
-<p><strong>Sort Order:</strong> - Sort Order set's the order of which the Order Total extension will be displayed amongst others.</p>
-<p><strong>Calculation Order:</strong> - set's the order of which the Order Total extension will be calculated amongst others.</p>
-<p>After you have made your changes, click the SAVE</p>
-<p>The sub total of the order is the sum of the price of the product of each order item, each respectively multiplied by the quantity/count value of the order item. The sum is basically the total amount of the order before the shipping charges, discounts, taxes and other relevant values are calculated. Sub-Total is nearly always on the top so the calculation order and sort order should be the set to the lowest number.</p>
+<p>Cho phép khách hàng xem tổng số phụ trên một màn hình riêng biệt.</p>
+<p>Điền các trường sau đây:</p>
+<p><strong>Status/Tình trạng:</strong> - Cần bật ON để phần thiết lập này được hiển thị khi thanh toán.</p>
+<p><strong>Type/Loại:</strong> - chọn kiểu để hiển thị.</p>
+<p><strong>Sort Order/Thứ tự:</strong> - Xếp theo thứ tự hiển thị của mở rộng này so với các mục khác trong đơn hàng.</p>
+<p><strong>Calculation Order/Thứ tự tính toán:</strong> - Thiết lập thứ tự tính toán cho mở rộng đơn hàng này cho tổng số chi phí cần tính.</p>
+<p>Sau khi thay đổi nhấn nút lưu.</p>
+<p>Tổng phụ của đơn hàng là tổng giá của các sản phẩm của từng mặt hàng, mỗi loại được lấy số lượng nhân với đơn giá. Tổng số về cơ bản là tổng số tiền của đơn hàng trước khi tính chi phí vận chuyển, giảm giá, thuế và các giá trị có liên quan khác được tính toán. Tổng số phụ là gần như luôn luôn trên đầu do đó thứ tự tính toán và sắp xếp thứ tự nên được thiết lập để số thấp nhất.</p>
 
 
 
@@ -135,26 +134,26 @@ tags: [
 <a name="Shipping" class="anchor"></a>
 						<!-- Category Info -->
 						<div class="category-info ">
-							<h3 class="category-title">Setting up Shipping Total</h3>
-							<h4 class="category-description">Admin > Extensions > Order Totals</h4>
+							<h3 class="category-title">Thiết lập chi phí vận chuyển</h3>
+							<h4 class="category-description">Admin > Phần mở rộng > Thiết lập đặt hàng</h4>
 						</div>
 						<!-- Category Info -->
 
-<p>Allow customer to see shipping price or select from multiple shippers.</p>
-<p>Fill in the following fields:</p>
-<p><strong>Status:</strong> - MUST be "ON" for the order total extension is displayed when checking out.</p>
-<p><strong>Type:</strong> - select type to display.</p>
-<p><strong>Sort Order:</strong> - Sort Order set's the order of which the Order Total extension will be displayed amongst others.</p>
-<p><strong>Calculation Order:</strong> - set's the order of which the Order Total extension will be calculated amongst others.</p>
-<p>After you have made your changes, click the SAVE</p>
-<p>With shipping calculation enabled one or more tangible order items assigned to the order, this value will tell you what the total shipping charge is for the specified order. This value will be added to the sub total of the order and finally presents the total amount of the order as a sum.</p>
+<p>Cho phép khách hàng để xem phí vận chuyển hoặc có thể chọn các nhà vận chuyển khác nhau.</p>
+<p>Điền vào các trường sau:</p>
+<p><strong>Status/Tình trạng:</strong> - Cần bật ON để phần thiết lập này được hiển thị khi thanh toán.</p>
+<p><strong>Type/Loại:</strong> - chọn kiểu để hiển thị.</p>
+<p><strong>Sort Order/Thứ tự:</strong> - Xếp theo thứ tự hiển thị của mở rộng này so với các mục khác trong đơn hàng.</p>
+<p><strong>Calculation Order/Thứ tự tính toán:</strong> - Thiết lập thứ tự tính toán cho mở rộng đơn hàng này cho tổng số chi phí cần tính.</p>
+<p>Sau khi thay đổi nhấn nút lưu.</p>
+<p>Khi tính toán vận chuyển được kích hoạt với một hay nhiều sản phẩm/mặt hàng trên đơn hàng. GIá trị này sẽ cho bạn biết tổng phí vận chuyển đã được tính toán. Giá trị này sẽ được thêm vào tổng số phụ của đơn hàng và cuối cùng hiển thị tổng số tiền của đơn hàng như một khoản tiền phải chi trả.</p>
 						<!-- Note -->
 						<div class="note js-note blue">
 							<span class="note-close js-close">
 								<i class="fa fa-times"></i>
 							</span>
-							<h4 class="note-title"> Note </h4>
-							<p class="note-description"> After Shipping Total enabled please configure <a href="/pages/ship_and_pay/enable_shipping.html">Shipping methods</a> to allow customers to ship products purchased. </p>
+							<h4 class="note-title"> Chú ý </h4>
+							<p class="note-description"> Sau khi kích hoạt phí vận chuyển vui lòng cấu hình <a href="/pages/ship_and_pay/enable_shipping.html">phương thức thanh toán</a> để cho phép khách hàng vận chuyển các sản phẩm mà họ đã mua. </p>
 						</div>
 						<!-- End of Note -->
 
@@ -166,25 +165,25 @@ tags: [
 <a name="Taxes" class="anchor"></a>
 						<!-- Category Info -->
 						<div class="category-info ">
-							<h3 class="category-title">Setting up Taxes Total</h3>
-							<h4 class="category-description">Admin > Extensions > Order Totals</h4>
+							<h3 class="category-title">Thiết lập chi phí thuế</h3>
+							<h4 class="category-description">Admin > Phần mở rộng > Thiết lập đặt hàng</h4>
 						</div>
 						<!-- Category Info -->
 
-<p>Allow customer to see the taxes on a separate screen.</p>
-<p>Fill in the following fields:</p>
-<p><strong>Status:</strong> - MUST be "ON" for the order total extension is displayed when checking out.</p>
-<p><strong>Type:</strong> - select type to display. Default is <em>Tax</em></p>
-<p><strong>Sort Order:</strong> - Sort Order set's the order of which the Order Total extension will be displayed amongst others.</p>
-<p><strong>Calculation Order:</strong> - set's the order of which the Order Total extension will be calculated amongst others.</p>
-<p>After you have made your changes, click the SAVE</p>
+<p>Cho phép khách hàng xem chi phí thuế trên một màn hình riêng biệt.</p>
+<p>Điền các trường sau đây:</p>
+<p><strong>Status/Tình trạng:</strong> - Cần bật ON để phần thiết lập này được hiển thị khi thanh toán.</p>
+<p><strong>Type/Loại:</strong> - chọn loại để hiển thị. Mặc định là <em>Thuế</em></p>
+<p><strong>Sort Order/Thứ tự:</strong> - Xếp theo thứ tự hiển thị của mở rộng này so với các mục khác trong đơn hàng.</p>
+<p><strong>Calculation Order/Thứ tự tính toán:</strong> - Thiết lập thứ tự tính toán cho mở rộng đơn hàng này cho tổng số chi phí cần tính.</p>
+<p>Sau khi thay đổi nhấn nút lưu</p>
 						<!-- Note -->
 						<div class="note js-note blue">
 							<span class="note-close js-close">
 								<i class="fa fa-times"></i>
 							</span>
-							<h4 class="note-title"> Note </h4>
-							<p class="note-description"> After Tax Total enabled please configure <a href="/pages/quickstart/setup_taxes.html">Tax Rates</a>. </p>
+							<h4 class="note-title"> Chú ý </h4>
+							<p class="note-description"> Sau khi chi phí thuế được kích hoạt vui lòng cấu hình <a href="/pages/quickstart/setup_taxes.html">thuế suất</a>. </p>
 						</div>
 						<!-- End of Note -->
 
@@ -197,15 +196,15 @@ tags: [
 <a name="Total" class="anchor"></a>
 						<!-- Category Info -->
 						<div class="category-info ">
-							<h3 class="category-title">Setting up Total</h3>
-							<h4 class="category-description">Admin > Extensions > Order Totals</h4>
+							<h3 class="category-title">Thiết lập tổng cộng</h3>
+							<h4 class="category-description">Admin > Phần mở rộng > Thiết lập đặt hàng</h4>
 						</div>
 						<!-- Category Info -->
 
-<p>Allow customer to see one last total before the purchase is billed.</p>
-<p>Fill in the following fields:</p>
-<p><strong>Status:</strong> - MUST be "ON" for the order total extension is displayed when checking out.</p>
-<p><strong>Type:</strong> - select type to display. Default <em>Total</em></p>
-<p><strong>Sort Order:</strong> - Sort Order set's the order of which the Order Total extension will be displayed amongst others.</p>
-<p>After you have made your changes, click the SAVE</p>
-<p>The order total is the amount that the user will be/has been charged. The total is the sum of the sub total minus the discount applied, plus the shipping charges, plus taxes. This is the amount for the payment you receive when the user pays via the payment gateway.</p>
+<p>Cho phép khách hàng xem một tổng số tiền cuối cùng cần phải trả trước khi tiến hành đặt hàng (tạo hóa đơn).</p>
+<p>Điền vào các trường sau:</p>
+<p><strong>Status/Tình trạng:</strong> - Cần bật ON để phần thiết lập này được hiển thị khi thanh toán.</p>
+<p><strong>Type/Loại:</strong> - chọn loại để hiển thị. Mặc định <em>Tổng giá trị</em></p>
+<p><strong>Sort Order/Thứ tự:</strong> - Xếp theo thứ tự hiển thị của mở rộng này so với các mục khác trong đơn hàng.</p>
+<p>Sau khi thay đổi nhấn nút lưu.</p>
+<p>Tổng giá trị đơn hàng là số tiền mà người dùng (khách hàng) sẽ phải tri trả. Tổng số tiền gồm tổng số phụ trừ đi số tiền triết khấu, cộng với phí vận chuyển và thuế. Đây là số tiền để thanh toán của bạn khi người dùng thanh toán qua cổng thanh toán.</p>

@@ -1,0 +1,133 @@
+---
+layout: default
+title: Tạo cửa hàng mới
+description: Tạo một cửa hàng mới và quản lý cài đặt cửa hàng.
+tags: [
+    ['setting_listing', 'Tất cả các cài đặt'],
+    ['system', 'Cài đặt hệ thống'],
+]
+redirect_from: "/tag/stores.html"
+---
+
+						<!-- Category Info -->
+						<div class="category-info ">
+							<h3 class="category-title">Multi-store</h3>
+							<h4 class="category-description"> VinaCart có khả năng cho phép tạo và quản lý nhiều cửa hàng từ một giao diện quản trị.</h4>
+						</div>
+<p>Để thiết lập nhiều cửa hàng, bước đầu tiên thiết lập cửa hàng chính của bạn với tên domain chính.</p>
+<p>Nếu bạn cần để tạo ra nhiều cửa hàng bạn không cần cài đặt vinacart một lần nữa hoặc thay thế tập tin. Bạn chỉ cần yếu tố sau:<br /> 1. thiết lập thêm domain (addon domain) hoặc tên miền con trên bảng điều khiển dịch vụ hosting của bạn<br /> 2. thiết lập cửa hàng thứ 2 trong admin của cửa hàng chính. Cuối cùng, bạn có được 1 quản trị và 2 hay nhiều cửa hàng.  </p>
+						<!-- Note -->
+						<div class="note js-note green note-pulse">
+							<span class="note-close js-close">
+								<i class="fa fa-times"></i>
+							</span>
+							<h4 class="note-title"> Xin lưu ý </h4>
+							<p class="note-description"> bước đầu tiên không liên quan đến Vinacart. Nếu bạn có vấn đề xẩy ra vui lòng liên hệ với nhà cung cấp hosting của bạn. </p>
+						</div>
+						<!-- End of Note -->
+
+
+
+
+
+
+
+						<div class="category-info ">
+							<h3 class="category-title">Thiết lập trên cpanel</h3>
+							<h4 class="category-description"> </h4>
+						</div>
+<p>Thiết lập hai hay nhiều domains trong bảng điều khiển dịch vụ hosting của bạn. Điều này là rất quan trọng để đảm bảo rằng tên miền thứ hai hoạt động trên đúng thư mục của Vinacart.</p>
+<p>Có nhiều cách khác nhau trong Cpanel - tên miền phụ hoặc ( addon domain).</p>
+
+<h3 class="heading_gray"> Dưới đây là ví dụ  để thiết lập tên miền con.</h3>
+<p>Trong quản trị Cpanel nhấn vào biểu tượng sub-domains <br>
+<img src="/img/other/vinacart-multistore-cpanel1.png" border="0" width="501" /></p>
+<p>Tạo một sub-domain<br>
+<img src="/img/other/vinacart-multistore-cpanel2.png" border="0" width="736" /></p>
+						<!-- Note -->
+						<div class="note js-note blue">
+							<span class="note-close js-close">
+								<i class="fa fa-times"></i>
+							</span>
+							<h4 class="note-title"> Chú ý </h4>
+							<p class="note-description">   Rất quan trọng - giá trị Document Root cần giống với tên miền chính !!! Nếu bạn có cài đặt vinacart trong thư mục khác, ví dụ /public_html/somefolder/mycartfolder/ Root của subdomain cũng phải giống như vậy. </p>
+						</div>
+						<!-- End of Note -->
+						<p> Ngoài ra, rất nhiều vấn đề khác ở đây không liên quan đến VinaCart:<br/>• Một vài nhà cung cấp hosting giới hạn hoặc không cho phép sử dụng sub-domains<br />• Nếu bạn đang sử dụng một mạng lưới phân phối nội dung (content delivery network) bạn cần chỉnh sửa bản ghi trong trình sửa DNS zone bằng tay và có thể sửa thêm các cài đặt khác.</p>
+<p> </p>
+
+<p>Dù sao rất nhiều người mới bắt đầu có vấn đề với bước này bởi vì:
+<ul>
+<li>Do DNS chưa sử lý hoàn thiện, sub-domain có thể mất đến 24 giờ và nhiều hơn nữa để bắt đầu</li>
+<li>đảm bảo sub-domain trỏ vào đúng đường dẫn với cửa hàng chính đã cài đặt.</li>
+<li>chắc chắn rằng không có thiết lập chuyển hướng cho tên miền phụ mới / tên miền</li>
+<li>thường người dùng có thể cần để xóa bộ nhớ cache của trình duyệt và DNS cache trên máy tính của họ để giải quyết làm mới hoặc cấu hình lại domains/subdomains</li>
+<li>Cũng có thể một số cài đặt trong file .htaccess hoặc vấn đề về quyền sử dụng tệp gây ra không hoạt động đúng.</li> 
+</ul>
+<p>Vui lòng liên hệ với nhà cung cấp dịch vụ lưu trữ (hosting) của bạn để đảm bảo domain/subdomain được cấu hình một cách chính xác</p>
+<p> </p>
+
+
+
+
+						<div class="category-info ">
+							<h3 class="category-title">Thiết lập bảng quản trị vinacart</h3>
+							<h4 class="category-description"> Trong vinacart admin truy cập System > Settings</h4>
+						</div>
+<p>nhấn vào nút <strong>Tạo cửa hàng mới</strong> </p>
+<p><a class="jcepopup" href="/img/other/multistore1.png"><img src="/img/other/multistore1.png" border="0" width="400" /></a>
+</p>
+<p>điền vào ít nhất các trường sau:</p>
+<p><strong>Status:</strong> Bật để kích hoạt cửa hàng.</p>
+<p><strong>Store Name:</strong> tên của cửa hàng bạn.</p>
+<p><strong>Store URL:</strong> địa chỉ URL đầy đủ cho cửa hàng. Hãy chắc chắn thêm '/' ở cuối. VD: http://www.second.yourdomain.com/store/</p>
+<p>
+<a class="jcepopup" href="/img/other/multistore2.png"><img src="/img/other/multistore2.png" border="0" width="400" /></a></p>
+<p>Bạn có thể sao chép tất cả các thiết lập từ một cửa hàng đã tạo ra. Ít nhất là từ cửa hàng mặc định của bạn.</p>
+<a class="jcepopup" href="/img/other/multistore3.png"><img src="/img/other/multistore3.png" border="0" width="400" /></a>
+<p>nhấn nút <strong>lưu</strong> , trang sẽ được tải lại và bạn sẽ có thể chỉnh sửa tất cả các thiết lập khác của cửa hàng.</p>
+
+<p>Sau khi cài đặt hoàn tất, bạn có thể sử dụng nhiều cửa hàng theo nhiều cách:</p>
+
+<ul>
+<li>một back-end để quản lý tất cả các cửa hàng</li>
+
+<li>sử dụng các giao diện khác nhau trên mỗi cửa hàng</li>
+
+<li>hiển thị các sản phẩm/danh mục khác nhau  trên mỗi cửa hàng</li>
+
+<li>hiển thị blocks, banners... layout khác nhau (bằng cách sửa giao diện 'template' của cửa hàng)</li>
+
+<li>địa phương hóa mỗi cửa hàng bằng cách thiết lập một ngôn ngữ và tiền tệ khác.</li>
+
+<li>thiết lập phương thức giao hàng và thanh toán khác nhau.</li>
+</ul>
+
+
+						<!-- Note -->
+						<div class="note js-note red note-pulse">
+							<span class="note-close js-close">
+								<i class="fa fa-times"></i>
+							</span>
+							<h4 class="note-title"> Chú ý khi sử dụng trên một domain </h4>
+							<p class="note-description"> Nếu bạn sử dụng domain.com là cửa hàng chính, sẽ làm việc với các subdomain *.domain.com và các cửa hàng khác không thể sử dụng trên cùng một domain. Có thể sử dụng các domains khác cho các cửa hàng tiếp theo hoặc tất cả các cửa hàng (gồm cửa hàng chính) đều sử dụng là subdomain<br>
+Chẳng hạn nếu bạn muốn sử dụng subdomain vd: store1.domain.com cho một cửa hàng khác, hãy chắc chắn rằng cửa hàng chính sử dụng subdomain có dạng (vd: www.domain.com)
+ </p>
+						</div>
+						<!-- End of Note -->
+
+
+
+
+
+
+						<div class="category-info ">
+							<h3 class="category-title">Xóa một cửa hàng ?</h3>
+							<h4 class="category-description"> trong vinacart admin truy cập System > Settings</h4>
+						</div>
+<p>Chọn cửa hàng trong danh sách chọn <em>sửa cài đặt (Edit Settings):</em></p>
+<p>nhấn nút <em>sửa cửa hàng</em> </p>
+<p><img src="/img/other/multistore4.png" border="0"  /></p>
+<p>biểu tượng thùng rác xuất hiện, nhấn vào đó để xóa cửa hàng.</p>
+<p><img src="/img/other/multistore5.png" border="0"  /></p>
+<br />
