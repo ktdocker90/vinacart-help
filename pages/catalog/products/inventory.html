@@ -1,27 +1,27 @@
 ---
 layout: default
-title: Manage Products Inventory 
-description: Manage product Inventory or stocked items
+title: Quản lý sản phẩm tồn kho
+description: Quản lý hàng tồn kho
 redirect_from: "/tag/product_inventory.html"
 tags: [
-    ['product_listing', 'List Products'],
+    ['product_listing', 'Danh sách sản phẩm'],
     ['product_media', 'Product Media'],
-    ['product_options', 'Product Options'],
+    ['product_options', 'Thuộc tính sản phẩm'],
     ['product_files', 'Product Files'], 
-    ['product_relations', 'Product Relations'],
-    ['product_promotions', 'Product Promotions'], 
-    ['product_layout', 'Edit page layout'],
-    ['product_setting', 'Product setting'],
-    ['weight_class_listing', 'Add Weight Class'],
-    ['length_status_listing', 'Add Length Class'],
+    ['product_relations', 'Sản phẩm liên quan'],
+    ['product_promotions', 'Sản phẩm giảm giá'], 
+    ['product_layout', 'Sửa bố cục trang'],
+    ['product_setting', 'Cài đặt sản phẩm'],
+    ['weight_class_listing', 'Thêm lớp trọng lượng'],
+    ['length_status_listing', 'Thêm lớp chiều dài'],
 ]
 ---
 
 
 						<!-- Category Info -->
 						<div class="category-info ">
-							<h3 class="category-title">Products Inventory</h3>
-							<h4 class="category-description">Global Level settings applied to all products or to cart</h4>
+							<h3 class="category-title">Sản phẩm tồn kho</h3>
+							<h4 class="category-description">Thiết lập số lượng (Global Level) được áp dụng cho tất cả các sản phẩm hoặc vào giỏ hàng</h4>
 						</div>
 						<!-- End of Caregory Info -->
 						
@@ -33,12 +33,11 @@ tags: [
 							<div class="col-md-6">
 								<!-- Box -->
 								<div class="box ">
-									<h4 class="box-title">General: <strong>Display Stock</strong></h4>
-									<p class="box-description">You may want to display the actual stock level for the product in order to let their customers know how much of the product is available for purchase. (Display stock quantity on the product page).<br>
-									Sets display of quantity amount available in stock. If set to OFF no quantities will be shown. If <strong>Display Stock</strong> is On and quantity is 0 or negative then message will be shown configured based on product "Out of stock status".<br>
-									"Out of stock status" configured per product and will be shown in the product listing and product pages.
+									<h4 class="box-title">General: <strong>Hiển thị kho</strong></h4>
+									<p class="box-description">Bạn có thể muốn hiển thị số lượng kho cho sản phẩm nhằm để cho khách hàng của họ biết bao nhiêu sản phẩm có sẵn để mua. (Hiển thị số lượng kho trên trang sản phẩm).<br>
+									Thiết lập hiển thị số lượng có sẵn trong kho. Nếu tắt sẽ không hiển thị số lượng. Nếu bật <strong>hiển thị kho</strong> và số lượng =0 hoặc số âm, một tin nhắn sẽ được hiển thị  dựa trên cấu hình sản phẩm  "Out of stock status".<br>"Out of stock status" được cấu hình trên mỗi sản phẩm và sẽ được hiển thị trong danh sách sản phẩm và trang sản phẩm.
 									 </p>
-									<p class="box-description" style="font-size:14px;">setting located in System > Settings > <a class="button stroke small green" href="/pages/settings/general.html" target="_blank">General Tab</a>
+									<p class="box-description" style="font-size:14px;">Cài đặt nằm ở System > Settings > <a class="button stroke small green" href="/pages/settings/general.html" target="_blank">General Tab</a>
 									</p>
 									
 								</div>
@@ -47,13 +46,13 @@ tags: [
 							<div class="col-md-6">
 								<!-- Box -->
 								<div class="box ">
-									<h4 class="box-title">General: <strong>No Stock Auto Disable</strong></h4>
-									<p class="box-description">(Disable product on out of stock)<br>
-									If product is set with trackable stock on <a class="crosslink" href="/pages/settings/general.html" target="_blank">product</a> or <a class="crosslink" href="/pages/catalog/products/attributes.html" target="_blank">options level</a> will reach 0 or negative quantity, product will be disabled automatically and message will be saved for admin to review in the <a class="crosslink" href="/pages/tools/message_manager.html" target="_blank">message manager</a>.<br>
-<p>If only one of many options becomes 0 or negative in quantity, this option will not be shown.<br>
-<p>If you want to allow customers to preorder or purchase products with no stock (<a class="crosslink" href="/pages/settings/checkout.html" target="_blank">Stock Checkout setting</a> ON) you need to disable this setting
+									<h4 class="box-title">General: <strong>mặc định tắt Không quản lý kho (No Stock Auto Disable)</strong></h4>
+									<p class="box-description">(Vô hiệu hóa sản phẩm ởi tình trạng hết hàng "out of stock")<br>
+									Nếu <a class="crosslink" href="/pages/settings/general.html" target="_blank">sản phẩm</a> thiết lập có thể theo dõi kho hoặc <a class="crosslink" href="/pages/catalog/products/attributes.html" target="_blank">số lượng hàng cho các tùy chọn</a> =0 hoặc số âm, sản phẩm sẽ bị vô hiệu hóa tự động và tin nhắn sẽ được lưu lại trong phần <a class="crosslink" href="/pages/tools/message_manager.html" target="_blank">quản lý thông báo</a> cho admin.<br>
+<p>Nếu chỉ một trong số các tùy chọn có số lượng =0 hoặc số âm, tùy chọn này sẽ không được hiển thị.<br>
+<p>Nếu bạn muốn cho phép khách hàng đặt hàng trước hoặc mua sản phẩm với hàng không có trong kho (<a class="crosslink" href="/pages/settings/checkout.html" target="_blank">thiết lập thanh toán kho 'stock checkout'</a> được bật) bạn cần phải vô hiệu hóa thiết lập này
 									</p>
-									<p class="box-description" style="font-size:14px;">setting located in System > Settings > <a class="button stroke small green" href="/pages/settings/general.html" target="_blank">General Tab</a>
+									<p class="box-description" style="font-size:14px;">cài đặt tại System > Settings > <a class="button stroke small green" href="/pages/settings/general.html" target="_blank">General Tab</a>
 									</p>
 								</div>
 								<!-- End of Box -->
@@ -67,11 +66,11 @@ tags: [
 							<div class="col-md-6">
 								<!-- Box -->
 								<div class="box ">
-									<h4 class="box-title">General: <strong>Stock Status</strong></h4>
-									<p class="box-description">(Global Stock status).<br>
-									This is a setting that defaults all newly created products to be set to this status in case of stock dropping to 0 or below.<br><br></p>
+									<h4 class="box-title">General: <strong>trạng thái kho</strong></h4>
+									<p class="box-description">(trạng thái kho chung).<br>
+									Đây là một thiết lập mặc định của tất cả các sản phẩm mới được tạo ra, đều được thiết lập với tình trạng này trong trường hợp kho =0 hoặc một số âm.<br><br></p>
 									<p class="box-description" style="font-size:14px;">
-									settings located in System > Settings > <a class="button stroke small green" href="/pages/settings/checkout.html" target="_blank">Checkout Tab</a>
+									cài đặt tại System > Settings > <a class="button stroke small green" href="/pages/settings/checkout.html" target="_blank">Checkout Tab</a>
 									</p>
 									
 								</div>
@@ -81,9 +80,9 @@ tags: [
 								<!-- Box -->
 								<div class="box ">
 									<h4 class="box-title">Checkout: <strong>Stock Checkout</strong></h4>
-									<p class="box-description">This setting enables your cart to allow customers to preorder or purchase products with no stock. No warnings will be seen. Make sure that no other settings are preventing product or option from begin available.</p>
+									<p class="box-description">Thiết lập này cho phép giỏ hàng của bạn cho phép khách hàng đặt hàng trước hoặc mua sản phẩm không có sẵn. Không có cảnh báo sẽ được nhìn thấy. Hãy chắc chắn rằng không có cài đặt khác để ngăn sản phẩm hoặc tùy chọn cho việc đặt hàng.</p>
 									<p class="box-description" style="font-size:14px;">
-settings located in System > Settings > <a class="button stroke small green" href="/pages/settings/checkout.html" target="_blank">Checkout Tab</a>
+cài đặt tại System > Settings > <a class="button stroke small green" href="/pages/settings/checkout.html" target="_blank">Checkout Tab</a>
 									</p>
 									
 								</div>
@@ -115,8 +114,8 @@ settings located in System > Settings > <a class="button stroke small green" hre
 
 						<!-- Category Info -->
 						<div class="category-info ">
-							<h3 class="category-title">Products Inventory</h3>
-							<h4 class="category-description">Product Level Settings</h4>
+							<h3 class="category-title">Sản phẩm tồn kho</h3>
+							<h4 class="category-description">Thiết lập số lượng sản phẩm</h4>
 						</div>
 						<!-- End of Caregory Info -->
 
@@ -126,10 +125,10 @@ settings located in System > Settings > <a class="button stroke small green" hre
 							<div class="col-md-6">
 								<!-- Box -->
 								<div class="box ">
-									<h4 class="box-title">Product Main <strong>Quantity</strong></h4>
-									<p class="box-description">Quantity available for the product. Used if stock trackable is set ON. If you have any stock trackable <a class="crosslink" href="/pages/catalog/products/attributes.html" target="_blank">options</a>, do not use this quantity and set it to 0.<br><br> You can specify quantity for each specific product's option value.</p>
+									<h4 class="box-title"><strong>Số lượng sản phẩm </strong></h4>
+									<p class="box-description">Quantity available for the product. Used if stock trackable is set ON. If you have any stock trackable <a class="crosslink" href="/pages/catalog/products/attributes.html" target="_blank">options</a>, Số lượng có sẵn cho sản phẩm. Được sử dụng nếu bật có thể theo dõi kho. Nếu bạn có bất kỳ tùy chọn có thể theo dõi kho, không sử dụng lượng này và đặt =0.<br><br> Bạn có thể chỉ định số lượng cho mỗi giá trị tùy chọn của sản phẩm.</p>
 									<p class="box-description" style="font-size:14px;">
-									settings located in product edit page  <a class="button stroke small green" href="/pages/settings/general.html" target="_blank">General Tab</a>
+									thiết lập tại product edit page  <a class="button stroke small green" href="/pages/settings/general.html" target="_blank">General Tab</a>
 									</p>
 									
 								</div>
@@ -138,10 +137,10 @@ settings located in System > Settings > <a class="button stroke small green" hre
 							<div class="col-md-6">
 								<!-- Box -->
 								<div class="box ">
-									<h4 class="box-title">Product Main <strong>Minimum Quantity</strong></h4>
-									<p class="box-description">Minimum quantity required to purchase this product. By specifying the minimum quantity, AbanteCart will always add this number to the cart when anything lower than this number is added. In other words, if the Min Quantity is set for two, and the customer tries to add 1 to cart; the store will automatically update this product to 2 items.</p>
+									<h4 class="box-title"><strong>Số lượng tối thiểu của sản phẩm </strong></h4>
+									<p class="box-description">Số lượng tối thiểu cần thiết để mua sản phẩm này. Bằng cách xác định số lượng tối thiểu, Vinacart sẽ luôn luôn thêm số này vào giỏ hàng khi một số nhỏ hơn số này được thêm vào giỏ. Nói cách khác, nếu số lượng tối thiểu thiết lập =2 và khách hàng cố gắng thêm 1 vào giỏ hàng; cửa hàng sẽ tự động cập nhật sản phẩm với số lượng =2.</p>
 									<p class="box-description" style="font-size:14px;">
-									settings located in product edit page  <a class="button stroke small green" href="/pages/settings/general.html" target="_blank">General Tab</a>
+									thiết lập nằm trong trang sửa sản phẩm ở tab  <a class="button stroke small green" href="/pages/settings/general.html" target="_blank">General</a>
 									</p>
 									
 								</div>
@@ -168,32 +167,32 @@ settings located in System > Settings > <a class="button stroke small green" hre
 							<div class="col-md-6">
 								<!-- Box -->
 								<div class="box ">
-									<h4 class="box-title">Product Main <strong>Track Stock</strong></h4>
-									<p class="box-description">Enabled main product to track stock and subtract the quantity after order is placed by customers.</p>
+									<h4 class="box-title">Sản phẩm <strong>theo dõi kho </strong></h4>
+									<p class="box-description">Cho phép sản phẩm theo dõi kho và trừ số lượng sau khi khách hàng đặt đơn hàng.</p>
 						<!-- Note -->
 						<div class="note js-note blue">
 							<span class="note-close js-close">
 								<i class="fa fa-times"></i>
 							</span>
-							<h4 class="note-title"> Note </h4>
-							<p class="note-description"> This is a main setting to control stock management. If set to NO and there are no stock trackable <a class="crosslink" href="/pages/catalog/products/attributes.html" target="_blank">options</a> available, no other stock related settings will matter. </p>
+							<h4 class="note-title"> Chú ý </h4>
+							<p class="note-description"> Đây là một thiết lập chính để quản lý kho hàng. Nếu tắt thiết lập này và sẽ không có <a class="crosslink" href="/pages/catalog/products/attributes.html" target="_blank">tùy chọn</a> có thể theo dõi kho, cũng không có cài đặt kho khác liên quan nào. </p>
 						</div>
 						<!-- End of Note -->
 
 								<p class="box-description" style="font-size:14px;">
-									setting located in product edit page  <a class="button stroke small green" href="/pages/settings/general.html" target="_blank">General Tab</a>	
+									thiết lập tại trang sửa sản phẩm ở tab <a class="button stroke small green" href="/pages/settings/general.html" target="_blank">General </a>	
 								</div>
 								<!-- End of Box -->
 							</div>
 							<div class="col-md-6">
 								<!-- Box -->
 								<div class="box ">
-									<h4 class="box-title">Product Option <strong>Quantity</strong> Values</h4>
-									<p class="box-description">Set quantity for unique options value combination that represents one unique product variation.<br><br>
-									When you enable stock trackable options, please set main product quantity to 0. For example if your product comes in 3 colors (black, white, and green) and - with Track Stock enabled for each color - you specify 3 quantity for each color variant.
+									<h4 class="box-title">Nhập <strong>số lượng</strong> cho tùy chọn sản phẩm</h4>
+									<p class="box-description">Thiết lập số lượng cho từng tùy chọn riêng biệt đại diện với mỗi thuộc tính tùy chọn cho một sản phẩm trên web.<br><br>
+									Khi bạn kích hoạt tùy chọn có thể theo dõi kho, vui lòng thiết lập số lượng sản phẩm =0. Ví dụ, nếu sản phẩm của bạn có 3 màu (black, white, và green) và với kích hoạt theo dõi kho cho mỗi mầu - bạn chỉ định số lượng =3 cho mỗi mầu.
 									</p><br><br><br>
 									<p class="box-description" style="font-size:14px;">
-									set Values Quantity in product edit page  <a class="button stroke small green" href="/pages/catalog/products/attributes.html" target="_blank">Options Tab</a>
+									thiết lập các giá trị số lượng trên trang sửa sản phẩm ở tab <a class="button stroke small green" href="/pages/catalog/products/attributes.html" target="_blank">Options </a>
 									</p>
 									
 								</div>
@@ -216,11 +215,11 @@ settings located in System > Settings > <a class="button stroke small green" hre
 							<div class="col-md-6">
 								<!-- Box -->
 								<div class="box ">
-									<h4 class="box-title">Product Option Value <strong>Track Stock</strong></h4>
-									<p class="box-description"> Enabled option value for product to track stock and subtract the quantity after order is placed by customers.<br><br>
-									Set this to count, for example, different size and color combinations and do not track the item as a whole.</p><br>
+									<h4 class="box-title">Giá trị số lượng cho tùy chọn sản phẩm (<strong>Track Stock</strong>)</h4>
+									<p class="box-description"> kích hoạt giá trị số lượng cho tùy chọn sản phẩm để theo dõi kho và trừ đi số lượng sau khi khách hàng đặt hàng.<br><br>
+									Thiết lập để đếm, ví dụ kết hợp tùy chọn với kích thước và mầu sắc khác nhau và không theo dõi các mục một cách tổng thể.</p><br>
 									<p class="box-description" style="font-size:14px;">
-									setting located in product edit page  <a class="button stroke small green" href="/pages/catalog/products/attributes.html" target="_blank">Options Tab</a>
+									cài đặt tại trang sửa sản phẩm ở tab  <a class="button stroke small green" href="/pages/catalog/products/attributes.html" target="_blank">Options </a>
 									</p>
 									
 								</div>
@@ -229,13 +228,12 @@ settings located in System > Settings > <a class="button stroke small green" hre
 							<div class="col-md-6">
 								<!-- Box -->
 								<div class="box ">
-									<h4 class="box-title">Per Product <strong>Out Of Stock Status</strong></h4>
-									<p class="box-description">( or Out of stock message "In Stock, Out Stock, Pre-Order")<br>
-									Message shown if stock in product or options will drop to 0 or below. This message is always show if out of stock condition is met for stock trackable products or options. 
-									If you do not want to see this message set product and all options to be stock trackable off.
+									<h4 class="box-title">Mỗi sản phẩm thiết lập <strong>trạng thái hết hàng </strong></h4>
+									<p class="box-description">(hoặc thông báo tình trạng kho "Trong kho, hết hàng, đặt trước"/"In Stock, Out Stock, Pre-Order")<br>
+									Tin nhắn hiển thị nếu kho sản phẩm hoặc các tùy chọn <=0. Thông điệp này luôn hiển thị nếu phát hiện sản phẩm hết hàng. Nếu bạn không muốn thấy thông báo này, tắt quản lý kho cho sản phẩm và tất cả tùy chọn của sản phẩm.
 									</p>
 									<p class="box-description" style="font-size:14px;">
-									setting located in product edit page  <a class="button stroke small green" href="/pages/settings/general.html" target="_blank">General Tab</a>
+									cài đặt tại trang sửa sản phẩm  ở tab <a class="button stroke small green" href="/pages/settings/general.html" target="_blank">General </a>
 									</p>
 									
 								</div>

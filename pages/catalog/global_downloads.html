@@ -1,65 +1,64 @@
 ---
 layout: default
-title: Edit Global Downloads
-description: Manage products global downloads
+title: Sửa tải tệp toàn cục
+description: Quản lý tệp downloads chung cho sản phẩm
 redirect_from: "/tag/download_listing.html"
 tags: [
     ['product_files', 'Product Files'], 
-    ['order_files', 'View Order Files'],  
+    ['order_files', 'Xem Order Files'],  
 ]
 ---
 
-
-						
-						<h4 class="category-description">See short video how to use downloads with digital products</h4>
-						<!-- Video -->
-						<iframe class="video js-responsive-video" src="https://www.youtube.com/embed/EbSe5Pms_t8?showinfo=0" style="border:0" allowfullscreen></iframe>
-						<!-- End of Video -->
+<!--  remove video here -->
 
 
 
 						<!-- Category Info -->
 						<div class="category-info ">
-							<h3 class="category-title">Downloads list</h3>
+							<h3 class="category-title">Danh sách Downloads </h3>
 							<h4 class="category-description">
-							Managed from Catalog > Downloads.</h4>
+							Quản lý từ Catalog > Downloads.</h4>
 						</div>
 						<!-- End of Caregory Info -->
-<p>Global Downloads explained in this guide can be added to the any product or several products on the product's edit page Files Tab. AbanteCart supports multiple downloads (files) per product! Also you can create download manually on that page too.</p>
+<p>Global Downloads/File được giải thích trong hướng dẫn này có thể được thêm vào bất kỳ sản phẩm hoặc một số sản phẩm trên trang chỉnh sửa sản phẩm ở tab Files. Có thể sử dụng nhiều files cho mỗi sản phẩm ! bạn cũng có thể tạo thêm download trong trang này.</p>
 <p><a class="jcepopup" href="/img/other/catalog-downloads-grid.png"><img src="/img/other/catalog-downloads-grid.png" border="0" width="550" /></a>
 </p>
 <ul>
-<li>The Downloads page contains the "refine" pattern which allows you to refine shared downloads by the following parameter:</li>
+<li>Trang Downloads có công cụ lọc cho phép bạn tìm các tệp chia sẻ (downloads) bởi các thông số:</li>
 </ul>
 
-<p>- Downloads Name;</p>
+<p>- Tên Downloads;</p>
 
 <ul>
-<li>You can change the language of downloads to display using top navigation</li>
+<li>Bạn có thể thay đổi ngôn ngữ hiển thị và của downloads</li>
 
-<li>You can sort downloads by <em>Downloads Name, Status, Products Count</em></li>
+<li>Bạn có thể xắp xếp downloads bởi <em>Tên, trạng thái, số lượng sản phẩm</em></li>
 
-<li>Red color of Shared Download indicates missing file.</li>
+<li>Mầu đỏ cho tệp (Shared Download) nghĩa là file bị thiếu .</li>
 </ul>
-<p>To add a new download click the + button</p>
+<p>Để thêm một download mới nhấn nút + </p>
 <a class="jcepopup" href="/img/other/catalog-downloads-new.png"><img src="/img/other/catalog-downloads-new.png" border="0" alt="" width="400" /></a>
 
-<p><strong>To add file:</strong> click on 'empty' image the Resource Library popup will appear. Here select existing or upload new file from your local PC.</p>
-<p><em>note: the maximum file size allowed is regulated by <strong>upload_max_filesize</strong> directive in php.ini on your server and Resource Library <strong>Upload Max File Size, kB</strong> value in the System-Settings-<a class="crosslink" href="/pages/settings/system.html" target="_blank">System Tab</a></em></p>
-<p><strong>Name:</strong> The download name as it will appear in the front-end.</p>
-<p><strong>Download mask:</strong> Filename alias for customer download output</p>
-<p><strong>Activated:</strong> Download will be activates on the event selected.<br /> Before Order - Download is activate before order is placed and available for download at product page on Storefront. <br /> Immediately - Download is activate after order is placed, regardless of the order status<br /> On Order Status - Download is activate after order status reach status selected<br /> Manually - Download is activate only after administrator manually allow it on order's edit page Front-end (Admin > Sales > Order's edit page > <a class="crosslink" href="/pages/catalog/products/files.html" target="_blank">Files Tab</a>)</p>
-<p><strong>Max downloads:</strong> the maximum number of allowed downloads for the customer. Once the user hits this limit they will no longer be able to download the file.</p>
-<p><strong>Expire days:</strong> Count of days from date of purchase. Download expire date works in the same way; if you define a number of days, after that days the download will expire.</p>
-<p><strong>Sort Order:</strong> Sort Order set's the order of which the Shared Download will be displayed amongst others.</p>
-<p>After you have made your changes, click the SAVE button</p>
+<p><strong>Để thêm file:</strong> nhấn vào ành trống 'empty' cửa sổ Resource Library sẽ xuất hiện. Tại đây chọn tệp đã có hoặc upload mới từ máy tính của bạn.</p>
+<p><em>chú ý: kích thước tối đa cho phép tải lên được quy định bởi thiết lập <strong>upload_max_filesize</strong> trong php.ini trên server của bạn và giá trị <strong>Upload Max File Size, kB</strong> trong System-Settings-<a class="crosslink" href="/pages/settings/system.html" target="_blank">System Tab</a></em></p>
+<p><strong>Name:</strong> tên download sẽ hiển thị trên web.</p>
+<p><strong>Download mask:</strong> tên khác cho File cho khách hàng tải về</p>
+<p><strong>Activated:</strong> Download sẽ được kích hoạt với sự kiện được chọn.
+	<br /> Before Order - Download được kích hoạt trước khi đơn hàng được tạo và có sẵn để download ở trang sản phẩm trên cửa hàng. 
+	<br /> Immediately - Download được kích hoạt sau khi đơn hàng được tạo , không phụ thuộc vào trạng thái đơn hàng
+	<br /> On Order Status - Download được kích hoạt sau khi chỉ định trạng thái đơn hàng
+	<br /> Manually - Download chỉ được kích hoạt sau khi thực hiện bởi administrator cho phép hiển thị trên trang sửa đơn hàng (Front-end) (Admin > Sales > sửa một đơn hàng (Order's edit page) > <a class="crosslink" href="/pages/catalog/products/files.html" target="_blank">Files Tab</a>)</p>
+<p><strong>Max downloads:</strong> số lượng tối đa cho phép khách hàng tải về. Một khi chạm tới giới hạn này, họ sẽ không còn có thể tải về các tập tin này.</p>
+<p><strong>Expire days:</strong> Đếm ngày kể từ ngày mua. Ngày hết hạn tải làm việc tương tự; nếu bạn chỉ định một số ngày, sau đó sẽ hết hạn tải.</p>
+<p><strong>Sort Order:</strong> Xắp theo thứ tự, download này sẽ hiển thị so với các downloads khác.</p>
+<p>Sau khi bạn đã thực hiện những thay đổi của bạn, nhấp vào nút SAVE</p>
 						<!-- Note -->
 						<div class="note js-note blue">
 							<span class="note-close js-close">
 								<i class="fa fa-times"></i>
 							</span>
-							<h4 class="note-title"> Note </h4>
-							<p class="note-description"> To add Shared download (download file) to product locate the <a class="crosslink" href="/pages/catalog/products/files.html" target="_blank">Files tab</a> on product's edit page. </p>
+							<h4 class="note-title"> Chú ý </h4>
+							<p class="note-description"> Để thêm file tải về (Shared download) cho sản phẩm tìm đến trang sửa sản phẩm ở tab <a class="crosslink" href="/pages/catalog/products/files.html" target="_blank">Files </a> . </p>
 						</div>
 						<!-- End of Note -->
 
@@ -68,20 +67,20 @@ tags: [
 							<span class="note-close js-close">
 								<i class="fa fa-times"></i>
 							</span>
-							<h4 class="note-title"> Note </h4>
-							<p class="note-description"> to update previously purchased you need to modify shared download then click on <strong>Push to Previous Orders</strong> button <em>in the purchased products Files section</em> </p>
+							<h4 class="note-title"> Chú ý </h4>
+							<p class="note-description"> để cập nhật cho các đơn hàng đã mua trước bạn cần sửa file download sau đó nhấn vào nút <strong>Push to Previous Orders</strong>  <em>trong phần các Files của sản phẩm đã mua</em> </p>
 						</div>
 						<!-- End of Note -->
 
 
-<p>For any Shared Downloads you able to add Download Attributes.<br /> Just select values for Download Attribute you want to add and save shared download.</p>
+<p>Đối với mọi Downloads bạn có thể thêm thuộc tính cho nó.<br/> Chỉ cần chọn các giá trị cho thuộc tính Download bạn muốn thêm và lưu lại.</p>
 						<!-- Note -->
 						<div class="note js-note blue">
 							<span class="note-close js-close">
 								<i class="fa fa-times"></i>
 							</span>
-							<h4 class="note-title"> Note </h4>
-							<p class="note-description">Download Attributes developed for internal use but You able to alllow customers to see it in the Download section Storefront using Download Attribute's setting 'Show to Customers'.</p>
+							<h4 class="note-title"> Chú ý </h4>
+							<p class="note-description">Các thuộc tính tải về được phát triển để sử dụng nội bộ, nhưng bạn có thể cho phép khách hàng xem nó trong phần Download trên  web sử dụng thiết lập 'Show to Customers'.</p>
 						</div>
 						<!-- End of Note -->
 						
@@ -89,14 +88,14 @@ tags: [
 						
 						<!-- Category Info -->
 						<div class="category-info ">
-							<h3 class="category-title">The order process</h3>
+							<h3 class="category-title">Tiến trình đặt hàng</h3>
 							<h4 class="category-description">
-							Download should be added to product to allow customers to order them.</h4>
-							<p>The order process for downloadable products is as follows:
+							Download sẽ được thêm vào sản phẩm để cho khách hàng tải về.</h4>
+							<p>Quá trình đặt hàng cho sản phẩm có tệp tải về là như sau:
 							<ol>
-							<li>User adds product to their cart</li>
-							<li>Users checks out and pays</li>
-							<li>After payment customer will be able to download depending on your <strong>Activated</strong> setting setup
+							<li>Người dùng thêm sản phẩm vào giỏ hàng của họ</li>
+							<li>Người dùng kiểm tra hàng và thanh toán</li>
+							<li>Sau khi thực hiện thanh toán khách hàng sẽ có thể tải tệp về tùy thuộc vào cài đặt <strong>Activated</strong> của bạn
 							</li>
 							</ol>
 							</p>
@@ -105,8 +104,8 @@ tags: [
 							<span class="note-close js-close">
 								<i class="fa fa-times"></i>
 							</span>
-							<h4 class="note-title"> Info </h4>
-							<p class="note-description"> You can set your store to disable downloads globally. Change <strong>Allow Downloads</strong> setting in System > Settings > General</p>
+							<h4 class="note-title"> Thông tin </h4>
+							<p class="note-description"> Bạn cũng có thể cho phép cửa hàng để vô hiệu hóa downloads (globally). Thay đổi cài đặt <strong>Allow Downloads</strong> trong System > Settings > General</p>
 						</div>
 						<!-- End of Note -->
 						</div>
@@ -119,9 +118,9 @@ tags: [
 						
 						<!-- Category Info -->
 						<div class="category-info ">
-							<h3 class="category-title">Managing orders with downloadable items</h3>
+							<h3 class="category-title">Quản lý các đơn hàng với sản phẩm có download</h3>
 							<h4 class="category-description">
-							If you edit/view an order with downloadable products within it you will notice the downloadable products Files Tab contains the download settings</h4>
+							Nếu bạn sửa/xem một đơn hàng với các sản phẩm có downloads, bạn sẽ được thông báo các sản phẩm có downloads ở tab Files chứa các cài đặt tải về.</h4>
 							<p>
 							</p>
 						</div>
